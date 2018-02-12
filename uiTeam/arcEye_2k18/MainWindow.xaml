@@ -1,12 +1,19 @@
-﻿<Window x:Class="arcEye_2k18.MainWindow"
+﻿<controls:MetroWindow x:Class="arcEye_2k18.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:arcEye_2k18"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        mc:Ignorable="d" TitleAlignment="Center" WindowStartupLocation="CenterScreen"
+        Title="arcEye_2k18" MinHeight="600" MinWidth="800">
+    <controls:MetroWindow.RightWindowCommands>
+        <controls:WindowCommands>
+            <Button Content="info"></Button>
+        </controls:WindowCommands>
+    </controls:MetroWindow.RightWindowCommands>
     <Grid>
-        
+        <Button Content="this is a button"></Button>
     </Grid>
-</Window>
+</controls:MetroWindow>
+
