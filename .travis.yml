@@ -3,12 +3,12 @@ matrix:
     - language: csharp
       solution: arcEye_2k18.sln
       before_script:
-        - cd uiTeam
+        - cd /uiTeam/
         
     - language: python
       python: 2.7
       before_script:
-        - cd imageProcessing&comVision_Team
+        - cd /imageProcessing&comVision_Team/
 
 notifications:
   email:
