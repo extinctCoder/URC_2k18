@@ -26,3 +26,13 @@ D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\Debug\MaterialDesignThemes.MahApps.d
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\Resources\Icons.baml
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\Resources\IconsNonShared.baml
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\Debug\MaterialDesignColors.pdb
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\Debug\LiveCharts.dll
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\Debug\LiveCharts.Wpf.dll
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\Debug\LiveCharts.pdb
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\Debug\LiveCharts.xml
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\Debug\LiveCharts.Wpf.pdb
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\Debug\LiveCharts.Wpf.xml
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\Debug\De.TorstenMandelkow.MetroChart.dll
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\chartControls\angularGauge.g.cs
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\chartControls\angularGauge.baml
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\GeneratedInternalTypeHelper.g.cs
