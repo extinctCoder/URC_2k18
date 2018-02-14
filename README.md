@@ -62,17 +62,7 @@ Any issues not covered by these published rule sets will be addressed on a case-
         
     1. The rover is only required to be autonomous for the Autonomous Traversal Task. In the other tasks autonomy is not required, although some level of autonomy may be beneficial, such as the ability to backtrack to the last good communications location. Besides the Autonomous Traversal Task, the rover shall be operated remotely by a team which will not be able to view the rover on the site or the site itself directly, and line-of-sight communications are not guaranteed for all of the tasks. The rover may be commanded by the team using a wireless link, with information needed for guiding the rover acquired by the rover's own on-board systems and transmitted to the team wirelessly. There shall be no time delay in communications, as the URC is based on the assumption that the rovers in question are telerobots, being operated by astronauts on or orbiting Mars. Refer to rule 2.f regarding the impacts of a loss of communications. Teams may use tethered communications instead of wireless, but will be penalized 50% of the points earned during that task. When operating in tethered mode, teams cannot progress beyond the first stage of any staged task.
     
-    1. Wireless communication methods used by teams shall adhere to all applicable FCC (United States
-Federal Communications Commission) standards and regulations. The 900 MHz and 2.4 GHz
-bands are further regulated in their use at URC as described in section 2.e. Other bands are not
-further regulated. Teams may utilize multiple bands at the same time. Teams must submit details
-regarding any wireless communication devices being implemented and operator licenses (when
-applicable) to the URC Director no later than Friday, April 27, 2018. Team members are permitted
-to obtain and utilize any relevant licenses, and must document the license, applicable regulations,
-and devices as part of the communications documentation deadline. Teams must notify the URC
-Director immediately of any changes after this date. Teams may be required to power down
-communications equipment at the event sites while not competing, so as not to interfere with other
-teams.
+    1. Wireless communication methods used by teams shall adhere to all applicable FCC (United States Federal Communications Commission) standards and regulations. The 900 MHz and 2.4 GHz bands are further regulated in their use at URC as described in section                            1. Other bands are not further regulated. Teams may utilize multiple bands at the same time. Teams must submit details regarding any wireless communication devices being implemented and operator licenses (when applicable) to the URC Director no later than Friday, April 27, 2018. Team members are permitted to obtain and utilize any relevant licenses, and must document the license, applicable regulations, and devices as part of the communications documentation deadline. Teams must notify the URC Director immediately of any changes after this date. Teams may be required to power down communications equipment at the event sites while not competing, so as not to interfere with other teams.
 
         1. Internet is not available in the field or at MDRS, but is available at nearby businesses in Hanksville.
         
@@ -84,19 +74,11 @@ teams.
         
     1. Teams must notify the organizers of the communications standards they will be using, includingfrequency bands and channels, by April 27, 2018. The URC restrictions on the 900 MHz and 2.4GHz bands are as follows:
     
-        1. 900 MHz frequency band (902-928 MHz): Teams shall not use frequency bandwidths
-greater than 8 MHz. Teams must also be able to operate exclusively within each of the
-following three sub-bands: "900-Low" (902-910 MHz), "900-Mid" (911-919 MHz),
-and "900-High" (920-928 MHz). The competition schedule will notify teams which
-sub-band may be used for each task, and teams must be able to shift to another subband as required. There is no limit on the number of 900 MHz channels a team uses, so
-long as they are all within the designated sub-band.
-2.e.ii. 2.4 GHz frequency band (2.400-2.4835 GHz): Teams shall use center frequencies that
-correspond to channels 1-11 of the IEEE (Institute of Electrical and Electronics
-Engineers) 802.11 standard for 2.4 GHz. Teams shall not use frequency bandwidths
-greater than 22 MHz. The competition schedule will notify teams which channels may
-be used for each task, and teams must be able to shift to other channels as required.
-Teams shall be limited to using no more than three channels in the 2.4 GHz band.
-2.e.iii. Teams may use spread spectrum or narrowband (fixed channel allocation) within the
+        1. 900 MHz frequency band (902-928 MHz): Teams shall not use frequency bandwidths greater than 8 MHz. Teams must also be able to operate exclusively within each of the following three sub-bands: "900-Low" (902-910 MHz), "900-Mid" (911-919 MHz), and "900-High" (920-928 MHz). The competition schedule will notify teams which sub-band may be used for each task, and teams must be able to shift to another subband as required. There is no limit on the number of 900 MHz channels a team uses, so long as they are all within the designated sub-band.
+        
+        1. 2.4 GHz frequency band (2.400-2.4835 GHz): Teams shall use center frequencies that correspond to channels 1-11 of the IEEE (Institute of Electrical and Electronics Engineers) 802.11 standard for 2.4 GHz. Teams shall not use frequency bandwidths greater than 22 MHz. The competition schedule will notify teams which channels may be used for each task, and teams must be able to shift to other channels as required. Teams shall be limited to using no more than three channels in the 2.4 GHz band.
+        
+        1. Teams may use spread spectrum or narrowband (fixed channel allocation) within the
 sub-band limits as they fit.
 2.e.iv. There will be spectrum monitoring on-site to ensure that teams are not interfering with
 channels outside those allotted. Teams should anticipate being within signal range of other
