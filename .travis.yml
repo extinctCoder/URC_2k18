@@ -3,7 +3,7 @@ matrix:
     - language: csharp
       solution: arcEye_2k18.sln
       script:
-        - cd ../uiTeam && npm install && npm test
+        - cd uiTeam && npm install && npm test
         
     - language: python
       python: 2.7
