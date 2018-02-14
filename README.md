@@ -117,176 +117,70 @@ Any issues not covered by these published rule sets will be addressed on a case-
         1. Teams shall submit a written science plan by May 11, 2018, which will be factored into thejudges’ evaluation for the Science Cache Task. Specifications for the plan will posted to the URC website.
     
         1. Teams will be given a field briefing by judges to discuss the tasks at the science site. Through the information relayed by the rover, teams shall then select sites of potential biological interest within a 0.5 km radius of the command station.
+        
         1. Teams shall document each site investigated by:
         
-        • A wide-angle panorama showing the full context of the site. The panorama must
-indicate cardinal directions, and have some indication of scale;
-• A close up, well focused, high-resolution picture with some indication of scale (scale
-can be indicated post-capture) at the sampling site;
-• Teams will be required to take a stratigraphic profile using the on-board cameras to
-determine the depositional environment and history of water in the sedimentary
-structures;
-• GPS coordinates of each site, to include elevation and accuracy range. Thorough
-documentation is especially crucial for the sample that is returned onboard the rover.
-3.b.iv. Based upon investigation of the selected sites, teams shall then collect a sub-surface
-sample from a depth of 10 cm or deeper. Sample(s) must be at least 5 g and may consist of
-a single rock, loose soil, or anything in between. Sample(s) may return the full depth
-including the topsoil but teams must be able to distinguish the soil depth for any sample.
-The portion of the sample from below 10 cm will be used to determine the sample mass.
-3.b.v. After collection of the sample, the rover must then store and seal it in a cache container
-onboard the rover, and return the sealed cache to the command station.
-3.b.vi. Onboard equipment at a minimum should include a science capability of the team’s
-choice, and also test the soil moisture (relative humidity) and subsurface temperature
-at least 10 cm below the surface. Additional sensors, subsystems, and test procedures are
-left to the discretion of the teams to meet the science-driven objectives of this task.
-3.b.vii. Any chemicals used onboard, including water and any reaction products, must follow a nospill policy of being contained on the rover and not spilt on the ground. Use of hazardous
-chemicals must be pre-approved prior to competition by submitting a plan of
-transportation, usage, safety precautions, and accident plan. Teams should consider that
-URC takes place in a remote desert location with very limited water supplies and no quick
-access to emergency medical care.
-3.b.viii.Teams will be given between 20 and 30 minutes to collect data and the sample with the
-rover. Teams may investigate as many sites as time allows.
-3.b.ix. After return of the rover to the command station, teams shall remove the cached sample
-from the rover, while minimizing any possibility of contamination. Teams will have the
-opportunity to use these samples for subsequent laboratory analysis at a later time in the
-competition.
-3.b.x. At a later time the cache will be returned to the teams and they will be given 15-30 minutes
-for analysis and preparation of data for a 10 minute discussion with the judges. The lab
-analysis portion shall include at least one life detection method (i.e. biological assay)
-of the team’s choosing. The lab science analysis and discussion with the judges is allowed
-even if the team was unsuccessful in obtaining samples with their rover. The discussion
-should include:
-• The stratigraphic profile and evidence of water in the profile;
-• Results of on-board rover and laboratory tests performed;
-• Method used to ensure sample was collected at least 10 cm below the surface and
-transferred to the judges without contamination;
-• Reasoning for sample site selection and documentation of each site;
-• Meaning of data collected with respect to the habitability potential, the geology of the
-site (past and present) and implications of the site being suitable for life;
-• Scientific knowledge of Mars based on responses to judges’ questions.
-3.b.xi. The score for this task will be based on the following components:
-• Thoroughness of the investigation of sites (panoramas, site selection, stratigraphic
-profile);
-• Quality and applicability of the onboard and laboratory analysis (moisture,
-temperature, science capability of choice, laboratory analysis);
-• Quality of the sample returned (weight, depth, possible contamination);
-• Scientific knowledge of astrobiology.
-3.c. Extreme Retrieval and Delivery Task:
-This will be a staged task in which rovers shall be required to pick up and deliver objects in the
-field, and deliver assistance to astronauts, all while traversing a wide variety of terrain. Teams
-will be given a fixed amount of time for each stage. Each stage will include multiple objectives as
-described below, and teams must complete each component of a stage within the allotted time in
-order to proceed to the next stage. Failure to complete a stage will result in the end of the task.
-Teams will NOT be allowed to survey the course ahead of time.
-3.c.i. Terrain may include soft sandy areas, rough stony areas, rock and boulder fields, vertical
-drops potentially in excess of 1 m, and steep slopes in excess of 45°. There is no limit
-placed on the steepness of slopes or size of drops or boulders that may be encountered.
-Terrain may include routes indicated by visual markers. Terrain will range from very easy
-and close to the starting line, to exceedingly difficult obstacles at greater distances also
-involving navigation challenges. Portions of this task, particularly in later stages, will be
-intentionally placed beyond direct line-of-sight of the control station antenna.
-3.c.ii. Rovers will be required to complete a set of objectives not more than 1 km from the start
-gate. In some areas a set path may be defined. All paths will be at least 2 m wide. Teams
-will be given approximate GPS coordinates of the object retrieval and delivery locations
-and any required waypoints.
-3.c.iii. Objects to be retrieved in the field will consist of small lightweight hand tools (e.g.
-screwdriver, hammer, wrench), supply containers (e.g. toolbox, gasoline can), or rocks up
-to 5 kg in mass. All items will have graspable features (such as a handle) no greater than
-5 cm in diameter. The maximum dimensions shall be no larger than 40 cm x 40 cm x
-40 cm, but teams should expect a variety of sizes and weights. Rovers may pick up
-multiple items at a time, but are not required to do so.
-3.c.iv. Objects shall be picked up in the field and delivered to designated locations, which may
-include markers or astronauts identifiable by simulated space suits. Approximate GPS
-coordinates will be provided for each pickup/delivery location, although accuracy may
-vary. In certain cases, specific instructions will be provided for each object in advance,
-and in other cases, the object to be delivered will be indicated at the delivery location (e.g.
-on a small sign held by the astronaut).
-3.c.v. Teams must successfully complete the objectives of a stage in order to advance to the next
-stage. Any time remaining at the completion of a stage is added to the allotted time of the
-subsequent stage, which begins immediately. A more complete description of the stages,
-specific objectives within them, and requirements for passing to the next stage will be
-given to the teams at a later date before the competition.
-3.c.vi. Certain objectives of this task may require field science proficiency in order to complete.
-This can include picking a specified type of rock from an assortment for the pickup /
-delivery.
-3.c.vii. Teams will be scored on their ability to pick up and deliver the correct objects to the
-correct locations, and how close the object is placed to the objective within the allotted
-time. Points will be awarded for partial completion, and will be deducted for failure to stay
-within marked routes.
-3.c.viii.This task will allow 20 minutes for set-up time and time on course will be no greater than
-70 minutes. Teams do not need to return to the start line as part of the task, but are
-expected to leave the field immediately after their time on course is over in consideration
-of the next contestants.
-3.d. Equipment Servicing Task:
-Rovers shall be required to perform several dexterous operations on a mock-up equipment system.
-The rover shall have to travel up to 0.25 km across relatively flat terrain (minimal slope) to reach
-the equipment. The equipment servicing task will involve delivering a cached science sample to a
-lander and performing maintenance on the lander. It will include but not be limited to some subset
-of the following sub-tasks:
-• Pick up the cache container and transport to the lander rocket. Cache will have a handle at
-least 10cm long and not more than 5cm in diameter. Cache will weigh less than 3 kg. The
-equipment servicing cache will be provided and may be partially buried;
-• Open a drawer on the lander. Insert cache into a close-fitting space in the drawer, and
-close the drawer;
-• Undo a latch on a hinged panel of the lander and open panel;
-• Type commands on a keyboard and follow directions on computer display;
-• Push buttons, flip switches, turn knobs;
-• Turn a hand crank;
-• Replace an electronics board using a rugged board-to-board connector such as a multi-pin
-power molex connector;
-• 
-3.d.i. 	Picking up and using a screwdriver or wrench.
-Teams will receive points for every sub-task completed successfully. Teams will have
-between 20 and 45 min to complete the task.
-3.e. Autonomous Traversal Task:
-Rovers shall be required to autonomously traverse between markers in this staged task across
-moderately difficult terrain. Teams will be given a fixed amount of time for a given stage. Each
-stage will have one or more legs as described below, and teams must complete each leg of a stage
-within the allotted time in order to proceed to the next stage. Failure to complete a stage will result
-in the end of the task.
-3.e.i. 	Teams will begin on this task 10 minutes after the completion of the Equipment Servicing
-Task, operating from the same control station on an adjacent course.
-3.e.ii. A leg is defined as the rover autonomously traversing from a start marker to a finish
-marker. Markers will be a standard tennis ball elevated 10 – 50 cm off the ground and GPS
-coordinates close to the markers will be provided. The finish marker of one leg may be
-used as the start marker of a subsequent leg.
-3.e.iii. Stages will increase in difficulty and may or may not include legs of the following levels
-of difficulty:
-• Level 1: Teleoperated scouting of the route will be allowed between markers which will be
-very close to the GPS coordinates provided.
-• Level 2: Marker will not be very close to the GPS coordinates requiring a search for the
-marker once the GPS coordinates have been reached.
-• Level 3: Teleoperated scouting is not allowed. Purely autonomous navigation to the GPS
-coordinates and an autonomous search around the GPS coordinates to find the marker
-will be required.
-• Level 4: No teleoperation allowed and significant obstacles may lay between the markers
-requiring pre-planning or autonomous route finding. Approximate bearing and
-distance to the next marker may be provided, instead of GPS coordinates.
-3.e.iv. To complete a leg, teams must start with their rover within 2 m of the designated start
-marker. Before proceeding, teams must formally announce to judges that they are entering
-autonomous mode. In autonomous mode team members may monitor video and telemetry
-information sent from the rover, but may not transmit any commands that would be
-considered teleoperation.
-3.e.v. The rover shall autonomously navigate from the start marker to the finish marker. The
-rover’s on-board systems are required to decide when it has reached the finish
-marker, and transmit a message back to operators that is displayed for the judge to
-observe. It must also provide a visual signal on the rover that can observed by a judge
-following the rover. A 2 m radius from the marker to the closest point on the rover will be
-considered successful.
-3.e.vi. In stages where teleoperation is allowed, operators may abort autonomous operation and
-revert to teleoperation at any time, but the time will continue to run and teams shall be
-required to resume that leg in autonomous mode from the start marker. Interventions that
-require the physical intervention of runners are still penalized as in rule 2.f. In legs where
-teleoperation is not allowed, operators may only abort autonomous operations and request
-the physical intervention of runners, which is still penalized as in rule 2.f.
-3.e.vii. Teams may resume teleoperation mode when the rover indicates it is at a marker and
-conduct any operations prior to attempting the subsequent leg but competition time will not
-stop. In stages where teleoperation is not allowed teleoperation at a marker shall not
-include driving of the rover, but programming of the next leg is allowed.
-3.e.viii.Teams must successfully complete each leg of a stage in order to advance to the next
-stage. Any time remaining at the completion of a stage is added to the allotted time of the
-subsequent stage, which begins immediately.
-3.e.ix. It is anticipated that there will be a total of four stages in this task at increasing levels of
-difficulty, however judges may revise this number for the final schedule. Total time on
-course will be no greater than 60 minutes, and the cumulative distance of all legs shall be
-no greater than 2000 m.
+            - A wide-angle panorama showing the full context of the site. The panorama must indicate cardinal directions, and have some indication of scale;
+            
+            - A close up, well focused, high-resolution picture with some indication of scale (scalecan be indicated post-capture) at the sampling site;
+            
+            - Teams will be required to take a stratigraphic profile using the on-board cameras to determine the depositional environment and history of water in the sedimentary structures;
+            
+            - GPS coordinates of each site, to include elevation and accuracy range. Thorough documentation is especially crucial for the sample that is returned onboard the rover.
+            
+        1. Based upon investigation of the selected sites, teams shall then collect a sub-surface sample from a depth of 10 cm or deeper. Sample(s) must be at least 5 g and may consist of a single rock, loose soil, or anything in between. Sample(s) may return the full depth including the topsoil but teams must be able to distinguish the soil depth for any sample. The portion of the sample from below 10 cm will be used to determine the sample mass.
+        
+        1. After collection of the sample, the rover must then store and seal it in a cache container onboard the rover, and return the sealed cache to the command station.
+        
+        1. Onboard equipment at a minimum should include a science capability of the team’s choice, and also test the soil moisture (relative humidity) and subsurface temperature at least 10 cm below the surface. Additional sensors, subsystems, and test procedures are left to the discretion of the teams to meet the science-driven objectives of this task.
+        
+        1. Any chemicals used onboard, including water and any reaction products, must follow a nospill policy of being contained on the rover and not spilt on the ground. Use of hazardous chemicals must be pre-approved prior to competition by submitting a plan of transportation, usage, safety precautions, and accident plan. Teams should consider that URC takes place in a remote desert location with very limited water supplies and no quick access to emergency medical care.
+        
+        1.Teams will be given between 20 and 30 minutes to collect data and the sample with the rover. Teams may investigate as many sites as time allows.
+        
+        1. After return of the rover to the command station, teams shall remove the cached sample from the rover, while minimizing any possibility of contamination. Teams will have the opportunity to use these samples for subsequent laboratory analysis at a later time in the competition.
+        
+        1. At a later time the cache will be returned to the teams and they will be given 15-30 minutes for analysis and preparation of data for a 10 minute discussion with the judges. The lab analysis portion shall include at least one life detection method (i.e. biological assay) of the team’s choosing. The lab science analysis and discussion with the judges is allowed even if the team was unsuccessful in obtaining samples with their rover. The discussion should include:
+            - The stratigraphic profile and evidence of water in the profile;
+            - Results of on-board rover and laboratory tests performed;
+            - Method used to ensure sample was collected at least 10 cm below the surface and transferred to the judges without contamination;
+            - Reasoning for sample site selection and documentation of each site;
+            - Meaning of data collected with respect to the habitability potential, the geology of thesite (past and present) and implications of the site being suitable for life;
+            - Scientific knowledge of Mars based on responses to judges’ questions.
+        1. The score for this task will be based on the following components:
+            - Thoroughness of the investigation of sites (panoramas, site selection, stratigraphic profile);
+            - Quality and applicability of the onboard and laboratory analysis (moisture, temperature, science capability of choice, laboratory analysis);
+            - Quality of the sample returned (weight, depth, possible contamination);
+            - Scientific knowledge of astrobiology.
+    1. Extreme Retrieval and Delivery Task: This will be a staged task in which rovers shall be required to pick up and deliver objects in the field, and deliver assistance to astronauts, all while traversing a wide variety of terrain. Teams will be given a fixed amount of time for each stage. Each stage will include multiple objectives as described below, and teams must complete each component of a stage within the allotted time in order to proceed to the next stage. Failure to complete a stage will result in the end of the task.Teams will NOT be allowed to survey the course ahead of time.
+        1. Terrain may include soft sandy areas, rough stony areas, rock and boulder fields, vertical drops potentially in excess of 1 m, and steep slopes in excess of 45°. There is no limit placed on the steepness of slopes or size of drops or boulders that may be encountered. Terrain may include routes indicated by visual markers. Terrain will range from very easy and close to the starting line, to exceedingly difficult obstacles at greater distances also involving navigation challenges. Portions of this task, particularly in later stages, will be intentionally placed beyond direct line-of-sight of the control station antenna.
+        1. Rovers will be required to complete a set of objectives not more than 1 km from the start gate. In some areas a set path may be defined. All paths will be at least 2 m wide. Teams will be given approximate GPS coordinates of the object retrieval and delivery locations and any required waypoints.
+        1. Objects to be retrieved in the field will consist of small lightweight hand tools (e.g. screwdriver, hammer, wrench), supply containers (e.g. toolbox, gasoline can), or rocks up to 5 kg in mass. All items will have graspable features (such as a handle) no greater than 5 cm in diameter. The maximum dimensions shall be no larger than 40 cm x 40 cm x 40 cm, but teams should expect a variety of sizes and weights. Rovers may pick up multiple items at a time, but are not required to do so.
+        1. Objects shall be picked up in the field and delivered to designated locations, which may include markers or astronauts identifiable by simulated space suits. Approximate GPS coordinates will be provided for each pickup/delivery location, although accuracy may vary. In certain cases, specific instructions will be provided for each object in advance, and in other cases, the object to be delivered will be indicated at the delivery location (e.g. on a small sign held by the astronaut).
+        1. Teams must successfully complete the objectives of a stage in order to advance to the next stage. Any time remaining at the completion of a stage is added to the allotted time of the subsequent stage, which begins immediately. A more complete description of the stages, specific objectives within them, and requirements for passing to the next stage will be given to the teams at a later date before the competition.
+        1. Certain objectives of this task may require field science proficiency in order to complete. This can include picking a specified type of rock from an assortment for the pickup / delivery.
+        1. Teams will be scored on their ability to pick up and deliver the correct objects to the correct locations, and how close the object is placed to the objective within the allotted time. Points will be awarded for partial completion, and will be deducted for failure to stay within marked routes.
+        1.This task will allow 20 minutes for set-up time and time on course will be no greater than 70 minutes. Teams do not need to return to the start line as part of the task, but are expected to leave the field immediately after their time on course is over in consideration of the next contestants.
+    1. Equipment Servicing Task: Rovers shall be required to perform several dexterous operations on a mock-up equipment system. The rover shall have to travel up to 0.25 km across relatively flat terrain (minimal slope) to reach the equipment. The equipment servicing task will involve delivering a cached science sample to a lander and performing maintenance on the lander. It will include but not be limited to some subset of the following sub-tasks:
+    • Pick up the cache container and transport to the lander rocket. Cache will have a handle at least 10cm long and not more than 5cm in diameter. Cache will weigh less than 3 kg. The equipment servicing cache will be provided and may be partially buried;
+    • Open a drawer on the lander. Insert cache into a close-fitting space in the drawer, and close the drawer;
+    • Undo a latch on a hinged panel of the lander and open panel;
+    • Type commands on a keyboard and follow directions on computer display;
+    • Push buttons, flip switches, turn knobs;
+    • Turn a hand crank;
+    • Replace an electronics board using a rugged board-to-board connector such as a multi-pin power molex connector;
+        1. 	Picking up and using a screwdriver or wrench. Teams will receive points for every sub-task completed successfully. Teams will have between 20 and 45 min to complete the task.
+    1. Autonomous Traversal Task: Rovers shall be required to autonomously traverse between markers in this staged task across moderately difficult terrain. Teams will be given a fixed amount of time for a given stage. Each stage will have one or more legs as described below, and teams must complete each leg of a stage within the allotted time in order to proceed to the next stage. Failure to complete a stage will result in the end of the task.
+        1. 	Teams will begin on this task 10 minutes after the completion of the Equipment Servicing Task, operating from the same control station on an adjacent course.
+        1. A leg is defined as the rover autonomously traversing from a start marker to a finish marker. Markers will be a standard tennis ball elevated 10 – 50 cm off the ground and GPS coordinates close to the markers will be provided. The finish marker of one leg may be used as the start marker of a subsequent leg.
+        1. Stages will increase in difficulty and may or may not include legs of the following levels of difficulty:
+            • Level 1: Teleoperated scouting of the route will be allowed between markers which will be very close to the GPS coordinates provided.
+            • Level 2: Marker will not be very close to the GPS coordinates requiring a search for themarker once the GPS coordinates have been reached.
+            • Level 3: Teleoperated scouting is not allowed. Purely autonomous navigation to the GPS coordinates and an autonomous search around the GPS coordinates to find the marker will be required.
+            • Level 4: No teleoperation allowed and significant obstacles may lay between the markers requiring pre-planning or autonomous route finding. Approximate bearing and distance to the next marker may be provided, instead of GPS coordinates.
+        1. To complete a leg, teams must start with their rover within 2 m of the designated start marker. Before proceeding, teams must formally announce to judges that they are entering autonomous mode. In autonomous mode team members may monitor video and telemetry information sent from the rover, but may not transmit any commands that would be considered teleoperation.
+        1. The rover shall autonomously navigate from the start marker to the finish marker. The rover’s on-board systems are required to decide when it has reached the finish marker, and transmit a message back to operators that is displayed for the judge to observe. It must also provide a visual signal on the rover that can observed by a judge following the rover. A 2 m radius from the marker to the closest point on the rover will be considered successful.
+        1. In stages where teleoperation is allowed, operators may abort autonomous operation and revert to teleoperation at any time, but the time will continue to run and teams shall be required to resume that leg in autonomous mode from the start marker. Interventions that require the physical intervention of runners are still penalized as in rule 2.f. In legs where teleoperation is not allowed, operators may only abort autonomous operations and request the physical intervention of runners, which is still penalized as in rule 2.f.
+        1. Teams may resume teleoperation mode when the rover indicates it is at a marker and conduct any operations prior to attempting the subsequent leg but competition time will not stop. In stages where teleoperation is not allowed teleoperation at a marker shall not include driving of the rover, but programming of the next leg is allowed.
+        1.Teams must successfully complete each leg of a stage in order to advance to the next stage. Any time remaining at the completion of a stage is added to the allotted time of the subsequent stage, which begins immediately.
+        1. It is anticipated that there will be a total of four stages in this task at increasing levels ofdifficulty, however judges may revise this number for the final schedule. Total time on course will be no greater than 60 minutes, and the cumulative distance of all legs shall be no greater than 2000 m.
