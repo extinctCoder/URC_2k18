@@ -20,7 +20,9 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="0"></RowDefinition>
         </Grid.RowDefinitions>
-        <materialDesign:Card Grid.Column="1" Grid.Row="1"></materialDesign:Card>
+        <materialDesign:Card Grid.Column="1" Grid.Row="1">
+            <Button></Button>
+        </materialDesign:Card>
     </Grid>
 </UserControl>
 
