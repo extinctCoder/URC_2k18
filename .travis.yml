@@ -8,7 +8,9 @@ matrix:
         - cd uiTeam
         
     - language: python
-      python: 2.7
+      python: 
+        - 2.7
+        - 3.5
       script:
         - cd ./visionTeam
 
