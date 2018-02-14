@@ -1,0 +1,19 @@
+matrix:
+  include:
+    - language: csharp
+      solution: ./uiTeam/arcEye_2k18.sln
+      install:
+        - nuget restore ./uiTeam/arcEye_2k18.sln
+      script:
+        - cd uiTeam
+        
+    - language: python
+      python: 
+        - 2.7
+        - 3.5
+      script:
+        - cd ./visionTeam
+
+notifications:
+  email:
+    - extinctCoder@outlook.com
