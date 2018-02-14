@@ -20,53 +20,18 @@ Any issues not covered by these published rule sets will be addressed on a case-
     1. Teams will operate their rovers from designated command and control stations. These stations will be metal trailer units (such as the back of a small moving truck provided by URC) or structures at the Mars Desert Research Station. Visibility of the course to the operators in the control station will be blocked. Basic power (120V, 60Hz), tables, and chairs will be provided. All of the competition events will be held in full daylight.
     
     1. There is no restriction on the number of team members or operators allowed. All operators must remain in the designated operators’ area. Nobody may follow alongside the rover for the purpose of providing feedback to the operators. Members of the judging team, media, and non-operator team members may follow a rover at the judges' discretion. Team members following the rover may participate as runners in accordance with Section 2.f, or activate an emergency kill switch (in the event of an emergency), but may not otherwise participate in that task.
-    1. The MDRS field site is located in the desert of southern Utah. As such, the site will have a full
-spectrum of sloped terrain from flat to vertical. Teams should be prepared for any ground
-conditions that would appear at MDRS. The GPS standard shall be the WGS 84 datum.
-Coordinates will be provided in latitude/longitude format (decimal degrees). The rover shall also
-be capable of withstanding such an environment in the early summer, including airborne dust and
-temperatures that can easily reach 100°F. Rovers shall be able to withstand light rain but will not
-be expected to compete in heavy rain or thunderstorms.
-1.g. There should be radio communication line-of-sight from the command station to the rover for the
-Science Cache and Equipment Servicing Tasks. For the other tasks, line of sight communication is
-not guaranteed for more than 50% of the courses. Rovers are not expected to travel more than
-1 km at most from the command station.
-1.h. Testing at or near MDRS before, during, and after URC is subject to the following restrictions:
-URC does not have the appropriate permits for off-road activities on Bureau of Land Management
-(BLM) controlled lands, and only has permission to use the two State Trust Land areas outlined
-(in the blue boxes) on the MDRS BLM map:
-http://urc.marssociety.org/files/CowDungRdMap.pdf. All land managed by the Bureau of Land
-Management (BLM) may NOT be used at any point. Please ask URC staff if you are uncertain
-where these boundaries are. Additional details regarding testing on MDRS-leased land
-(highlighted on the above map) will be published closer to the competition. Unless specifically
-authorized by the URC Director or the MDRS Director, teams shall not scout or test on MDRSleased land. During URC no scouting or testing on the courses is allowed. If asked to leave an area
-by URC staff or other officials, please do so.
-1.i. Registration, Milestone Reviews and Down-Selections
-Prospective teams will undergo a review and down-selection process, meaning that only teams
-who pass each milestone will be invited to compete in the field. Specific details for each deadline
-(including deliverable format, submission requirements, and judges' expectations) will be posted
-to the URC web site (http://urc.marssociety.org). Judges may respond to teams with follow-up
-questions or requests for clarification at any of these milestones.
-1.i.i. Declaration of Intent to Compete
-Teams are required to register and declare their intent to compete no later than Friday,
-November 3, 2017. No significant deliverables are required for this deadline, aside from
-team details requested via the URC web site.
-1.i.ii. 	Preliminary Design Review
-Teams are required to submit a Preliminary Design Review (PDR) document no later than
-Friday, December 1, 2017. The PDR document is expected to focus on the team structure,
-resources, and project management plan, including a Gantt chart, initial budget, fundraising plans, recruiting and educational outreach. Technical details regarding the rover
-are highly encouraged but are not the main focus. Judges will be assessing each team's
-overall level of readiness to compete in the URC competition. Teams will be assessed on
-their own merits, not against other teams. PDRs may be submitted as early as November 6,
-2017, and will be reviewed by judges on a rolling basis.
-1.i.iii. System Acceptance Review
-Teams are required to submit a System Acceptance Review (SAR) Package no later than
-Friday, March 2, 2018. The SAR Package will focus on the overall system design, science
-plan, and progress to-date of the final system. The SAR Package will consist of both
-written and video components. The SAR is a competitive milestone and packages will be
-judged against other teams’ submissions by the judges. Only teams who pass the SAR
-milestone will be invited to compete in the field.
-1.j. Teams shall be required to track all finances as related to this project, and submit a final expense
+    
+    1. The MDRS field site is located in the desert of southern Utah. As such, the site will have a full spectrum of sloped terrain from flat to vertical. Teams should be prepared for any ground conditions that would appear at MDRS. The GPS standard shall be the WGS 84 datum. Coordinates will be provided in latitude/longitude format (decimal degrees). The rover shall also be capable of withstanding such an environment in the early summer, including airborne dust and temperatures that can easily reach 100°F. Rovers shall be able to withstand light rain but will not be expected to compete in heavy rain or thunderstorms.
+    
+    1. There should be radio communication line-of-sight from the command station to the rover for the Science Cache and Equipment Servicing Tasks. For the other tasks, line of sight communication is not guaranteed for more than 50% of the courses. Rovers are not expected to travel more than 1 km at most from the command station.
+    
+    1. Testing at or near MDRS before, during, and after URC is subject to the following restrictions: URC does not have the appropriate permits for off-road activities on Bureau of Land Management (BLM) controlled lands, and only has permission to use the two State Trust Land areas outlined (in the blue boxes) on the MDRS BLM map: http://urc.marssociety.org/files/CowDungRdMap.pdf All land managed by the Bureau of Land Management (BLM) may NOT be used at any point. Please ask URC staff if you are uncertain where these boundaries are. Additional details regarding testing on MDRS-leased land (highlighted on the above map) will be published closer to the competition. Unless specifically authorized by the URC Director or the MDRS Director, teams shall not scout or test on MDRSleased land. During URC no scouting or testing on the courses is allowed. If asked to leave an area by URC staff or other officials, please do so.
+    
+    1. Registration, Milestone Reviews and Down-Selections Prospective teams will undergo a review and down-selection process, meaning that only teams who pass each milestone will be invited to compete in the field. Specific details for each deadline (including deliverable format, submission requirements, and judges' expectations) will be posted to the URC web site (http://urc.marssociety.org). Judges may respond to teams with follow-up questions or requests for clarification at any of these milestones.
+        1. Declaration of Intent to Compete Teams are required to register and declare their intent to compete no later than Friday, November 3, 2017. No significant deliverables are required for this deadline, aside from team details requested via the URC web site.
+        1. Preliminary Design Review Teams are required to submit a Preliminary Design Review (PDR) document no later than Friday, December 1, 2017. The PDR document is expected to focus on the team structure, resources, and project management plan, including a Gantt chart, initial budget, fundraising plans, recruiting and educational outreach. Technical details regarding the rover are highly encouraged but are not the main focus. Judges will be assessing each team's overall level of readiness to compete in the URC competition. Teams will be assessed on their own merits, not against other teams. PDRs may be submitted as early as November 6, 2017, and will be reviewed by judges on a rolling basis.
+        1. System Acceptance Review Teams are required to submit a System Acceptance Review (SAR) Package no later than Friday, March 2, 2018. The SAR Package will focus on the overall system design, science plan, and progress to-date of the final system. The SAR Package will consist of both written and video components. The SAR is a competitive milestone and packages will be judged against other teams’ submissions by the judges. Only teams who pass the SAR milestone will be invited to compete in the field.
+    1. Teams shall be required to track all finances as related to this project, and submit a final expense
 record no later than May 21, 2018 (if necessary, teams may submit an updated record – hard or
 soft copy – on the first day of the URC event – May 31, 2018). Teams shall be penalized 10% of
 total points per day if they are late in submitting the expense report, and will be disqualified for
