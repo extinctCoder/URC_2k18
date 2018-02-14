@@ -1,8 +1,7 @@
 matrix:
   include:
     - language: csharp
-      solution: arcEye_2k18.sln
-      script: cd uiTeam && npm install && npm test
+      solution: ./uiTeam/arcEye_2k18.sln
         
     - language: python
       python: 2.7
