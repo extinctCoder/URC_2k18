@@ -78,89 +78,48 @@ Any issues not covered by these published rule sets will be addressed on a case-
         
         1. 2.4 GHz frequency band (2.400-2.4835 GHz): Teams shall use center frequencies that correspond to channels 1-11 of the IEEE (Institute of Electrical and Electronics Engineers) 802.11 standard for 2.4 GHz. Teams shall not use frequency bandwidths greater than 22 MHz. The competition schedule will notify teams which channels may be used for each task, and teams must be able to shift to other channels as required. Teams shall be limited to using no more than three channels in the 2.4 GHz band.
         
-        1. Teams may use spread spectrum or narrowband (fixed channel allocation) within the
-sub-band limits as they fit.
-2.e.iv. There will be spectrum monitoring on-site to ensure that teams are not interfering with
-channels outside those allotted. Teams should anticipate being within signal range of other
-teams operating on different 900 MHz sub-bands and different 2.4GHz channels and be
-able to operate their rover under these conditions. Teams must also be able to deconflict
-communications as specified above (the URC Director will mediate as necessary). Beyond
-this requirement a 0.5 km minimum separation between competition areas will be
-guaranteed, which will include large terrain barriers, and event scheduling will avoid
-communication interference to the greatest extent possible.
-2.e.v. Teams are allowed to operate in bands outside of 900 MHz and 2.4 GHz, but should
-implement spread spectrum, automatic channel switching, frequency hopping, or other
-interference-tolerant protocols. In the event of interference outside of 900 MHz and 2.4
-GHz, teams will not be granted additional time or special considerations.
-2.f. If a rover suffers a critical problem during a task that requires direct team intervention (including a
-loss of communication that requires the team to move the rover to reestablish communications),
-that intervention shall be subject to the following:
-2.f.i. A request for an intervention can only come from the team members operating the
-rover, not any team members spectating in the field. They may designate any number
-of team members who may go to repair or retrieve the rover (hereafter referred to as
-“runners”). Spectating team members may be asked to act as runners, and also rover
-operators may leave the command station and become runners.
-2.f.ii. If a spectating team member intervenes with the rover without request from the
-operators, it counts as an emergency stop. This is allowed such as to rescue the rover to
-prevent a fall or a fire. The current task will be considered terminated although the rover
-may compete in other subsequent tasks.
-2.f.iii. If a team member leaves the command station to become a runner they will not be
-permitted to return to the command station to participate in operating the rover, or analysis
-of any data, after this point for the current task. Runners will still be permitted to retrieve
-or repair the rover in future interventions.
-2.f.iv. Runners may fix the rover in the field without moving it, return the rover to the command
-station, or return the rover to the start of that obstacle/task as defined by the judge in the
-field. However, the judge may require the rover to be moved for the safety of the team
-members or preservation of the course.
-2.f.v. If the rover is returned to the command station runners and spectators shall not
-communicate any details about the task site to the team members operating the rover
-(judges will monitor conversation), however all team members are permitted to take part
-in the diagnostic and repair process.
-2.f.vi. Spectating team members may carry tools and the command station may radio out to them
-to request an intervention.
-2.f.vii. Teams will be penalized 20% of the total points in that task for every intervention. The
-task clock will continue to run during an intervention. Multiple intervention penalties in a
-single task are additive: e.g. two interventions would result in a score of 60% of points
-earned, not 0.8 x 0.8 = 64%.
-2.g. All rovers shall have a “kill switch” that is readily visible and accessible on the exterior of the
-rover. This switch shall immediately stop the rover’s movement in the case of emergency.
-Teams are encouraged to configure their rover such that the kill switch immediately ceases
-power draw from batteries in the event of a dangerous exothermal runaway event.
-3. Competition Tasks
-3.a. 	The rover shall be judged in the four competition tasks outlined below in 3.b to 3.e. and also on
-the System Acceptance Review Package.
-3.a.i. 	For the four competition events, the rover is not required to be in the same configuration so
-modular pieces can be swapped between tasks. On days that teams compete in the Science
-Cache and Extreme Retrieval and Delivery Tasks, teams will only compete in one Task.
-Teams will begin on the Autonomous Traversal Task 10 minutes after the completion of
-the Equipment Servicing Task, operating from the same control station on an adjacent
-course. The rover will otherwise be accessible throughout the competition and
-modifications can be made at any point.
-3.a.ii. Each event and the SAR shall be worth 100 points, for a total of 500 points. Penalties for
-overweight rovers, interventions, and other penalties are additive: e.g. penalties of 10% and
-20% would result in a score of 70% of the points earned, not 0.9x0.8 = 72%. Tasks are
-scored independently and it is not possible to score less than zero on a task.
-3.a.iii. From the time teams are given access to their command station, they shall be able to set up
-all necessary systems, including all communications systems, and be ready to compete in
-no more than 15 minutes for all tasks except the Extreme Retrieval and Delivery Task
-where 20 minutes will be allowed. Teams shall be able to fully disassemble all equipment
-in no more than 10 minutes at the end of the event, and may be asked to switch off radio
-equipment immediately.
-3.b. Science Cache Task:
-The goal is to collect samples at sites selected in the field, perform basic science evaluation of
-these samples with onboard instrumentation, and store at least one sample in a cache for further
-scientific analysis. A single or multiple sites can be sampled. Sites shall be analyzed for their
-likelihood to support microbial life using the geological context such as evidence of water flow,
-minerals present and soil structure in addition to the data obtained from the on-board
-instrumentation.
-3.b.i. Teams shall submit a written science plan by May 11, 2018, which will be factored into the
-judges’ evaluation for the Science Cache Task. Specifications for the plan will posted to
-the URC website.
-3.b.ii. Teams will be given a field briefing by judges to discuss the tasks at the science site.
-Through the information relayed by the rover, teams shall then select sites of potential
-biological interest within a 0.5 km radius of the command station.
-3.b.iii. Teams shall document each site investigated by:
-• A wide-angle panorama showing the full context of the site. The panorama must
+        1. Teams may use spread spectrum or narrowband (fixed channel allocation) within the sub-band limits as they fit.
+        
+        1. There will be spectrum monitoring on-site to ensure that teams are not interfering with channels outside those allotted. Teams should anticipate being within signal range of other teams operating on different 900 MHz sub-bands and different 2.4GHz channels and be able to operate their rover under these conditions. Teams must also be able to deconflict communications as specified above (the URC Director will mediate as necessary). Beyond this requirement a 0.5 km minimum separation between competition areas will be guaranteed, which will include large terrain barriers, and event scheduling will avoid communication interference to the greatest extent possible.
+        
+    1. Teams are allowed to operate in bands outside of 900 MHz and 2.4 GHz, but should implement spread spectrum, automatic channel switching, frequency hopping, or other interference-tolerant protocols. In the event of interference outside of 900 MHz and 2.4 GHz, teams will not be granted additional time or special considerations.
+        
+        1. If a rover suffers a critical problem during a task that requires direct team intervention (including a loss of communication that requires the team to move the rover to reestablish communications), that intervention shall be subject to the following:
+        
+        1. A request for an intervention can only come from the team members operating the rover, not any team members spectating in the field. They may designate any number of team members who may go to repair or retrieve the rover (hereafter referred to as “runners”). Spectating team members may be asked to act as runners, and also rover operators may leave the command station and become runners.
+        
+        1. If a spectating team member intervenes with the rover without request from the operators, it counts as an emergency stop. This is allowed such as to rescue the rover to prevent a fall or a fire. The current task will be considered terminated although the rover may compete in other subsequent tasks.
+        
+        1. If a team member leaves the command station to become a runner they will not be permitted to return to the command station to participate in operating the rover, or analysis of any data, after this point for the current task. Runners will still be permitted to retrieve or repair the rover in future interventions.
+        
+        1. Runners may fix the rover in the field without moving it, return the rover to the command station, or return the rover to the start of that obstacle/task as defined by the judge in the field. However, the judge may require the rover to be moved for the safety of the team members or preservation of the course.
+        
+        1. If the rover is returned to the command station runners and spectators shall not communicate any details about the task site to the team members operating the rover (judges will monitor conversation), however all team members are permitted to take part in the diagnostic and repair process.
+        
+        1. Spectating team members may carry tools and the command station may radio out to them to request an intervention.
+        
+        1. Teams will be penalized 20% of the total points in that task for every intervention. The task clock will continue to run during an intervention. Multiple intervention penalties in a single task are additive: e.g. two interventions would result in a score of 60% of points earned, not 0.8 x 0.8 = 64%.
+        
+    1. All rovers shall have a “kill switch” that is readily visible and accessible on the exterior of the rover. This switch shall immediately stop the rover’s movement in the case of emergency. Teams are encouraged to configure their rover such that the kill switch immediately ceases power draw from batteries in the event of a dangerous exothermal runaway event.
+    
+1. Competition Tasks
+
+    1. The rover shall be judged in the four competition tasks outlined below in 3.b to 3.e. and also on the System Acceptance Review Package.
+    
+        1. 	For the four competition events, the rover is not required to be in the same configuration so modular pieces can be swapped between tasks. On days that teams compete in the Science Cache and Extreme Retrieval and Delivery Tasks, teams will only compete in one Task. Teams will begin on the Autonomous Traversal Task 10 minutes after the completion of the Equipment Servicing Task, operating from the same control station on an adjacent course. The rover will otherwise be accessible throughout the competition and modifications can be made at any point.
+        
+        1. Each event and the SAR shall be worth 100 points, for a total of 500 points. Penalties for overweight rovers, interventions, and other penalties are additive: e.g. penalties of 10% and 20% would result in a score of 70% of the points earned, not 0.9x0.8 = 72%. Tasks are scored independently and it is not possible to score less than zero on a task.
+        
+        1. From the time teams are given access to their command station, they shall be able to set up all necessary systems, including all communications systems, and be ready to compete in no more than 15 minutes for all tasks except the Extreme Retrieval and Delivery Task where 20 minutes will be allowed. Teams shall be able to fully disassemble all equipment in no more than 10 minutes at the end of the event, and may be asked to switch off radio equipment immediately.
+        
+    1. Science Cache Task: The goal is to collect samples at sites selected in the field, perform basic science evaluation of these samples with onboard instrumentation, and store at least one sample in a cache for further scientific analysis. A single or multiple sites can be sampled. Sites shall be analyzed for their likelihood to support microbial life using the geological context such as evidence of water flow, minerals present and soil structure in addition to the data obtained from the on-board instrumentation.
+    
+        1. Teams shall submit a written science plan by May 11, 2018, which will be factored into thejudges’ evaluation for the Science Cache Task. Specifications for the plan will posted to the URC website.
+    
+        1. Teams will be given a field briefing by judges to discuss the tasks at the science site. Through the information relayed by the rover, teams shall then select sites of potential biological interest within a 0.5 km radius of the command station.
+        1. Teams shall document each site investigated by:
+        
+        • A wide-angle panorama showing the full context of the site. The panorama must
 indicate cardinal directions, and have some indication of scale;
 • A close up, well focused, high-resolution picture with some indication of scale (scale
 can be indicated post-capture) at the sampling site;
