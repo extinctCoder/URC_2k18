@@ -28,73 +28,41 @@ Any issues not covered by these published rule sets will be addressed on a case-
     1. Testing at or near MDRS before, during, and after URC is subject to the following restrictions: URC does not have the appropriate permits for off-road activities on Bureau of Land Management (BLM) controlled lands, and only has permission to use the two State Trust Land areas outlined (in the blue boxes) on the MDRS BLM map: http://urc.marssociety.org/files/CowDungRdMap.pdf All land managed by the Bureau of Land Management (BLM) may NOT be used at any point. Please ask URC staff if you are uncertain where these boundaries are. Additional details regarding testing on MDRS-leased land (highlighted on the above map) will be published closer to the competition. Unless specifically authorized by the URC Director or the MDRS Director, teams shall not scout or test on MDRSleased land. During URC no scouting or testing on the courses is allowed. If asked to leave an area by URC staff or other officials, please do so.
     
     1. Registration, Milestone Reviews and Down-Selections Prospective teams will undergo a review and down-selection process, meaning that only teams who pass each milestone will be invited to compete in the field. Specific details for each deadline (including deliverable format, submission requirements, and judges' expectations) will be posted to the URC web site (http://urc.marssociety.org). Judges may respond to teams with follow-up questions or requests for clarification at any of these milestones.
+    
         1. Declaration of Intent to Compete Teams are required to register and declare their intent to compete no later than Friday, November 3, 2017. No significant deliverables are required for this deadline, aside from team details requested via the URC web site.
+        
         1. Preliminary Design Review Teams are required to submit a Preliminary Design Review (PDR) document no later than Friday, December 1, 2017. The PDR document is expected to focus on the team structure, resources, and project management plan, including a Gantt chart, initial budget, fundraising plans, recruiting and educational outreach. Technical details regarding the rover are highly encouraged but are not the main focus. Judges will be assessing each team's overall level of readiness to compete in the URC competition. Teams will be assessed on their own merits, not against other teams. PDRs may be submitted as early as November 6, 2017, and will be reviewed by judges on a rolling basis.
+        
         1. System Acceptance Review Teams are required to submit a System Acceptance Review (SAR) Package no later than Friday, March 2, 2018. The SAR Package will focus on the overall system design, science plan, and progress to-date of the final system. The SAR Package will consist of both written and video components. The SAR is a competitive milestone and packages will be judged against other teams’ submissions by the judges. Only teams who pass the SAR milestone will be invited to compete in the field.
-    1. Teams shall be required to track all finances as related to this project, and submit a final expense
-record no later than May 21, 2018 (if necessary, teams may submit an updated record – hard or
-soft copy – on the first day of the URC event – May 31, 2018). Teams shall be penalized 10% of
-total points per day if they are late in submitting the expense report, and will be disqualified for
-not submitting their expense report by the end of the URC event (June 2, 2018).
-1.j.i. The maximum allowable cash budget to be spent on the project is $17,500 US, which shall
-include money components for the rover, rover modules, rover power sources, rover
-communications equipment, and base station equipment including the antenna and
-transceiver, and all command and control equipment (i.e. base station computers, monitors,
-controllers, etc.). The budget limit shall not apply to tools, travel expenses, or volunteer
-labor. Volunteer labor applies to any work done helping out with menial labor and should
-not make a significant contribution to the rover.
-1.j.ii. 	Spare parts that are replaced one-for-one in the case of damage to the original are not
-counted against budget or mass limits.
-1.j.iii. Corporate sponsorship is encouraged. Teams may acquire donations of equipment and
-services. However, such donations will count towards the cash budget, except for specific
-exemptions granted by the URC Director for donations made available to all URC teams.
-1.j.iv. Teams may be required to submit receipts as proof of budget upon request (donations must
-be documented by the donor). For donated equipment or services teams may use the
-cheapest rate commercially available for the same equipment or service. Shipping and
-taxes should be included in the cost since these are a standard part of the cost of any item.
-1.j.v. If used equipment is purchased commercially the as-bought price may be used. If used
-equipment is donated to the team and no used market exists for a component then the cost
-of a new component must be used.
-1.j.vi. Non-US teams have an allowable budget equivalent to $17,500 US based on the most
-advantageous documented currency conversion rate between August 1, 2017 and May 31,
-2018.
-2. Rover Guidelines
-2.a. Rovers shall utilize power and propulsion systems that are applicable to operations on Mars.
-Air-breathing systems (such as internal combustion engines and certain fuel cells) are permissible,
-but must be implemented as fixed-supply systems. No power or propulsion system may ingest
-ambient air for the purpose of combustion or other chemical reaction that yields energy. Teams
-implementing such systems are required to understand and follow all applicable safety regulations
-at their university. Teams are required to document their adherence with these safety regulations
-during the design phase, and submit this documentation to the URC Director prior to
-implementation. The URC Director further reserves the right to ban any system deemed unsafe
-from competition.
-2.b. The maximum allowable mass of the rover when deployed for any competition task is 50 kg. The
-total mass of all fielded rover parts for all events is 70 kg. For example, a modular rover may have
-a robotic arm and a sensor that are never on the rover at the same time. The combinations of rover
-plus arm and rover plus sensor must each be under 50 kg, but the total rover plus arm plus sensor
-must be less than 70 kg. The weight limits do not include any spares or tools used to prepare or
-maintain the rover, but does include any items deployed by the rover such as sub-rovers, cameras,
-relays. Rover wheelbase width or length may not exceed 2m.
-2.b.i. 	For each event in which the rover is overweight, the team shall be assessed a penalty of
-5% of the points scored, per kilogram over 50.
-2.b.ii. Rovers over 70 kg in any given configuration must be cleared with the URC Director by
-email prior to April 27, 2018 to be eligible to compete.
-2.b.iii. If a gas-consuming engine is used, the rover shall weigh-in with all tanks full.
-2.c. 	The rover is only required to be autonomous for the Autonomous Traversal Task. In the other
-tasks autonomy is not required, although some level of autonomy may be beneficial, such as the
+        
+    1. Teams shall be required to track all finances as related to this project, and submit a final expense record no later than May 21, 2018 (if necessary, teams may submit an updated record – hard or soft copy – on the first day of the URC event – May 31, 2018). Teams shall be penalized 10% of total points per day if they are late in submitting the expense report, and will be disqualified for not submitting their expense report by the end of the URC event (June 2, 2018).
 
-ability to backtrack to the last good communications location. Besides the Autonomous Traversal
-Task, the rover shall be operated remotely by a team which will not be able to view the rover on
-the site or the site itself directly, and line-of-sight communications are not guaranteed for all of the
-tasks. The rover may be commanded by the team using a wireless link, with information needed
-for guiding the rover acquired by the rover's own on-board systems and transmitted to the team
-wirelessly. There shall be no time delay in communications, as the URC is based on the
-assumption that the rovers in question are telerobots, being operated by astronauts on or orbiting
-Mars. Refer to rule 2.f regarding the impacts of a loss of communications. Teams may use
-tethered communications instead of wireless, but will be penalized 50% of the points earned
-during that task. When operating in tethered mode, teams cannot progress beyond the first
-stage of any staged task.
-2.d. Wireless communication methods used by teams shall adhere to all applicable FCC (United States
+        1. The maximum allowable cash budget to be spent on the project is $17,500 US, which shall include money components for the rover, rover modules, rover power sources, rover communications equipment, and base station equipment including the antenna and transceiver, and all command and control equipment (i.e. base station computers, monitors, controllers, etc.). The budget limit shall not apply to tools, travel expenses, or volunteer labor. Volunteer labor applies to any work done helping out with menial labor and shouldnot make a significant contribution to the rover.
+    
+        1. Spare parts that are replaced one-for-one in the case of damage to the original are not counted against budget or mass limits. 
+        1. Corporate sponsorship is encouraged. Teams may acquire donations of equipment and services. However, such donations will count towards the cash budget, except for specific exemptions granted by the URC Director for donations made available to all URC teams.
+        
+        1. Teams may be required to submit receipts as proof of budget upon request (donations must be documented by the donor). For donated equipment or services teams may use the cheapest rate commercially available for the same equipment or service. Shipping and taxes should be included in the cost since these are a standard part of the cost of any item.
+        
+        1. If used equipment is purchased commercially the as-bought price may be used. If used equipment is donated to the team and no used market exists for a component then the cost of a new component must be used.
+        
+        1. Non-US teams have an allowable budget equivalent to $17,500 US based on the most advantageous documented currency conversion rate between August 1, 2017 and May 31, 2018.
+        
+2. Rover Guidelines
+
+    2. Rovers shall utilize power and propulsion systems that are applicable to operations on Mars. Air-breathing systems (such as internal combustion engines and certain fuel cells) are permissible, but must be implemented as fixed-supply systems. No power or propulsion system may ingest ambient air for the purpose of combustion or other chemical reaction that yields energy. Teams implementing such systems are required to understand and follow all applicable safety regulations at their university. Teams are required to document their adherence with these safety regulations during the design phase, and submit this documentation to the URC Director prior to implementation. The URC Director further reserves the right to ban any system deemed unsafe from competition.
+    
+    2. The maximum allowable mass of the rover when deployed for any competition task is 50 kg. The total mass of all fielded rover parts for all events is 70 kg. For example, a modular rover may have a robotic arm and a sensor that are never on the rover at the same time. The combinations of rover plus arm and rover plus sensor must each be under 50 kg, but the total rover plus arm plus sensor must be less than 70 kg. The weight limits do not include any spares or tools used to prepare or maintain the rover, but does include any items deployed by the rover such as sub-rovers, cameras, relays. Rover wheelbase width or length may not exceed 2m.
+    
+        2. For each event in which the rover is overweight, the team shall be assessed a penalty of 5% of the points scored, per kilogram over 50.
+        
+        2. Rovers over 70 kg in any given configuration must be cleared with the URC Director by email prior to April 27, 2018 to be eligible to compete.
+        
+        2. If a gas-consuming engine is used, the rover shall weigh-in with all tanks full.
+        
+    2. The rover is only required to be autonomous for the Autonomous Traversal Task. In the other tasks autonomy is not required, although some level of autonomy may be beneficial, such as the ability to backtrack to the last good communications location. Besides the Autonomous Traversal Task, the rover shall be operated remotely by a team which will not be able to view the rover on the site or the site itself directly, and line-of-sight communications are not guaranteed for all of the tasks. The rover may be commanded by the team using a wireless link, with information needed for guiding the rover acquired by the rover's own on-board systems and transmitted to the team wirelessly. There shall be no time delay in communications, as the URC is based on the assumption that the rovers in question are telerobots, being operated by astronauts on or orbiting Mars. Refer to rule 2.f regarding the impacts of a loss of communications. Teams may use tethered communications instead of wireless, but will be penalized 50% of the points earned during that task. When operating in tethered mode, teams cannot progress beyond the first stage of any staged task.
+    
+    2. Wireless communication methods used by teams shall adhere to all applicable FCC (United States
 Federal Communications Commission) standards and regulations. The 900 MHz and 2.4 GHz
 bands are further regulated in their use at URC as described in section 2.e. Other bands are not
 further regulated. Teams may utilize multiple bands at the same time. Teams must submit details
