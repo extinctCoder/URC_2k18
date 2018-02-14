@@ -48,21 +48,21 @@ Any issues not covered by these published rule sets will be addressed on a case-
         
         1. Non-US teams have an allowable budget equivalent to $17,500 US based on the most advantageous documented currency conversion rate between August 1, 2017 and May 31, 2018.
         
-2. Rover Guidelines
+1. Rover Guidelines
     
-    2. Rovers shall utilize power and propulsion systems that are applicable to operations on Mars. Air-breathing systems (such as internal combustion engines and certain fuel cells) are permissible, but must be implemented as fixed-supply systems. No power or propulsion system may ingest ambient air for the purpose of combustion or other chemical reaction that yields energy. Teams implementing such systems are required to understand and follow all applicable safety regulations at their university. Teams are required to document their adherence with these safety regulations during the design phase, and submit this documentation to the URC Director prior to implementation. The URC Director further reserves the right to ban any system deemed unsafe from competition.
+    1. Rovers shall utilize power and propulsion systems that are applicable to operations on Mars. Air-breathing systems (such as internal combustion engines and certain fuel cells) are permissible, but must be implemented as fixed-supply systems. No power or propulsion system may ingest ambient air for the purpose of combustion or other chemical reaction that yields energy. Teams implementing such systems are required to understand and follow all applicable safety regulations at their university. Teams are required to document their adherence with these safety regulations during the design phase, and submit this documentation to the URC Director prior to implementation. The URC Director further reserves the right to ban any system deemed unsafe from competition.
     
-    2. The maximum allowable mass of the rover when deployed for any competition task is 50 kg. The total mass of all fielded rover parts for all events is 70 kg. For example, a modular rover may have a robotic arm and a sensor that are never on the rover at the same time. The combinations of rover plus arm and rover plus sensor must each be under 50 kg, but the total rover plus arm plus sensor must be less than 70 kg. The weight limits do not include any spares or tools used to prepare or maintain the rover, but does include any items deployed by the rover such as sub-rovers, cameras, relays. Rover wheelbase width or length may not exceed 2m.
+    1. The maximum allowable mass of the rover when deployed for any competition task is 50 kg. The total mass of all fielded rover parts for all events is 70 kg. For example, a modular rover may have a robotic arm and a sensor that are never on the rover at the same time. The combinations of rover plus arm and rover plus sensor must each be under 50 kg, but the total rover plus arm plus sensor must be less than 70 kg. The weight limits do not include any spares or tools used to prepare or maintain the rover, but does include any items deployed by the rover such as sub-rovers, cameras, relays. Rover wheelbase width or length may not exceed 2m.
     
-        2. For each event in which the rover is overweight, the team shall be assessed a penalty of 5% of the points scored, per kilogram over 50.
+        1. For each event in which the rover is overweight, the team shall be assessed a penalty of 5% of the points scored, per kilogram over 50.
         
-        2. Rovers over 70 kg in any given configuration must be cleared with the URC Director by email prior to April 27, 2018 to be eligible to compete.
+        1. Rovers over 70 kg in any given configuration must be cleared with the URC Director by email prior to April 27, 2018 to be eligible to compete.
         
-        2. If a gas-consuming engine is used, the rover shall weigh-in with all tanks full.
+        1. If a gas-consuming engine is used, the rover shall weigh-in with all tanks full.
         
-    2. The rover is only required to be autonomous for the Autonomous Traversal Task. In the other tasks autonomy is not required, although some level of autonomy may be beneficial, such as the ability to backtrack to the last good communications location. Besides the Autonomous Traversal Task, the rover shall be operated remotely by a team which will not be able to view the rover on the site or the site itself directly, and line-of-sight communications are not guaranteed for all of the tasks. The rover may be commanded by the team using a wireless link, with information needed for guiding the rover acquired by the rover's own on-board systems and transmitted to the team wirelessly. There shall be no time delay in communications, as the URC is based on the assumption that the rovers in question are telerobots, being operated by astronauts on or orbiting Mars. Refer to rule 2.f regarding the impacts of a loss of communications. Teams may use tethered communications instead of wireless, but will be penalized 50% of the points earned during that task. When operating in tethered mode, teams cannot progress beyond the first stage of any staged task.
+    1. The rover is only required to be autonomous for the Autonomous Traversal Task. In the other tasks autonomy is not required, although some level of autonomy may be beneficial, such as the ability to backtrack to the last good communications location. Besides the Autonomous Traversal Task, the rover shall be operated remotely by a team which will not be able to view the rover on the site or the site itself directly, and line-of-sight communications are not guaranteed for all of the tasks. The rover may be commanded by the team using a wireless link, with information needed for guiding the rover acquired by the rover's own on-board systems and transmitted to the team wirelessly. There shall be no time delay in communications, as the URC is based on the assumption that the rovers in question are telerobots, being operated by astronauts on or orbiting Mars. Refer to rule 2.f regarding the impacts of a loss of communications. Teams may use tethered communications instead of wireless, but will be penalized 50% of the points earned during that task. When operating in tethered mode, teams cannot progress beyond the first stage of any staged task.
     
-    2. Wireless communication methods used by teams shall adhere to all applicable FCC (United States
+    1. Wireless communication methods used by teams shall adhere to all applicable FCC (United States
 Federal Communications Commission) standards and regulations. The 900 MHz and 2.4 GHz
 bands are further regulated in their use at URC as described in section 2.e. Other bands are not
 further regulated. Teams may utilize multiple bands at the same time. Teams must submit details
@@ -73,29 +73,18 @@ and devices as part of the communications documentation deadline. Teams must not
 Director immediately of any changes after this date. Teams may be required to power down
 communications equipment at the event sites while not competing, so as not to interfere with other
 teams.
-2.d.i. 	Internet is not available in the field or at MDRS, but is available at nearby businesses in
-Hanksville.
-2.d.ii. Both omnidirectional and directional antennae are allowed, but communications
-equipment must not rely on the team’s ability to watch and track the rover first hand.
-Steered directional antennae may use a mechanized antenna mounted outside that is
-controlled via an electronic signal from the command station or operates autonomously.
-Signal strength, relayed GPS, or other strategies may be used to give feedback on antenna
-direction, but it is not allowed to mount a camera on top of the antenna for visual
-feedback. However a camera may be deployed by the rover in the field.
-2.d.iii. Antenna height is limited to 3m, and shall adhere to all applicable regulations. Any
-antennae must be documented as part of the communications documentation submitted by
-April 27, 2018. Antenna bases must be located within 5 meters of the team’s command
-station, and any ropes or wires used for stability purposes only may be anchored within 10
-meters of the command station. The exception to this is the use of structures at the MDRS
-where allowable antennae locations will be given by the judge and may be located up to
-20m away from the Hab to avoid underground pipe and cables, and other structures which
-may block radio signals. All teams should bring at least 25m of antenna cable to deal
-with this scenario.
-2.d.iv. Lighter-than-air devices are not allowed for communications at URC.
-2.e. Teams must notify the organizers of the communications standards they will be using, including
-frequency bands and channels, by April 27, 2018. The URC restrictions on the 900 MHz and
-2.4GHz bands are as follows:
-2.e.i. 900 MHz frequency band (902-928 MHz): Teams shall not use frequency bandwidths
+
+        1. Internet is not available in the field or at MDRS, but is available at nearby businesses in Hanksville.
+        
+        1. Both omnidirectional and directional antennae are allowed, but communications equipment must not rely on the team’s ability to watch and track the rover first hand. Steered directional antennae may use a mechanized antenna mounted outside that is controlled via an electronic signal from the command station or operates autonomously. Signal strength, relayed GPS, or other strategies may be used to give feedback on antenna direction, but it is not allowed to mount a camera on top of the antenna for visual feedback. However a camera may be deployed by the rover in the field.
+        
+        1. Antenna height is limited to 3m, and shall adhere to all applicable regulations. Any antennae must be documented as part of the communications documentation submitted by April 27, 2018. Antenna bases must be located within 5 meters of the team’s command station, and any ropes or wires used for stability purposes only may be anchored within 10 meters of the command station. The exception to this is the use of structures at the MDRS where allowable antennae locations will be given by the judge and may be located up to 20m away from the Hab to avoid underground pipe and cables, and other structures which may block radio signals. All teams should bring at least 25m of antenna cable to deal with this scenario.
+        
+        1. Lighter-than-air devices are not allowed for communications at URC.
+        
+    1. Teams must notify the organizers of the communications standards they will be using, includingfrequency bands and channels, by April 27, 2018. The URC restrictions on the 900 MHz and 2.4GHz bands are as follows:
+    
+        1. 900 MHz frequency band (902-928 MHz): Teams shall not use frequency bandwidths
 greater than 8 MHz. Teams must also be able to operate exclusively within each of the
 following three sub-bands: "900-Low" (902-910 MHz), "900-Mid" (911-919 MHz),
 and "900-High" (920-928 MHz). The competition schedule will notify teams which
