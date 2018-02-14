@@ -9,39 +9,26 @@ Any issues not covered by these published rule sets will be addressed on a case-
 1. ompetition Overview
 
     1. The 2018 University Rover Challenge will be held May 31 – June 2, 2018 at the Mars Society’s Mars Desert Research Station (MDRS) near Hanksville, Utah. The competition is open to both graduate and undergraduate students, although teams are permitted to include secondary (high school) students. Students must be enrolled at least half-time in a degree or high school diploma granting course. Students from multiple universities may compete on the same team. A single university may field multiple rovers and multiple teams, however there may be no overlap between team members and leaders, budget, donated equipment, or purchased equipment.
-    
+
     1. Teams are encouraged to work with advisors. However, advisors are expected to limit their involvement to academic level advising only. It is incumbent upon the student team leaders to ensure that their respective teams uphold the integrity of this competition. Nontechnical team management duties, including tracking finances, registration, submission of deliverables, and communication with URC staff, fall within the duties of the students.
-    
+
     1. The rover shall be a stand-alone, off-the-grid, mobile platform. Tethered power and communications are not allowed, except as noted in Section 2.c of the rules.
-    
+
         1. A single connected platform must leave the designated start gate and return to this location (except when otherwise indicated). In the open field, the primary platform may deploy any number of smaller sub-platforms, so long as the combined master/slave sub-platforms meet all additional requirements published.
-        
+
         1. Due to increased FAA (United States Federal Aviation Authority) restrictions, no airborne vehicles will be allowed at URC2018.
     1. Teams will operate their rovers from designated command and control stations. These stations will be metal trailer units (such as the back of a small moving truck provided by URC) or structures at the Mars Desert Research Station. Visibility of the course to the operators in the control station will be blocked. Basic power (120V, 60Hz), tables, and chairs will be provided. All of the competition events will be held in full daylight.
-    
+
     1. There is no restriction on the number of team members or operators allowed. All operators must remain in the designated operators’ area. Nobody may follow alongside the rover for the purpose of providing feedback to the operators. Members of the judging team, media, and non-operator team members may follow a rover at the judges' discretion. Team members following the rover may participate as runners in accordance with Section 2.f, or activate an emergency kill switch (in the event of an emergency), but may not otherwise participate in that task.
-    1. The MDRS field site is located in the desert of southern Utah. As such, the site will have a full
-spectrum of sloped terrain from flat to vertical. Teams should be prepared for any ground
-conditions that would appear at MDRS. The GPS standard shall be the WGS 84 datum.
-Coordinates will be provided in latitude/longitude format (decimal degrees). The rover shall also
-be capable of withstanding such an environment in the early summer, including airborne dust and
-temperatures that can easily reach 100°F. Rovers shall be able to withstand light rain but will not
-be expected to compete in heavy rain or thunderstorms.
-1.g. There should be radio communication line-of-sight from the command station to the rover for the
-Science Cache and Equipment Servicing Tasks. For the other tasks, line of sight communication is
-not guaranteed for more than 50% of the courses. Rovers are not expected to travel more than
-1 km at most from the command station.
-1.h. Testing at or near MDRS before, during, and after URC is subject to the following restrictions:
-URC does not have the appropriate permits for off-road activities on Bureau of Land Management
-(BLM) controlled lands, and only has permission to use the two State Trust Land areas outlined
-(in the blue boxes) on the MDRS BLM map:
-http://urc.marssociety.org/files/CowDungRdMap.pdf. All land managed by the Bureau of Land
-Management (BLM) may NOT be used at any point. Please ask URC staff if you are uncertain
-where these boundaries are. Additional details regarding testing on MDRS-leased land
-(highlighted on the above map) will be published closer to the competition. Unless specifically
-authorized by the URC Director or the MDRS Director, teams shall not scout or test on MDRSleased land. During URC no scouting or testing on the courses is allowed. If asked to leave an area
-by URC staff or other officials, please do so.
-1.i. Registration, Milestone Reviews and Down-Selections
+
+    1. The MDRS field site is located in the desert of southern Utah. As such, the site will have a full spectrum of sloped terrain from flat to vertical. Teams should be prepared for any ground conditions that would appear at MDRS. The GPS standard shall be the WGS 84 datum. Coordinates will be provided in latitude/longitude format (decimal degrees). The rover shall also be capable of withstanding such an environment in the early summer, including airborne dust and temperatures that can easily reach 100°F. Rovers shall be able to withstand light rain but will not be expected to compete in heavy rain or thunderstorms.
+
+    1. There should be radio communication line-of-sight from the command station to the rover for the Science Cache and Equipment Servicing Tasks. For the other tasks, line of sight communication is not guaranteed for more than 50% of the courses. Rovers are not expected to travel more than 1 km at most from the command station.
+
+    1. Testing at or near MDRS before, during, and after URC is subject to the following restrictions:
+
+      1. URC does not have the appropriate permits for off-road activities on Bureau of Land Management (BLM) controlled lands, and only has permission to use the two State Trust Land areas outlined(in the blue boxes) on the MDRS BLM map: http://urc.marssociety.org/files/CowDungRdMap.pdf. All land managed by the Bureau of Land Management (BLM) may NOT be used at any point. Please ask URC staff if you are uncertain where these boundaries are. Additional details regarding testing on MDRS-leased land (highlighted on the above map) will be published closer to the competition. Unless specifically authorized by the URC Director or the MDRS Director, teams shall not scout or test on MDRSleased land. During URC no scouting or testing on the courses is allowed. If asked to leave an area by URC staff or other officials, please do so.
+    1. Registration, Milestone Reviews and Down-Selections
 Prospective teams will undergo a review and down-selection process, meaning that only teams
 who pass each milestone will be invited to compete in the field. Specific details for each deadline
 (including deliverable format, submission requirements, and judges' expectations) will be posted
@@ -371,7 +358,7 @@ close the drawer;
 • Turn a hand crank;
 • Replace an electronics board using a rugged board-to-board connector such as a multi-pin
 power molex connector;
-• 
+•
 3.d.i. 	Picking up and using a screwdriver or wrench.
 Teams will receive points for every sub-task completed successfully. Teams will have
 between 20 and 45 min to complete the task.
