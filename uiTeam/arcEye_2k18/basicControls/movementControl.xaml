@@ -5,8 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:arcEye_2k18.basicControls"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300"
-             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+             d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2"></ColumnDefinition>

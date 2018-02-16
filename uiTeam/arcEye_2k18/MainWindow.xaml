@@ -7,6 +7,8 @@
         xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
         mc:Ignorable="d" TitleAlignment="Center" WindowStartupLocation="CenterScreen"
         Title="arcEye_2k18" MinHeight="864" MinWidth="1152"
+        xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:chartControls="clr-namespace:arcEye_2k18.chartControls"
         xmlns:basicControls="clr-namespace:arcEye_2k18.basicControls">
     <controls:MetroWindow.RightWindowCommands>
@@ -14,7 +16,7 @@
             <Button Content="info"></Button>
         </controls:WindowCommands>
     </controls:MetroWindow.RightWindowCommands>
-    <Grid>
+    <!--<Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -122,6 +124,19 @@
                 <TextBlock Text="this is a status bar"></TextBlock>
             </StatusBarItem>
         </StatusBar>
+    </Grid>-->
+    <Grid>
+        <dragablz:TabablzControl Margin="8" Style="{StaticResource MahAppsTabablzControlStyle}">
+
+            <TabItem Header="Tab No. 1" IsSelected="True">
+                <TextBlock>Hello World</TextBlock>
+            </TabItem>
+            <TabItem Header="Tab No. 2">
+                <TextBlock>We Have Tearable Tabs!</TextBlock>
+            </TabItem>
+        </dragablz:TabablzControl>
     </Grid>
 </controls:MetroWindow>
+
+
 
