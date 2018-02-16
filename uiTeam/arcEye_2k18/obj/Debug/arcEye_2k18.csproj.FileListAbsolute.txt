@@ -36,3 +36,13 @@ D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\Debug\De.TorstenMandelkow.MetroChart
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\chartControls\angularGauge.g.cs
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\chartControls\angularGauge.baml
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\basicControls\movementControl.g.cs
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\basicControls\movementControl.baml
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\chartControls\seriesChart.g.cs
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\chartControls\lineChart.g.cs
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\chartControls\lineChart.baml
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\chartControls\seriesChart.baml
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\chartControls\columnCharts.g.cs
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\chartControls\columnCharts.baml
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\chartControls\solidGauge.g.cs
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\chartControls\solidGauge.baml

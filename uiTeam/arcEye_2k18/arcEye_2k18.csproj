@@ -78,7 +78,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="basicControls\movementControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="chartControls\angularGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="chartControls\columnCharts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="chartControls\lineChart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="chartControls\seriesChart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="chartControls\solidGauge.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -90,8 +110,23 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="basicControls\movementControl.xaml.cs">
+      <DependentUpon>movementControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="chartControls\angularGauge.xaml.cs">
       <DependentUpon>angularGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="chartControls\columnCharts.xaml.cs">
+      <DependentUpon>columnCharts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="chartControls\lineChart.xaml.cs">
+      <DependentUpon>lineChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="chartControls\seriesChart.xaml.cs">
+      <DependentUpon>seriesChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="chartControls\solidGauge.xaml.cs">
+      <DependentUpon>solidGauge.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -139,6 +174,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Entypo-license.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="contents\mars.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="contents\165313main_mdrs4.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
