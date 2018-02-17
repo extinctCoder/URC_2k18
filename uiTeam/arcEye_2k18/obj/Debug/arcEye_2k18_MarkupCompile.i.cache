@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\App.xaml
-9575704072
+101177217354
 
-152078722940
-22576954186
-basicControls\movementControl.xaml;chartControls\angularGauge.xaml;chartControls\columnCharts.xaml;chartControls\lineChart.xaml;chartControls\seriesChart.xaml;chartControls\solidGauge.xaml;MainWindow.xaml;Resources\Icons.xaml;Resources\IconsNonShared.xaml;
+161296172996
+28721667015
+basicControls\movementControl.xaml;basicControls\visionModule.xaml;chartControls\angularGauge.xaml;chartControls\columnCharts.xaml;chartControls\lineChart.xaml;chartControls\seriesChart.xaml;chartControls\solidGauge.xaml;MainWindow.xaml;Resources\Icons.xaml;Resources\IconsNonShared.xaml;
 
-True
+False
 

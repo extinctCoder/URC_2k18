@@ -10,7 +10,21 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:metroChart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart">
     <Grid>
-        <lvc:CartesianChart Series="{Binding SeriesCollection}">
-        </lvc:CartesianChart>
+        <GroupBox Header="lineChart">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="2"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="2"></RowDefinition>
+                </Grid.RowDefinitions>
+                <lvc:CartesianChart Grid.Column="1" Grid.Row="1" Series="{Binding SeriesCollection}">
+                </lvc:CartesianChart>
+            </Grid>
+        </GroupBox>
     </Grid>
 </UserControl>

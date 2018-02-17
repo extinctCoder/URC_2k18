@@ -8,9 +8,12 @@
         mc:Ignorable="d" TitleAlignment="Center" WindowStartupLocation="CenterScreen"
         Title="arcEye_2k18" MinHeight="864" MinWidth="1152"
         xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
+        xmlns:dockablz="clr-namespace:Dragablz.Dockablz;assembly=Dragablz"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:chartControls="clr-namespace:arcEye_2k18.chartControls"
-        xmlns:basicControls="clr-namespace:arcEye_2k18.basicControls">
+        xmlns:basicControls="clr-namespace:arcEye_2k18.basicControls"
+                      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+                      xmlns:xcad="http://schemas.xceed.com/wpf/xaml/avalondock">
     <controls:MetroWindow.RightWindowCommands>
         <controls:WindowCommands>
             <Button Content="info"></Button>
@@ -21,15 +24,18 @@
             <ColumnDefinition Width="0"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="0"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="0"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="0"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="0"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="0"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="0"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="0"></RowDefinition>
         </Grid.RowDefinitions>
-        <Image Grid.Column="1" Grid.Row="1" Source="contents/mars.jpg"></Image>
         <Grid Grid.Column="1" Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0"></ColumnDefinition>
@@ -38,94 +44,121 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="0"></RowDefinition>
-                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="0"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="0"></RowDefinition>
             </Grid.RowDefinitions>
-            <Grid Grid.Column="1" Grid.Row="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0"></ColumnDefinition>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                    <ColumnDefinition Width="0"></ColumnDefinition>
-                    <ColumnDefinition Width="2*"></ColumnDefinition>
-                    <ColumnDefinition Width="0"></ColumnDefinition>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                    <ColumnDefinition Width="0"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="0"></RowDefinition>
-                    <RowDefinition Height="*"></RowDefinition>
-                    <RowDefinition Height="0"></RowDefinition>
-                    <RowDefinition Height="*"></RowDefinition>
-                    <RowDefinition Height="0"></RowDefinition>
-                </Grid.RowDefinitions>
-                <chartControls:lineChart Grid.Column="1" Grid.Row="3"></chartControls:lineChart>
-                <chartControls:lineChart Grid.Column="5" Grid.Row="3"></chartControls:lineChart>
-            </Grid>
+            <Grid Grid.Column="1" Grid.Row="1"></Grid>
             <Grid Grid.Column="1" Grid.Row="3">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0"></ColumnDefinition>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                     <ColumnDefinition Width="0"></ColumnDefinition>
-                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
+                </Grid.RowDefinitions>
+                <chartControls:solidGauge Grid.Column="1" Grid.Row="1"></chartControls:solidGauge>
+                <chartControls:solidGauge Grid.Column="3" Grid.Row="1"></chartControls:solidGauge>
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="3" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="0"></RowDefinition>
+            </Grid.RowDefinitions>
+            <basicControls:visionModule Grid.Column="1" Grid.Row="1"></basicControls:visionModule>
+        </Grid>
+        <Grid Grid.Column="5" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="0"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="0"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Column="1" Grid.Row="1"></Grid>
+            <Grid Grid.Column="1" Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
                     <ColumnDefinition Width="0"></ColumnDefinition>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                     <ColumnDefinition Width="0"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="0"></RowDefinition>
-                    <RowDefinition Height="3*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="0"></RowDefinition>
                 </Grid.RowDefinitions>
-                <chartControls:angularGauge Grid.Column="1" Grid.Row="1"></chartControls:angularGauge>
-                <Grid Grid.Column="3" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="0"></ColumnDefinition>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                        <ColumnDefinition Width="0"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="0"></RowDefinition>
-                        <RowDefinition Height="*"></RowDefinition>
-                        <RowDefinition Height="0"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="0"></RowDefinition>
-                    </Grid.RowDefinitions>
-                    <Grid Grid.Column="1" Grid.Row="1">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="0"></ColumnDefinition>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="0"></ColumnDefinition>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="0"></ColumnDefinition>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="0"></ColumnDefinition>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="0"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="0"></RowDefinition>
-                            <RowDefinition Height="*"></RowDefinition>
-                            <RowDefinition Height="0"></RowDefinition>
-                        </Grid.RowDefinitions>
-                        <chartControls:solidGauge Grid.Column="1" Grid.Row="1"></chartControls:solidGauge>
-                        <chartControls:solidGauge Grid.Column="3" Grid.Row="1"></chartControls:solidGauge>
-                        <chartControls:solidGauge Grid.Column="5" Grid.Row="1"></chartControls:solidGauge>
-                        <chartControls:solidGauge Grid.Column="7" Grid.Row="1"></chartControls:solidGauge>
-                    </Grid>
-                    <basicControls:movementControl Grid.Column="1" Grid.Row="3"></basicControls:movementControl>
-                </Grid>
-                <chartControls:angularGauge Grid.Column="5" Grid.Row="1"></chartControls:angularGauge>
+                <chartControls:solidGauge Grid.Column="1" Grid.Row="1"></chartControls:solidGauge>
+                <chartControls:solidGauge Grid.Column="3" Grid.Row="1"></chartControls:solidGauge>
             </Grid>
         </Grid>
-        <StatusBar Grid.Column="1" Grid.Row="3">
-            <StatusBarItem>
-                <TextBlock Text="this is a status bar"></TextBlock>
-            </StatusBarItem>
-        </StatusBar>
+        <Grid Grid.Column="1" Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="0"></RowDefinition>
+            </Grid.RowDefinitions>
+            <chartControls:angularGauge Grid.Column="1" Grid.Row="1"></chartControls:angularGauge>
+        </Grid>
+        <Grid Grid.Column="3" Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="0"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="0"></RowDefinition>
+            </Grid.RowDefinitions>
+            <chartControls:lineChart Grid.Column="1" Grid.Row="1"></chartControls:lineChart>
+            <basicControls:movementControl Grid.Column="1" Grid.Row="3"></basicControls:movementControl>
+        </Grid>
+        <Grid Grid.Column="5" Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="0"></RowDefinition>
+            </Grid.RowDefinitions>
+            <chartControls:angularGauge Grid.Column="1" Grid.Row="1"></chartControls:angularGauge>
+        </Grid>
     </Grid>
 </controls:MetroWindow>
+
+
+
+
 
 
 
