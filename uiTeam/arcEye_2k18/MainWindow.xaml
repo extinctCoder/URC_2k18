@@ -16,7 +16,7 @@
             <Button Content="info"></Button>
         </controls:WindowCommands>
     </controls:MetroWindow.RightWindowCommands>
-    <!--<Grid>
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -124,17 +124,6 @@
                 <TextBlock Text="this is a status bar"></TextBlock>
             </StatusBarItem>
         </StatusBar>
-    </Grid>-->
-    <Grid>
-        <dragablz:TabablzControl Margin="8" Style="{StaticResource MahAppsTabablzControlStyle}">
-
-            <TabItem Header="Tab No. 1" IsSelected="True">
-                <TextBlock>Hello World</TextBlock>
-            </TabItem>
-            <TabItem Header="Tab No. 2">
-                <TextBlock>We Have Tearable Tabs!</TextBlock>
-            </TabItem>
-        </dragablz:TabablzControl>
     </Grid>
 </controls:MetroWindow>
 

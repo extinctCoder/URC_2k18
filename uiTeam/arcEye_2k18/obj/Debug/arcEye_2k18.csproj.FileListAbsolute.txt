@@ -48,3 +48,4 @@ D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\chartControls\solidGauge.baml
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\Debug\Dragablz.dll
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\Debug\Dragablz.pdb
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\Debug\Dragablz.xml
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\Debug\GeneratedInternalTypeHelper.g.cs
