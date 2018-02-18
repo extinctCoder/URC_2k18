@@ -49,7 +49,19 @@
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="0"></RowDefinition>
             </Grid.RowDefinitions>
-            <Grid Grid.Column="1" Grid.Row="1"></Grid>
+            <Grid Grid.Column="1" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
+                </Grid.RowDefinitions>
+                <basicControls:gyroModule Grid.Column="1" Grid.Row="1"></basicControls:gyroModule>
+            </Grid>
             <Grid Grid.Column="1" Grid.Row="3">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0"></ColumnDefinition>
@@ -93,7 +105,19 @@
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="0"></RowDefinition>
             </Grid.RowDefinitions>
-            <Grid Grid.Column="1" Grid.Row="1"></Grid>
+            <Grid Grid.Column="1" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
+                </Grid.RowDefinitions>
+                <basicControls:mapModule Grid.Column="1" Grid.Row="1"></basicControls:mapModule>
+            </Grid>
             <Grid Grid.Column="1" Grid.Row="3">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0"></ColumnDefinition>
