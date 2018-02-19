@@ -160,3 +160,5 @@ D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\x64\Debug\basicControls\gyroModule.g
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\x64\Debug\basicControls\mapModule.g.cs
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\x64\Debug\basicControls\gyroModule.baml
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\x64\Debug\basicControls\mapModule.baml
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\x64\Debug\GMap.NET.Core.dll
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\x64\Debug\GMap.NET.WindowsPresentation.dll

@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:arcEye_2k18.chartControls"
-             mc:Ignorable="d" 
+             mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300"
              xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
@@ -22,7 +22,7 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="2"></RowDefinition>
                 </Grid.RowDefinitions>
-                <lvc:CartesianChart Grid.Column="1" Grid.Row="1" Series="{Binding SeriesCollection}">
+                <lvc:CartesianChart Grid.Column="1" Grid.Row="1" x:Name="CartesianChart" Series="{Binding SeriesCollection}">
                 </lvc:CartesianChart>
             </Grid>
         </GroupBox>

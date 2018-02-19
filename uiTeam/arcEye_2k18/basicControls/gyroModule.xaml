@@ -4,9 +4,27 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:arcEye_2k18.basicControls"
-             mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300"
+             xmlns:ht="clr-namespace:HelixToolkit.Wpf;assembly=HelixToolkit.Wpf">
     <Grid>
-            
+        <GroupBox Header="gyroModule">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="2"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="2"></RowDefinition>
+                </Grid.RowDefinitions>
+                <ht:HelixViewport3D  Grid.Column="1" Grid.Row="1" ZoomExtentsWhenLoaded="True" ShowCoordinateSystem="True" ShowFrameRate="True" Camera="{ht:PerspectiveCamera 5.3,-12.3,3.3,-6.3,11,-6.6}">
+                    <ht:SunLight></ht:SunLight>
+                    <ht:BoxVisual3D></ht:BoxVisual3D>
+                </ht:HelixViewport3D>
+            </Grid>
+        </GroupBox>
     </Grid>
 </UserControl>
