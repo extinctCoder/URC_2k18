@@ -135,6 +135,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="basicControls\statusBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="basicControls\visionModule.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -143,7 +147,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="chartControls\columnCharts.xaml">
+    <Page Include="chartControls\columnChart.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -176,14 +180,17 @@
     <Compile Include="basicControls\movementControl.xaml.cs">
       <DependentUpon>movementControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="basicControls\statusBar.xaml.cs">
+      <DependentUpon>statusBar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="basicControls\visionModule.xaml.cs">
       <DependentUpon>visionModule.xaml</DependentUpon>
     </Compile>
     <Compile Include="chartControls\angularGauge.xaml.cs">
       <DependentUpon>angularGauge.xaml</DependentUpon>
     </Compile>
-    <Compile Include="chartControls\columnCharts.xaml.cs">
-      <DependentUpon>columnCharts.xaml</DependentUpon>
+    <Compile Include="chartControls\columnChart.xaml.cs">
+      <DependentUpon>columnChart.xaml</DependentUpon>
     </Compile>
     <Compile Include="chartControls\lineChart.xaml.cs">
       <DependentUpon>lineChart.xaml</DependentUpon>
@@ -194,6 +201,9 @@
     <Compile Include="chartControls\solidGauge.xaml.cs">
       <DependentUpon>solidGauge.xaml</DependentUpon>
     </Compile>
+    <Compile Include="controllers\enums.cs" />
+    <Compile Include="controllers\movementController.cs" />
+    <Compile Include="dataTemplate\roverMovement.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -225,6 +235,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="contents\Model.3ds" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -264,6 +275,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <SplashScreen Include="contents\Splash_Screen.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

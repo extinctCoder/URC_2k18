@@ -10,11 +10,11 @@ none
 false
 
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\App.xaml
-12129736098
+13-364615725
 
-181616161159
+2299395690
 89-1259950235
-basicControls\gyroModule.xaml;basicControls\mapModule.xaml;basicControls\movementControl.xaml;basicControls\visionModule.xaml;chartControls\angularGauge.xaml;chartControls\columnCharts.xaml;chartControls\lineChart.xaml;chartControls\seriesChart.xaml;chartControls\solidGauge.xaml;MainWindow.xaml;Resources\Icons.xaml;Resources\IconsNonShared.xaml;
-
-True
+basicControls\gyroModule.xaml;basicControls\mapModule.xaml;basicControls\movementControl.xaml;basicControls\statusBar.xaml;basicControls\visionModule.xaml;chartControls\angularGauge.xaml;chartControls\columnChart.xaml;chartControls\lineChart.xaml;chartControls\seriesChart.xaml;chartControls\solidGauge.xaml;MainWindow.xaml;Resources\Icons.xaml;Resources\IconsNonShared.xaml;
+contents\splash_screen.gif
+False
 

@@ -20,10 +20,32 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="2"></RowDefinition>
                 </Grid.RowDefinitions>
-                <ht:HelixViewport3D  Grid.Column="1" Grid.Row="1" ZoomExtentsWhenLoaded="True" ShowCoordinateSystem="True" ShowFrameRate="True" Camera="{ht:PerspectiveCamera 5.3,-12.3,3.3,-6.3,11,-6.6}">
-                    <ht:SunLight></ht:SunLight>
-                    <ht:BoxVisual3D></ht:BoxVisual3D>
+                <ht:HelixViewport3D Grid.Column="1" Grid.Row="1" ZoomExtentsWhenLoaded="True" ShowCoordinateSystem="True" ShowViewCube="True" ShowCameraTarget="True" ShowFrameRate="True" ShowFieldOfView="True" Camera="{ht:PerspectiveCamera 5.3,-12.3,3.3,-6.3,11,-6.6}">
+                    <ht:DefaultLights></ht:DefaultLights>
+                    <ht:FileModelVisual3D Source="../../../contents/Model.3ds">
+                        <ht:FileModelVisual3D.Transform>
+                            <Transform3DGroup>
+                                <RotateTransform3D>
+                                    <RotateTransform3D.Rotation>
+                                        <AxisAngleRotation3D Axis="1,0,0" x:Name="rtn_x"/>
+                                    </RotateTransform3D.Rotation>
+                                </RotateTransform3D>
+                                <RotateTransform3D>
+                                    <RotateTransform3D.Rotation>
+                                        <AxisAngleRotation3D Axis="0,1,0" x:Name="rtn_y"/>
+                                    </RotateTransform3D.Rotation>
+                                </RotateTransform3D>
+                                <RotateTransform3D>
+                                    <RotateTransform3D.Rotation>
+                                        <AxisAngleRotation3D Axis="0,0,1" x:Name="rtn_z"/>
+                                    </RotateTransform3D.Rotation>
+                                </RotateTransform3D>
+                                <TranslateTransform3D x:Name="axs_z"/>
+                            </Transform3DGroup>
+                        </ht:FileModelVisual3D.Transform>
+                    </ht:FileModelVisual3D>
                 </ht:HelixViewport3D>
+                <!--</ht:HelixViewport3D>-->
             </Grid>
         </GroupBox>
     </Grid>

@@ -20,7 +20,7 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="2"></RowDefinition>
                 </Grid.RowDefinitions>
-                <WindowsPresentation:GMapControl Grid.Column="1" Grid.Row="1" MaxZoom="24" MinZoom="1"></WindowsPresentation:GMapControl>
+                <WindowsPresentation:GMapControl Grid.Column="1" Grid.Row="1" x:Name="map" MaxZoom="24" MinZoom="1"></WindowsPresentation:GMapControl>
             </Grid>
         </GroupBox>
     </Grid>
