@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Security.Cryptography;
@@ -16,7 +17,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Media.Media3D;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
+using arcEye_2k18.controllers;
 using HelixToolkit.Wpf;
+using XDMessaging;
+using XDMessaging.Messages;
 
 namespace arcEye_2k18.basicControls
 {
@@ -25,58 +30,102 @@ namespace arcEye_2k18.basicControls
     /// </summary>
     public partial class gyroModule : UserControl
     {
-        private static gyroModule _gyroModule;
-        private Thread _gyroModulleThread;
-        private gyroModule()
+        public gyroModule()
         {
             InitializeComponent();
-            this.startGyroModule();
+            this.Name = ChannelList.gyroModule.ToString();
+            this.group_box.Header = ChannelList.gyroModule.ToString();
+            this.initIMessageReceiver(ChannelList.gyroModule.ToString());
         }
 
-        public static gyroModule obj
+        public gyroModule(String _gyroModuleName)
         {
-            get
-            {
-                if (gyroModule._gyroModule == null)
-                {
-                    gyroModule._gyroModule=new gyroModule();
-                }
-
-                return gyroModule._gyroModule;
-            }
+            InitializeComponent();
+            this.Name = _gyroModuleName;
+            this.group_box.Header = _gyroModuleName;
+            this.initIMessageReceiver(_gyroModuleName);
         }
+        
     }
 
-    public partial class gyroModule
+    public partial class gyroModule : iMessageReceiver
     {
-        private void startGyroModule()
+        public IXDBroadcaster _xdBroadcaster { get; set; }
+        public XDMessagingClient _xdMessagingClient { get; set; }
+        public IXDListener _xdListener { get; set; }
+        public BackgroundWorker _backgroundWorker { get; set; }
+        TypedDataGram<gyroModuleData> _typedData;
+
+        void initIMessageReceiver(string _contentName)
         {
-            this._gyroModulleThread = new Thread(() => gyroModuleThreadedFunc());
-            this._gyroModulleThread.IsBackground = true;
-            this._gyroModulleThread.Name = "gyroModulleThread";
-            this._gyroModulleThread.Start();
+            this._backgroundWorker = new BackgroundWorker();
+            this._backgroundWorker.DoWork += BackgroundWorkerOnDoWork;
+            this._backgroundWorker.RunWorkerCompleted += BackgroundWorkerOnRunWorkerCompleted;
+
+            this._xdMessagingClient = new XDMessagingClient();
+            this._xdBroadcaster =
+                this._xdMessagingClient.Broadcasters.GetBroadcasterForMode(XDTransportMode.HighPerformanceUI);
+            this._xdListener = this._xdMessagingClient.Listeners.GetListenerForMode(XDTransportMode.HighPerformanceUI);
+            this._xdListener.RegisterChannel(_contentName);
+            this._xdListener.MessageReceived += XdListenerOnMessageReceived;
+            this._xdBroadcaster.SendToChannel(ChannelList.statusBar.ToString(), this.Name + " initialization successful.");
         }
 
-        private void gyroModuleThreadedFunc()
+        void iMessageReceiver.XdListenerOnMessageReceived(object sender, XDMessageEventArgs xdMessageEventArgs)
         {
-            Random rnd = new Random();
-            while (true)
+            XdListenerOnMessageReceived(sender, xdMessageEventArgs);
+        }
+
+        void iMessageReceiver.BackgroundWorkerOnDoWork(object sender, DoWorkEventArgs doWorkEventArgs)
+        {
+            BackgroundWorkerOnDoWork(sender, doWorkEventArgs);
+        }
+
+        void iMessageReceiver.BackgroundWorkerOnRunWorkerCompleted(object sender, RunWorkerCompletedEventArgs runWorkerCompletedEventArgs)
+        {
+            BackgroundWorkerOnRunWorkerCompleted(sender, runWorkerCompletedEventArgs);
+        }
+
+        void iMessageReceiver.initIMessageReceiver(string _contentName)
+        {
+            initIMessageReceiver(_contentName);
+        }
+
+        void XdListenerOnMessageReceived(object sender, XDMessageEventArgs xdMessageEventArgs)
+        {
+            if (xdMessageEventArgs.DataGram.Channel == this.Name)
             {
-                try
+                this._typedData = xdMessageEventArgs.DataGram;
+                if (!this._backgroundWorker.IsBusy)
                 {
-                    _gyroModule.Dispatcher.Invoke((Action) (() =>
-                    {
-                        this.rtn_x.Angle = Convert.ToDouble(rnd.Next(0, 5));
-                        this.rtn_y.Angle = Convert.ToDouble(rnd.Next(0, 5));
-                        this.rtn_z.Angle = Convert.ToDouble(rnd.Next(0, 5));
-                       
-                    }));
+                    this._backgroundWorker.RunWorkerAsync();
                 }
-                catch (Exception e)
+                
+            }
+        }
+        void BackgroundWorkerOnDoWork(object sender, DoWorkEventArgs doWorkEventArgs)
+        {
+            try
+            {
+                if (this._typedData.IsValid)
                 {
-                    Debug.WriteLine(e.Message);
+                    this.group_box.Dispatcher.Invoke((Action)(() =>
+                    {
+                        this.rtn_x.Angle = _typedData.Message.xAxisData;
+                        this.rtn_y.Angle = _typedData.Message.yAxisData;
+                        this.rtn_z.Angle = _typedData.Message.zAxisData;
+                    }), DispatcherPriority.Background);
                 }
             }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.Message);
+            }
+            
+        }
+        void BackgroundWorkerOnRunWorkerCompleted(object sender, RunWorkerCompletedEventArgs runWorkerCompletedEventArgs)
+        {
+            //
         }
     }
 }

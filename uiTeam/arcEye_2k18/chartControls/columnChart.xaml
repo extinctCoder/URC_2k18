@@ -8,9 +8,10 @@
              d:DesignHeight="300" d:DesignWidth="300"
              xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-             xmlns:metroChart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart">
+             xmlns:metroChart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart"
+             xmlns:geared="clr-namespace:LiveCharts.Geared;assembly=LiveCharts.Geared">
     <Grid>
-        <GroupBox Header="columnCharts">
+        <GroupBox x:Name="group_box">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2"></ColumnDefinition>
@@ -22,8 +23,20 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="2"></RowDefinition>
                 </Grid.RowDefinitions>
-                <lvc:CartesianChart Grid.Column="1" Grid.Row="1" Series="{Binding SeriesCollection}">
-
+                <lvc:CartesianChart Grid.Column="1" Grid.Row="1"  DataTooltip="{x:Null}" Hoverable="False" DisableAnimations="False">
+                    <lvc:CartesianChart.AxisX>
+                        <lvc:Axis LabelFormatter="{Binding DateTimeFormatter}" 
+                                  MaxValue="{Binding AxisMax}" 
+                                  MinValue="{Binding AxisMin}"
+                                  Unit="{Binding AxisUnit}">
+                            <lvc:Axis.Separator>
+                                <lvc:Separator Step="{Binding AxisStep}" />
+                            </lvc:Axis.Separator>
+                        </lvc:Axis>
+                    </lvc:CartesianChart.AxisX>
+                    <lvc:CartesianChart.Series>
+                        <geared:GColumnSeries Values="{Binding _seriesChartValues}" PointGeometry="{x:Null}"/>
+                    </lvc:CartesianChart.Series>
                 </lvc:CartesianChart>
             </Grid>
         </GroupBox>

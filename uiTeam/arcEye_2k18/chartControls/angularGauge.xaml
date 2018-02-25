@@ -10,7 +10,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:metroChart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart">
     <Grid>
-        <GroupBox Header="angularGauge">
+        <GroupBox x:Name="group_box">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2"></ColumnDefinition>
@@ -22,7 +22,12 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="2"></RowDefinition>
                 </Grid.RowDefinitions>
-                <lvc:AngularGauge Grid.Column="1" Grid.Row="1" FromValue="0" ToValue="100" Value="50">
+                <lvc:AngularGauge Grid.Column="1" Grid.Row="1" x:Name="angular_gauge" SectionsInnerRadius=".8">
+                    <lvc:AngularGauge.Sections>
+                        <lvc:AngularSection x:Name="section_one" Fill="Yellow"/>
+                        <lvc:AngularSection x:Name="section_two" Fill="Green"/>
+                        <lvc:AngularSection x:Name="section_three" Fill="Red"/>
+                    </lvc:AngularGauge.Sections>
                 </lvc:AngularGauge>
             </Grid>
         </GroupBox>

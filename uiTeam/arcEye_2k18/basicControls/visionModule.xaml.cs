@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using arcEye_2k18.controllers;
 
 namespace arcEye_2k18.basicControls
 {
@@ -20,9 +21,14 @@ namespace arcEye_2k18.basicControls
     /// </summary>
     public partial class visionModule : UserControl
     {
-        public visionModule()
+        public visionModule() : this(ChannelList.visionModule.ToString())
+        {
+        }
+        public visionModule(String _visionModuleName)
         {
             InitializeComponent();
+            this.group_box.Header = _visionModuleName;
+            this.Name = _visionModuleName;
         }
     }
 }

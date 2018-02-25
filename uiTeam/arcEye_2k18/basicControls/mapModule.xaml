@@ -8,19 +8,37 @@
              d:DesignHeight="300" d:DesignWidth="300"
              xmlns:WindowsPresentation="clr-namespace:GMap.NET.WindowsPresentation;assembly=GMap.NET.WindowsPresentation">
     <Grid>
-        <GroupBox Header="mapModule">
+        <GroupBox x:Name="group_box">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="2"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
                     <ColumnDefinition Width="*"></ColumnDefinition>
-                    <ColumnDefinition Width="2"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="2"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="2"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
                 </Grid.RowDefinitions>
-                <WindowsPresentation:GMapControl Grid.Column="1" Grid.Row="1" x:Name="map" MaxZoom="24" MinZoom="1"></WindowsPresentation:GMapControl>
+                <WindowsPresentation:GMapControl Grid.Column="1" Grid.Row="1" x:Name="map_module" MaxZoom="24" MinZoom="1"></WindowsPresentation:GMapControl>
+                <Grid Grid.Column="1" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="2"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="0"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="0"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Slider Grid.Column="3" Grid.Row="1" Value="{Binding ElementName=map_module, Path=Zoom}" Minimum="1" Maximum="24" TickPlacement="None" Orientation="Vertical"></Slider>
+                </Grid>
+                <ProgressBar Grid.Column="1" Grid.Row="3" x:Name="progress_bar"></ProgressBar>
             </Grid>
         </GroupBox>
     </Grid>

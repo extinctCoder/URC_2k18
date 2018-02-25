@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:arcEye_2k18.chartControls"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
+    <Grid >
             
     </Grid>
 </UserControl>

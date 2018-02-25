@@ -23,7 +23,7 @@ namespace arcEye_2k18.basicControls
     {
         private static movementControl _movementControl;
 
-        private movementControl()
+        public movementControl()
         {
             InitializeComponent();
             this.defultButtonState();

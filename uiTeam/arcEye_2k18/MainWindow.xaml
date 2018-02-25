@@ -4,7 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:arcEye_2k18"
-        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls" 
+        materialDesign:TransitionAssist.DisableTransitions="True"
         mc:Ignorable="d" TitleAlignment="Center" WindowStartupLocation="CenterScreen" WindowStyle="None"
         Title="arcEye_2k18" MinHeight="648" MinWidth="1152" KeyDown="MainWindow_OnKeyDown" KeyUp="MainWindow_OnKeyUp"
         xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
@@ -74,11 +75,11 @@
             <Grid Grid.Column="1" Grid.Row="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0"></ColumnDefinition>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width=".75*"></ColumnDefinition>
                     <ColumnDefinition Width="0"></ColumnDefinition>
-                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
                     <ColumnDefinition Width="0"></ColumnDefinition>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width=".75*"></ColumnDefinition>
                     <ColumnDefinition Width="0"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>

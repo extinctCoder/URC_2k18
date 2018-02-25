@@ -10,19 +10,19 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:metroChart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart">
     <Grid>
-        <GroupBox Header="solidGauge">
+        <GroupBox x:Name="group_box">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="2"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
                     <ColumnDefinition Width="*"></ColumnDefinition>
-                    <ColumnDefinition Width="2"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="2"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
-                    <RowDefinition Height="2"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
                 </Grid.RowDefinitions>
-                <lvc:Gauge Grid.Row="1" Grid.Column="1" From="0" To="100" Value="50"/>
+                <lvc:Gauge Grid.Row="1" Grid.Column="1" x:Name="gauge"/>
             </Grid>
         </GroupBox>
     </Grid>

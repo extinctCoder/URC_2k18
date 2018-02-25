@@ -462,3 +462,123 @@
 [0220/222102.981:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
 [0220/222107.982:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
 [0220/222112.985:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0224/235153.491:WARNING:angle_platform_impl.cc(51)] rx::HLSLCompiler::compileToBinary(228): 
+C:\fakepath(60,24-44): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+
+[0225/001809.147:ERROR:browser_host_impl.cc(1661)] Invalid URL passed to CefBrowserHostImpl::LoadURL: https://
+[0225/001809.180:ERROR:browser_host_impl.cc(1661)] Invalid URL passed to CefBrowserHostImpl::LoadURL: https:/
+[0225/001809.216:ERROR:browser_host_impl.cc(1661)] Invalid URL passed to CefBrowserHostImpl::LoadURL: https:
+[0225/001831.115:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0225/001831.115:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0225/001831.115:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0225/001831.115:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0225/002307.914:ERROR:gles2_cmd_decoder.cc(5288)] GLES2DecoderImpl: Context lost because resize failed.
+[0225/002307.914:ERROR:gles2_cmd_decoder.cc(5409)] Error: 5 for Command kResizeCHROMIUM
+[0225/002308.033:ERROR:gpu_channel_manager.cc(204)] Exiting GPU process because some drivers cannot recover from problems.
+[0225/002320.988:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 107
+[0225/002320.988:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 83
+[0225/002320.988:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 103
+[0225/002320.988:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 101
+[0225/002320.988:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 97
+[0225/002321.023:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 131
+[0225/002321.024:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 129
+[0225/002321.024:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 127
+[0225/002321.064:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 125
+[0225/002321.240:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 123
+[0225/002321.240:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 133
+[0225/002321.240:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 121
+[0225/002321.283:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 119
+[0225/002321.306:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 117
+[0225/002321.351:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 111
+[0225/002321.359:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 115
+[0225/002321.367:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 113
+[0225/002415.352:WARNING:angle_platform_impl.cc(51)] rx::HLSLCompiler::compileToBinary(228): 
+C:\fakepath(96,32-88): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+
+[0225/002415.362:WARNING:angle_platform_impl.cc(51)] rx::HLSLCompiler::compileToBinary(228): 
+C:\fakepath(199,32-88): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(200,32-88): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+
+[0225/002511.314:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0225/002511.314:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0225/002511.314:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0225/002511.314:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0225/002520.612:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 11
+[0225/002521.138:ERROR:browser_host_impl.cc(1661)] Invalid URL passed to CefBrowserHostImpl::LoadURL: https://
+[0225/002521.167:ERROR:browser_host_impl.cc(1661)] Invalid URL passed to CefBrowserHostImpl::LoadURL: https:/
+[0225/002521.202:ERROR:browser_host_impl.cc(1661)] Invalid URL passed to CefBrowserHostImpl::LoadURL: https:
+[0225/002527.749:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0225/002527.749:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0225/002528.195:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0225/002528.196:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0225/002528.552:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0225/002528.552:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0225/002528.804:INFO:CONSOLE(1122)] "<link rel=preload> must have a valid `as` value", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfllx-q4O/desktop_polymer.js (1122)
+[0225/002529.565:ERROR:quota_settings.cc(95)] Unable to compute QuotaSettings.
+[0225/002529.572:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSettings.
+[0225/002706.472:ERROR:browser_host_impl.cc(1661)] Invalid URL passed to CefBrowserHostImpl::LoadURL: ://localhost/webTech/
+[0225/002707.582:ERROR:browser_host_impl.cc(1661)] Invalid URL passed to CefBrowserHostImpl::LoadURL: ://localhost/webTech/
+[0225/002708.638:ERROR:browser_host_impl.cc(1661)] Invalid URL passed to CefBrowserHostImpl::LoadURL: /
+[0225/002820.568:ERROR:browser_host_impl.cc(1661)] Invalid URL passed to CefBrowserHostImpl::LoadURL: ://localhost/webTech/
+[0225/002821.886:ERROR:browser_host_impl.cc(1661)] Invalid URL passed to CefBrowserHostImpl::LoadURL: /
+[0225/002919.372:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0225/002919.373:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0225/002919.373:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0225/002919.373:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0225/002926.065:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0225/002926.065:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0225/002926.065:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0225/002926.066:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0225/003049.730:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0225/003049.730:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0225/003049.730:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0225/003049.730:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0225/003149.476:ERROR:gles2_cmd_decoder.cc(5288)] GLES2DecoderImpl: Context lost because resize failed.
+[0225/003149.477:ERROR:gles2_cmd_decoder.cc(5409)] Error: 5 for Command kResizeCHROMIUM
+[0225/003149.478:ERROR:gpu_channel_manager.cc(204)] Exiting GPU process because some drivers cannot recover from problems.
+[0225/004037.174:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0225/004037.177:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0225/004040.058:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0225/004040.058:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0225/004040.486:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0225/004040.486:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0225/004040.703:INFO:CONSOLE(1122)] "<link rel=preload> must have a valid `as` value", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfllx-q4O/desktop_polymer.js (1122)
+[0225/004040.852:ERROR:quota_settings.cc(95)] Unable to compute QuotaSettings.
+[0225/004040.852:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSettings.
+[0225/004048.231:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 105
+[0225/004104.499:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 175
+[0225/004105.873:INFO:CONSOLE(3205)] "paper-tooltip:", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfllx-q4O/desktop_polymer.js (3205)
+[0225/004105.980:INFO:CONSOLE(3205)] "paper-tooltip:", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfllx-q4O/desktop_polymer.js (3205)
+[0225/004123.539:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 255
+[0225/004128.151:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 257
+[0225/004151.969:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 277
+[0225/004155.553:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 281
+[0225/004438.615:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[0225/004438.615:ERROR:cache_util.cc(134)] Unable to move cache folder GPUCache to old_GPUCache_000
+[0225/004438.615:ERROR:disk_cache.cc(169)] Unable to create cache
+[0225/004438.615:ERROR:shader_disk_cache.cc(601)] Shader Cache Creation failed: -2
+[0225/010315.536:WARNING:PushPullFIFO.cpp(182)] PushPullFIFO: underflow while pulling (underflowCount=1, availableFrames=0, requestedFrames=480, fifoLength=8192)
+[0225/051134.880:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0225/051421.856:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0225/051512.513:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0225/063913.048:ERROR:broker_win.cc(138)] Error sending sync broker message

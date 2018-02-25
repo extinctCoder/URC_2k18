@@ -165,3 +165,5 @@ D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\x64\Debug\chartControls\columnChart.
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\x64\Debug\chartControls\columnChart.baml
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\x64\Debug\basicControls\statusBar.g.cs
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\x64\Debug\basicControls\statusBar.baml
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\x64\Debug\LiveCharts.Geared.dll
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\x64\Debug\XDMessaging.dll

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -13,12 +15,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Media.TextFormatting;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using arcEye_2k18.basicControls;
 using arcEye_2k18.chartControls;
 using arcEye_2k18.controllers;
 using Dragablz;
 using MahApps.Metro.Controls;
 using MaterialDesignThemes.Wpf;
+using XDMessaging;
 
 namespace arcEye_2k18
 {
@@ -27,8 +31,10 @@ namespace arcEye_2k18
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
+        private dataPublisher _dataPublisher;
         public MainWindow()
-        {
+        {   
+            _dataPublisher = new dataPublisher();
             InitializeComponent();
             this.initializeControls();
             this.placeComponentsHome();
@@ -101,26 +107,26 @@ namespace arcEye_2k18
             {
                 movementController.handMovementController(sender,e);
             }
-            else if (e.Key == Key.F1)
-            {
-                this.Home_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
-            }
-            else if (e.Key == Key.F2)
-            {
-                this.Full_screen_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
-            }
-            else if (e.Key == Key.F3)
-            {
-                this.Normal_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
-            }
-            else if (e.Key == Key.F4)
-            {
-                this.Settings_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
-            }
-            else if (e.Key == Key.F12)
-            {
-                this.dialog_host.IsOpen = true;
-            }
+            //else if (e.Key == Key.F1)
+            //{
+            //    this.Home_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
+            //}
+            //else if (e.Key == Key.F2)
+            //{
+            //    this.Full_screen_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
+            //}
+            //else if (e.Key == Key.F3)
+            //{
+            //    this.Normal_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
+            //}
+            //else if (e.Key == Key.F4)
+            //{
+            //    this.Settings_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
+            //}
+            //else if (e.Key == Key.F12)
+            //{
+            //    this.dialog_host.IsOpen = true; 
+            //}
             else if (e.Key == Key.LeftShift)
             {
                 
@@ -201,7 +207,7 @@ namespace arcEye_2k18
             this._columnChart4 = new columnChart();
             this._lineChart = new lineChart();
             this._mapModule = new mapModule();
-            this._gyroModule = gyroModule.obj;
+            this._gyroModule = new gyroModule();
             this._visionModule = new visionModule();
             this._movementControl = movementControl.obj;
         }
@@ -292,5 +298,7 @@ namespace arcEye_2k18
             
             this.full_screen_movement_control_grid.Children.Add(this._movementControl);
         }
+
     }
+
 }

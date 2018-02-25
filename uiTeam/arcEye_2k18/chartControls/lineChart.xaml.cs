@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -12,63 +15,172 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
+using arcEye_2k18.controllers;
 using LiveCharts;
+using LiveCharts.Configurations;
+using LiveCharts.Geared;
 using LiveCharts.Wpf;
+using XDMessaging;
+using XDMessaging.Messages;
 
 namespace arcEye_2k18.chartControls
 {
     /// <summary>
     /// Interaction logic for lineChart.xaml
     /// </summary>
-    public partial class lineChart : UserControl
+    public partial class lineChart : UserControl,  INotifyPropertyChanged
     {
-        public lineChart()
+        private double _axisMax;
+        private double _axisMin;
+        public Func<double, string> DateTimeFormatter { get; set; }
+        public double AxisStep { get; set; }
+        public double AxisUnit { get; set; }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        public double AxisMax
+        {
+            get { return _axisMax; }
+            set
+            {
+                _axisMax = value;
+                OnPropertyChanged("AxisMax");
+            }
+        }
+        public double AxisMin
+        {
+            get { return _axisMin; }
+            set
+            {
+                _axisMin = value;
+                OnPropertyChanged("AxisMin");
+            }
+        }
+        private void SetAxisLimits(DateTime now)
+        {
+            AxisMax = now.Ticks + TimeSpan.FromSeconds(1).Ticks;
+            AxisMin = now.Ticks - TimeSpan.FromSeconds(8).Ticks;
+        }
+
+        protected virtual void OnPropertyChanged(string propertyName = null)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+    }
+    public partial class lineChart : UserControl
+    {         //use the value property as Y
+        public lineChart() : this(ChannelList.lineChart.ToString())
+        {
+        }
+
+        public lineChart(String _lineChartName) : this(_lineChartName, 0, 100)
+        {
+        }
+
+        public lineChart(String _lineChartName, int minValue, int maxValue)
         {
             InitializeComponent();
-            SeriesCollection = new SeriesCollection
-            {
-                new LineSeries
-                {
-                    Title = "Series 1",
-                    Values = new ChartValues<double> { 4, 6, 5, 2 ,4 }
-                },
-                new LineSeries
-                {
-                    Title = "Series 2",
-                    Values = new ChartValues<double> { 6, 7, 3, 4 ,6 },
-                    PointGeometry = null
-                },
-                new LineSeries
-                {
-                    Title = "Series 3",
-                    Values = new ChartValues<double> { 4,2,7,2,7 },
-                    PointGeometry = DefaultGeometries.Square,
-                    PointGeometrySize = 15
-                }
-            };
-
-            Labels = new[] { "Jan", "Feb", "Mar", "Apr", "May" };
-            YFormatter = value => value.ToString("C");
-
-            //modifying the series collection will animate and update the chart
-            SeriesCollection.Add(new LineSeries
-            {
-                Title = "Series 4",
-                Values = new ChartValues<double> { 5, 3, 2, 4 },
-                LineSmoothness = 0, //0: straight lines, 1: really smooth lines
-                PointGeometry = Geometry.Parse("m 25 70.36218 20 -28 -20 22 -8 -6 z"),
-                PointGeometrySize = 50,
-                PointForeground = Brushes.Gray
-            });
-
-            //modifying any series values will also animate and update the chart
-            SeriesCollection[3].Values.Add(5d);
-
+            this.Name = _lineChartName;
+            this.group_box.Header = _lineChartName;
+            this._seriesChartValues = new GearedValues<dataModel>();
+            this._seriesChartValues.WithQuality(Quality.Highest);
+            this.initIMessageReceiver(_lineChartName);
+            var mapper = Mappers.Xy<dataModel>()
+                        .X(model => model.DateTime.Ticks)
+                        .Y(model => model.Value);
+            Charting.For<dataModel>(mapper);
+            DateTimeFormatter = value => new DateTime((long)value).ToString("mm:ss");
+            AxisStep = TimeSpan.FromSeconds(1).Ticks;
+            AxisUnit = TimeSpan.TicksPerSecond;
+            SetAxisLimits(DateTime.Now);
             DataContext = this;
         }
-        public SeriesCollection SeriesCollection { get; set; }
-        public string[] Labels { get; set; }
-        public Func<double, string> YFormatter { get; set; }
+    }
+    public partial class lineChart : iMessageReceiver
+    {
+        public IXDBroadcaster _xdBroadcaster { get; set; }
+        public XDMessagingClient _xdMessagingClient { get; set; }
+        public IXDListener _xdListener { get; set; }
+        public BackgroundWorker _backgroundWorker { get; set; }
 
+        TypedDataGram<lineChartData> _typedData;
+
+        public GearedValues<dataModel> _seriesChartValues { get; set; }
+
+        void initIMessageReceiver(string _contentName)
+        {
+            this._backgroundWorker = new BackgroundWorker();
+            this._backgroundWorker.DoWork += BackgroundWorkerOnDoWork;
+            this._backgroundWorker.RunWorkerCompleted += BackgroundWorkerOnRunWorkerCompleted;
+
+            this._xdMessagingClient = new XDMessagingClient();
+            this._xdBroadcaster =
+                this._xdMessagingClient.Broadcasters.GetBroadcasterForMode(XDTransportMode.HighPerformanceUI);
+            this._xdListener = this._xdMessagingClient.Listeners.GetListenerForMode(XDTransportMode.HighPerformanceUI);
+            this._xdListener.RegisterChannel(_contentName);
+            this._xdListener.MessageReceived += XdListenerOnMessageReceived;
+            this._xdBroadcaster.SendToChannel(ChannelList.statusBar.ToString(), this.Name + " initialization successful.");
+        }
+
+        void iMessageReceiver.XdListenerOnMessageReceived(object sender, XDMessageEventArgs xdMessageEventArgs)
+        {
+            XdListenerOnMessageReceived(sender, xdMessageEventArgs);
+        }
+
+        void iMessageReceiver.BackgroundWorkerOnDoWork(object sender, DoWorkEventArgs doWorkEventArgs)
+        {
+            BackgroundWorkerOnDoWork(sender, doWorkEventArgs);
+        }
+
+        void iMessageReceiver.BackgroundWorkerOnRunWorkerCompleted(object sender, RunWorkerCompletedEventArgs runWorkerCompletedEventArgs)
+        {
+            BackgroundWorkerOnRunWorkerCompleted(sender, runWorkerCompletedEventArgs);
+        }
+
+        void iMessageReceiver.initIMessageReceiver(string _contentName)
+        {
+            initIMessageReceiver(_contentName);
+        }
+
+        void XdListenerOnMessageReceived(object sender, XDMessageEventArgs xdMessageEventArgs)
+        {
+            if (xdMessageEventArgs.DataGram.Channel == this.Name)
+            {
+                this._typedData = xdMessageEventArgs.DataGram;
+                if (!this._backgroundWorker.IsBusy)
+                {
+                    this._backgroundWorker.RunWorkerAsync();
+                }
+
+            }
+        }
+        void BackgroundWorkerOnDoWork(object sender, DoWorkEventArgs doWorkEventArgs)
+        {
+            try
+            {
+                if (this._typedData.IsValid)
+                {
+                   
+                    this.group_box.Dispatcher.Invoke((Action)(() =>
+                    {
+                        this._seriesChartValues.Add(new dataModel(){DateTime = DateTime.Now, Value = _typedData.Message.lineChartValue});
+                        SetAxisLimits(DateTime.Now);
+
+                        //lets only use the last 150 values
+                        if (_seriesChartValues.Count > 150) _seriesChartValues.RemoveAt(0);
+                    }), DispatcherPriority.Background);
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.Message);
+            }
+
+        }
+        void BackgroundWorkerOnRunWorkerCompleted(object sender, RunWorkerCompletedEventArgs runWorkerCompletedEventArgs)
+        {
+            //
+        }
     }
 }
