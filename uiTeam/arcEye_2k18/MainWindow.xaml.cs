@@ -107,26 +107,26 @@ namespace arcEye_2k18
             {
                 movementController.handMovementController(sender,e);
             }
-            //else if (e.Key == Key.F1)
-            //{
-            //    this.Home_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
-            //}
-            //else if (e.Key == Key.F2)
-            //{
-            //    this.Full_screen_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
-            //}
-            //else if (e.Key == Key.F3)
-            //{
-            //    this.Normal_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
-            //}
-            //else if (e.Key == Key.F4)
-            //{
-            //    this.Settings_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
-            //}
-            //else if (e.Key == Key.F12)
-            //{
-            //    this.dialog_host.IsOpen = true; 
-            //}
+            else if (e.Key == Key.F1)
+            {
+                this.Home_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
+            }
+            else if (e.Key == Key.F2)
+            {
+                this.Full_screen_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
+            }
+            else if (e.Key == Key.F3)
+            {
+                this.Normal_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
+            }
+            else if (e.Key == Key.F4)
+            {
+                this.Settings_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
+            }
+            else if (e.Key == Key.F12)
+            {
+                this.dialog_host.IsOpen = true;
+            }
             else if (e.Key == Key.LeftShift)
             {
                 

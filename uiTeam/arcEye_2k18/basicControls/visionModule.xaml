@@ -59,7 +59,7 @@
                         <materialDesign:PackIcon Kind="ArrowCompressAll"></materialDesign:PackIcon>
                     </Button>
                 </Grid>
-                <cefSharp:ChromiumWebBrowser Grid.Row="3" Grid.Column="1" x:Name="vision_module" Address="https://github.com/extinctCoder" />
+                <cefSharp:ChromiumWebBrowser Grid.Row="3" Grid.Column="1" x:Name="vision_module" Address="localhost" />
                 <ProgressBar Grid.Column="1" Grid.Row="5" IsIndeterminate="{Binding IsLoading, ElementName = vision_module}">
                 </ProgressBar>
             </Grid>
