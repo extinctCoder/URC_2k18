@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="arcEye_2k18.basicControls.gyroModule"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:arcEye_2k18.basicControls"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300"
+             xmlns:ht="clr-namespace:HelixToolkit.Wpf;assembly=HelixToolkit.Wpf">
+    <Grid>
+        <GroupBox x:Name="group_box">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
+                </Grid.RowDefinitions>
+                <ht:HelixViewport3D Grid.Column="1" Grid.Row="1" ZoomExtentsWhenLoaded="True" ShowViewCube="True" ShowFieldOfView="True" ShowFrameRate="True" ShowCameraTarget="True" ShowCoordinateSystem="True" ShowTriangleCountInfo="True"  Camera="{ht:PerspectiveCamera 5.3,-12.3,3.3,-6.3,11,-6.6}">
+                    <ht:SunLight></ht:SunLight>
+                    <ht:FileModelVisual3D Source="../../../contents/Model.3ds">
+                        <ht:FileModelVisual3D.Transform>
+                            <Transform3DGroup>
+                                <RotateTransform3D>
+                                    <RotateTransform3D.Rotation>
+                                        <AxisAngleRotation3D Axis="1,0,0" x:Name="rtn_x"></AxisAngleRotation3D>
+                                    </RotateTransform3D.Rotation>
+                                </RotateTransform3D>
+                                <RotateTransform3D>
+                                    <RotateTransform3D.Rotation>
+                                        <AxisAngleRotation3D Axis="0,1,0" x:Name="rtn_y"></AxisAngleRotation3D>
+                                    </RotateTransform3D.Rotation>
+                                </RotateTransform3D>
+                                <RotateTransform3D>
+                                    <RotateTransform3D.Rotation>
+                                        <AxisAngleRotation3D Axis="0,0,1" x:Name="rtn_z"></AxisAngleRotation3D>
+                                    </RotateTransform3D.Rotation>
+                                </RotateTransform3D>
+                                <TranslateTransform3D x:Name="axs_z"/>
+                            </Transform3DGroup>
+                        </ht:FileModelVisual3D.Transform>
+                    </ht:FileModelVisual3D>
+                </ht:HelixViewport3D>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</UserControl>

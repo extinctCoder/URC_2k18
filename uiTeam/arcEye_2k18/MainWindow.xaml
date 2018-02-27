@@ -4,17 +4,253 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:arcEye_2k18"
-        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
-        mc:Ignorable="d" TitleAlignment="Center" WindowStartupLocation="CenterScreen"
-        Title="arcEye_2k18" MinHeight="600" MinWidth="800"
-        xmlns:chartControls="clr-namespace:arcEye_2k18.chartControls">
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls" 
+        materialDesign:TransitionAssist.DisableTransitions="True"
+        mc:Ignorable="d" TitleAlignment="Center" WindowStartupLocation="CenterScreen" WindowStyle="None"
+        Title="arcEye_2k18" MinHeight="648" MinWidth="1152" KeyDown="MainWindow_OnKeyDown" KeyUp="MainWindow_OnKeyUp"
+        xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
+        xmlns:dockablz="clr-namespace:Dragablz.Dockablz;assembly=Dragablz"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:chartControls="clr-namespace:arcEye_2k18.chartControls"
+        xmlns:basicControls="clr-namespace:arcEye_2k18.basicControls"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:xcad="http://schemas.xceed.com/wpf/xaml/avalondock">
+    <controls:MetroWindow.LeftWindowCommands>
+        <controls:WindowCommands>
+            <Button x:Name="HomeBtn" Click="Home_btn_OnClick" Content="HOME"></Button>
+            <Button x:Name="FullScreenBtn" Click="Full_screen_btn_OnClick" Content="FULL_SCREEN"></Button>
+            <Button x:Name="NormalBtn" Click="Normal_btn_OnClick" Content="NORMAL"></Button>
+            <Button x:Name="SettingsBtn" Click="Settings_btn_OnClick" Content="SETTINGS"></Button>
+        </controls:WindowCommands>
+    </controls:MetroWindow.LeftWindowCommands>
     <controls:MetroWindow.RightWindowCommands>
         <controls:WindowCommands>
-            <Button Content="info"></Button>
+            <Button x:Name="info_btn" Click="Info_btn_OnClick" Content="info"></Button>
         </controls:WindowCommands>
     </controls:MetroWindow.RightWindowCommands>
-    <Grid>
-        <chartControls:angularGauge></chartControls:angularGauge>
+    <Grid x:Name="grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="0"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="0"></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="0"></RowDefinition>
+        </Grid.RowDefinitions>
+        <materialDesign:DialogHost Grid.Column="1" Grid.Row="1" x:Name="dialog_host" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <materialDesign:DialogHost.DialogContent>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Column="1" Grid.Row="1" x:Name="info_txt_block" Text="designed and developed by FSIT department, AIUB. under Dr. Tabin Hansn's supervision."></TextBlock>
+                    <Button Grid.Column="1" Grid.Row="3" Command="materialDesign:DialogHost.CloseDialogCommand" Content="cancel" Style="{StaticResource MaterialDesignFlatButton}"></Button>
+                </Grid>
+            </materialDesign:DialogHost.DialogContent>
+        </materialDesign:DialogHost>
+        <Grid Grid.Column="1" Grid.Row="1" x:Name="home_grid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="0"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Column="1" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                    <ColumnDefinition Width=".75*"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                    <ColumnDefinition Width=".75*"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Column="1" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="0"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="0"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="0"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="0"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Column="1" Grid.Row="1" x:Name="gyro_grid"></Grid>
+                    <Grid Grid.Column="1" Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="0"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="0"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="0"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="0"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Column="1" Grid.Row="1" x:Name="solid_gudge_grid_one"></Grid>
+                        <Grid Grid.Column="3" Grid.Row="1" x:Name="solid_gudge_grid_two"></Grid>
+                        <Grid Grid.Column="1" Grid.Row="3" x:Name="column_chart_grid_one"></Grid>
+                        <Grid Grid.Column="3" Grid.Row="3" x:Name="column_chart_grid_two"></Grid>
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="5" x:Name="angular_gudge_grid_one"></Grid>
+                </Grid>
+                <Grid Grid.Column="3" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="0"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="0"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="0"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Column="1" Grid.Row="1" x:Name="home_vision_grid"></Grid>
+                    <Grid Grid.Column="1" Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="0"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="0"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="0"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Column="1" Grid.Row="1" x:Name="line_chart_grid"></Grid>
+                        <Grid Grid.Column="1" Grid.Row="3" x:Name="home_movement_control_grid"></Grid>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Column="5" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="0"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="0"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="0"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="0"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Column="1" Grid.Row="1" x:Name="map_grid"></Grid>
+                    <Grid Grid.Column="1" Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="0"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="0"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="0"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="0"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Column="1" Grid.Row="1" x:Name="solid_gudge_grid_three"></Grid>
+                        <Grid Grid.Column="3" Grid.Row="1" x:Name="solid_gudge_grid_four"></Grid>
+                        <Grid Grid.Column="1" Grid.Row="3" x:Name="column_chart_grid_three"></Grid>
+                        <Grid Grid.Column="3" Grid.Row="3" x:Name="column_chart_grid_four"></Grid>
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="5" x:Name="angular_gudge_grid_two"></Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="1" x:Name="full_screen_grid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="0"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Column="1" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Column="1" Grid.Row="1" x:Name="full_screen_vision_grid"></Grid>
+            </Grid>
+            <Grid Grid.Column="1" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Column="3" Grid.Row="3" x:Name="full_screen_movement_control_grid"></Grid>
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="1" x:Name="settings_grid">
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="3" x:Name="status_bar_grid">
+        </Grid>
     </Grid>
+    
 </controls:MetroWindow>
+
+
+
+
+
+
 

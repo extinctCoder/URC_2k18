@@ -4,25 +4,33 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:arcEye_2k18.chartControls"
-             mc:Ignorable="d" Width="320" Height="320"
+             mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300"
              xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:metroChart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="0"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="0"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="0"></RowDefinition>
-        </Grid.RowDefinitions>
-        <materialDesign:Card Grid.Column="1" Grid.Row="1">
-            <Button></Button>
-        </materialDesign:Card>
+        <GroupBox x:Name="group_box">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="2"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="2"></RowDefinition>
+                </Grid.RowDefinitions>
+                <lvc:AngularGauge Grid.Column="1" Grid.Row="1" x:Name="angular_gauge" SectionsInnerRadius=".8">
+                    <lvc:AngularGauge.Sections>
+                        <lvc:AngularSection x:Name="section_one" Fill="Yellow"/>
+                        <lvc:AngularSection x:Name="section_two" Fill="Green"/>
+                        <lvc:AngularSection x:Name="section_three" Fill="Red"/>
+                    </lvc:AngularGauge.Sections>
+                </lvc:AngularGauge>
+            </Grid>
+        </GroupBox>
     </Grid>
 </UserControl>
 
