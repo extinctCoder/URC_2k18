@@ -93,7 +93,7 @@ namespace arcEye_2k18.basicControls
                     movementControl.obj.defultButtonState();
                     break;
                 default:
-                    statusBar.statusAi("Unregistered user input.");
+                    //statusBar.statusAi("Unregistered user input.");
                     break;
             }
         }
@@ -119,7 +119,7 @@ namespace arcEye_2k18.basicControls
                     movementControl.obj.defultButtonState();
                     break;
                 default:
-                    statusBar.statusAi("Unregistered user input.");
+                    //statusBar.statusAi("Unregistered user input.");
                     break;
             }
         }
@@ -168,7 +168,7 @@ namespace arcEye_2k18.basicControls
                     movementControl.obj.defultButtonState();
                     break;
                 default:
-                    statusBar.statusAi("Unregistered user input.");
+                    //statusBar.statusAi("Unregistered user input.");
                     break;
             }
         }

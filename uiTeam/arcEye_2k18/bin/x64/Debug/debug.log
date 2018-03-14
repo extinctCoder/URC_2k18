@@ -1085,3 +1085,13 @@ C:\fakepath(200,32-88): warning X3571: pow(f, e) will not work for negative f, u
 [0226/180305.450:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
 [0226/180310.452:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
 [0226/180315.454:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0312/192956.710:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0312/192956.739:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0312/193001.739:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0312/193001.842:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0312/193006.844:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0312/193011.848:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0312/193016.847:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0312/193016.862:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0312/193016.920:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0312/193016.928:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.

@@ -33,13 +33,11 @@ namespace arcEye_2k18.controllers
     {
         public double angularGaugeValue;
     }
-
     [Serializable]
     public class solidGaugeData
     {
         public double solidGaugeValue;
     }
-
     [Serializable]
     public class lineChartData
     {
@@ -49,6 +47,17 @@ namespace arcEye_2k18.controllers
     public class coloumnChartData
     {
         public double coloumnChartValue;
+    }
+    [Serializable]
+    public class statusBarData
+    {
+        public statusBarData(statusBarPoint point, string statusBarString)
+        {
+            this.point = point;
+            this.statusBarString = statusBarString;
+        }
+        public statusBarPoint point;
+        public string statusBarString;
     }
     public enum ChannelList { statusBar, gyroModule, mapModule, visionModule, angularGauge, solidGauge, lineChart, columnChart }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
+using arcEye_2k18.controllers;
+using LiveCharts.Geared;
+using XDMessaging;
+using XDMessaging.Messages;
 
 namespace arcEye_2k18.basicControls
 {
@@ -21,62 +27,105 @@ namespace arcEye_2k18.basicControls
     /// </summary>
     public partial class statusBar : UserControl
     {
-        private static statusBar _statusBar;
 
-        private statusBar()
+        public statusBar():this(ChannelList.statusBar.ToString())
         {
             InitializeComponent();
         }
 
-        public static statusBar obj
+        public statusBar(String _statusBarName)
         {
-            get
+            InitializeComponent();
+            this.Name = _statusBarName;
+            this.initIMessageReceiver(_statusBarName);
+        }
+
+    }
+    public partial class statusBar : iMessageReceiver
+    {
+        public IXDBroadcaster _xdBroadcaster { get; set; }
+        public XDMessagingClient _xdMessagingClient { get; set; }
+        public IXDListener _xdListener { get; set; }
+        public BackgroundWorker _backgroundWorker { get; set; }
+
+        TypedDataGram<statusBarData> _typedData;
+
+        void initIMessageReceiver(string _contentName)
+        {
+            this._backgroundWorker = new BackgroundWorker();
+            this._backgroundWorker.DoWork += BackgroundWorkerOnDoWork;
+            this._backgroundWorker.RunWorkerCompleted += BackgroundWorkerOnRunWorkerCompleted;
+
+            this._xdMessagingClient = new XDMessagingClient();
+            this._xdBroadcaster =
+                this._xdMessagingClient.Broadcasters.GetBroadcasterForMode(XDTransportMode.HighPerformanceUI);
+            this._xdListener = this._xdMessagingClient.Listeners.GetListenerForMode(XDTransportMode.HighPerformanceUI);
+            this._xdListener.RegisterChannel(_contentName);
+            this._xdListener.MessageReceived += XdListenerOnMessageReceived;
+            this._xdBroadcaster.SendToChannel(ChannelList.statusBar.ToString(),
+                new statusBarData(statusBarPoint.Normal, this.Name + "is initialization successful"));
+        }
+
+        void iMessageReceiver.XdListenerOnMessageReceived(object sender, XDMessageEventArgs xdMessageEventArgs)
+        {
+            XdListenerOnMessageReceived(sender, xdMessageEventArgs);
+        }
+
+        void iMessageReceiver.BackgroundWorkerOnDoWork(object sender, DoWorkEventArgs doWorkEventArgs)
+        {
+            BackgroundWorkerOnDoWork(sender, doWorkEventArgs);
+        }
+
+        void iMessageReceiver.BackgroundWorkerOnRunWorkerCompleted(object sender, RunWorkerCompletedEventArgs runWorkerCompletedEventArgs)
+        {
+            BackgroundWorkerOnRunWorkerCompleted(sender, runWorkerCompletedEventArgs);
+        }
+
+        void iMessageReceiver.initIMessageReceiver(string _contentName)
+        {
+            initIMessageReceiver(_contentName);
+        }
+
+        void XdListenerOnMessageReceived(object sender, XDMessageEventArgs xdMessageEventArgs)
+        {
+            if (xdMessageEventArgs.DataGram.Channel == this.Name)
             {
-                if (statusBar._statusBar == null)
+                this._typedData = xdMessageEventArgs.DataGram;
+                if (!this._backgroundWorker.IsBusy)
                 {
-                    statusBar._statusBar = new statusBar();
+                    this._backgroundWorker.RunWorkerAsync();
                 }
 
-                return statusBar._statusBar;
             }
         }
-
-        public static void status(string content)
-        {
-            statusBar.obj.left_content.Text = "urc_2k18 : "+content.ToString();
-        }
-
-        public static void statusAi(string content)
-        {
-            statusBar.obj.right_content.Text = content.ToString() + " : urc_2k18-AI";
-        }
-        public static void status_ThreadSafe(string content)
+        void BackgroundWorkerOnDoWork(object sender, DoWorkEventArgs doWorkEventArgs)
         {
             try
             {
-                lock (statusBar.obj)
+                if (this._typedData.IsValid)
                 {
-                    statusBar.obj.left_content.Dispatcher.Invoke(new Action(() => statusBar.obj.left_content.Text = "urc_2k18 : " + content.ToString()));
+                    this.Dispatcher.Invoke((Action)(() =>
+                    {
+                        if (this._typedData.Message.point == statusBarPoint.Normal)
+                        {
+                            this.left_content.Text = "ARC_EYE :_ " + this._typedData.Message.statusBarString;
+                        }
+                        else if (this._typedData.Message.point == statusBarPoint.Ai)
+                        {
+                            this.right_content.Text = this._typedData.Message.statusBarString + "_: ARC_EYE_AI";
+                        }
+                    }), DispatcherPriority.Background);
                 }
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                Debug.WriteLine(ex.ToString());
+                Debug.WriteLine(e.Message);
             }
+
         }
-        public static void statusAi_ThreadSafe(string content)
+        void BackgroundWorkerOnRunWorkerCompleted(object sender, RunWorkerCompletedEventArgs runWorkerCompletedEventArgs)
         {
-            try
-            {
-                lock (statusBar.obj)
-                {
-                    statusBar.obj.right_content.Dispatcher.Invoke(new Action(() => statusBar.obj.right_content.Text = content.ToString() + " : urc_2k18-AI"));
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex.ToString());
-            }
+            //
         }
     }
 }

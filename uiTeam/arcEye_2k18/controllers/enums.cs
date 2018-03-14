@@ -24,4 +24,9 @@ namespace arcEye_2k18.controllers
     {
         firstDLeft, firstDRight, secondDUp, secondDDown, thirdDUp, thirdDDown, fourthDLeft, fourthDRight, fifthDUp, fifthDDown, clawOn, clawOff, stop
     }
+
+    public enum statusBarPoint
+    {
+        Normal, Ai
+    }
 }

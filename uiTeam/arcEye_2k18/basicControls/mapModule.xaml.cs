@@ -62,11 +62,11 @@ namespace arcEye_2k18.basicControls
             if (!PingNetwork("pingtest.com"))
             {
                 this.map_module.Manager.Mode = AccessMode.CacheOnly;
-                statusBar.statusAi_ThreadSafe("No Internet connection available, going to CacheOnly mode");
+                //statusBar.statusAi_ThreadSafe("No Internet connection available, going to CacheOnly mode");
             }
             else
             {
-                statusBar.statusAi_ThreadSafe("Internet connection available, going to normal mode");
+                //statusBar.statusAi_ThreadSafe("Internet connection available, going to normal mode");
             }
             this.map_module.OnTileLoadStart += MapModuleOnOnTileLoadStart;
             this.map_module.OnTileLoadComplete += MapModuleOnOnTileLoadComplete;
@@ -138,7 +138,8 @@ namespace arcEye_2k18.basicControls
             this._xdListener = this._xdMessagingClient.Listeners.GetListenerForMode(XDTransportMode.HighPerformanceUI);
             this._xdListener.RegisterChannel(_contentName);
             this._xdListener.MessageReceived += XdListenerOnMessageReceived;
-            this._xdBroadcaster.SendToChannel(ChannelList.statusBar.ToString(), this.Name + " initialization successful.");
+            this._xdBroadcaster.SendToChannel(ChannelList.statusBar.ToString(),
+                new statusBarData(statusBarPoint.Normal, this.Name + "is initialization successful"));
         }
 
         void iMessageReceiver.XdListenerOnMessageReceived(object sender, XDMessageEventArgs xdMessageEventArgs)

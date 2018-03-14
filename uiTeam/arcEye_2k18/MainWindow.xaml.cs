@@ -42,8 +42,6 @@ namespace arcEye_2k18
             this.home_grid.Visibility = Visibility.Visible;
             this.settings_grid.Visibility = Visibility.Hidden;
             this.full_screen_grid.Visibility = Visibility.Hidden;
-
-            statusBar.statusAi("Components initialization successful.");
         }
 
         private void Home_btn_OnClick(object sender, RoutedEventArgs e)
@@ -53,8 +51,7 @@ namespace arcEye_2k18
             this.home_grid.Visibility = Visibility.Visible;
             this.settings_grid.Visibility = Visibility.Hidden;
             this.full_screen_grid.Visibility = Visibility.Hidden;
-
-            statusBar.statusAi("Components swap successful.");
+            
         }
 
         private void Full_screen_btn_OnClick(object sender, RoutedEventArgs e)
@@ -64,8 +61,7 @@ namespace arcEye_2k18
             this.home_grid.Visibility = Visibility.Hidden;
             this.settings_grid.Visibility = Visibility.Hidden;
             this.full_screen_grid.Visibility = Visibility.Visible;
-
-            statusBar.statusAi("Components swap successful.");
+            
         }
 
         private void Normal_btn_OnClick(object sender, RoutedEventArgs e)
@@ -75,8 +71,7 @@ namespace arcEye_2k18
             this.home_grid.Visibility = Visibility.Visible;
             this.settings_grid.Visibility = Visibility.Hidden;
             this.full_screen_grid.Visibility = Visibility.Hidden;
-
-            statusBar.statusAi("Components swap successful.");
+            
         }
 
         private void Settings_btn_OnClick(object sender, RoutedEventArgs e)
@@ -85,8 +80,7 @@ namespace arcEye_2k18
             this.home_grid.Visibility = Visibility.Hidden;
             this.settings_grid.Visibility = Visibility.Visible;
             this.full_screen_grid.Visibility = Visibility.Hidden;
-
-            statusBar.statusAi("Components swap successful.");
+            
         }
         private void Info_btn_OnClick(object sender, RoutedEventArgs e)
         {
@@ -137,7 +131,7 @@ namespace arcEye_2k18
             }
             else
             {
-                statusBar.statusAi("Key stoke is not registered.");
+                
             }
 
             e.Handled = true;
@@ -175,7 +169,7 @@ namespace arcEye_2k18
             }
             else
             {
-                statusBar.statusAi("Key stoke is not registered.");
+                
             }
 
             e.Handled = true;
@@ -216,7 +210,7 @@ namespace arcEye_2k18
         {
             this.status_bar_grid.Children.Clear();
 
-            this.status_bar_grid.Children.Add(statusBar.obj);
+            this.status_bar_grid.Children.Add(new statusBar());
         }
 
         private void placeComponentsHome()
@@ -254,9 +248,9 @@ namespace arcEye_2k18
             this.gyro_grid.Children.Add(this._gyroModule);
 
             this.home_vision_grid.Children.Add(this._visionModule);
-            
+
             this.home_movement_control_grid.Children.Add(this._movementControl);
-            
+
         }
 
         private void placeComponentsFullScreen()

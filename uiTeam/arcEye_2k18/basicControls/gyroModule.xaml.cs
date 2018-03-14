@@ -68,7 +68,8 @@ namespace arcEye_2k18.basicControls
             this._xdListener = this._xdMessagingClient.Listeners.GetListenerForMode(XDTransportMode.HighPerformanceUI);
             this._xdListener.RegisterChannel(_contentName);
             this._xdListener.MessageReceived += XdListenerOnMessageReceived;
-            this._xdBroadcaster.SendToChannel(ChannelList.statusBar.ToString(), this.Name + " initialization successful.");
+            this._xdBroadcaster.SendToChannel(ChannelList.statusBar.ToString(),
+                new statusBarData(statusBarPoint.Normal, this.Name + "is initialization successful"));
         }
 
         void iMessageReceiver.XdListenerOnMessageReceived(object sender, XDMessageEventArgs xdMessageEventArgs)
