@@ -1095,3 +1095,4 @@ C:\fakepath(200,32-88): warning X3571: pow(f, e) will not work for negative f, u
 [0312/193016.862:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
 [0312/193016.920:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
 [0312/193016.928:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0317/033226.642:ERROR:backend_impl.cc(1055)] Critical error found -8
