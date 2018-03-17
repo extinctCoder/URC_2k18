@@ -1096,3 +1096,194 @@ C:\fakepath(200,32-88): warning X3571: pow(f, e) will not work for negative f, u
 [0312/193016.920:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
 [0312/193016.928:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
 [0317/033226.642:ERROR:backend_impl.cc(1055)] Critical error found -8
+[0318/013516.608:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0318/013516.622:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0318/013518.553:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/013518.553:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/013518.963:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/013518.963:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/013519.190:ERROR:shader_disk_cache.cc(238)] Failed to create shader cache entry: -2
+[0318/013519.326:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/013519.396:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/013519.438:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/013519.438:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/013519.490:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/013519.570:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/013519.660:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/013519.916:INFO:CONSOLE(1154)] "<link rel=preload> must have a valid `as` value", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfl0uBxpB/desktop_polymer.js (1154)
+[0318/013520.135:ERROR:quota_settings.cc(95)] Unable to compute QuotaSettings.
+[0318/013520.149:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSettings.
+[0318/013532.401:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 173
+[0318/013534.272:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/013535.237:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 183
+[0318/013605.443:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 191
+[0318/013606.251:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 193
+[0318/013612.539:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/013613.431:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/013613.907:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/013613.944:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/014103.359:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/014105.242:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/014140.397:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/014305.373:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 13
+[0318/014305.768:ERROR:render_media_log.cc(30)] MediaEvent: MEDIA_ERROR_LOG_ENTRY {"error":"video decode error"}
+[0318/015448.077:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/015448.116:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/015448.634:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0318/015448.634:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0318/015448.634:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0318/015448.634:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0318/015450.172:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0318/015450.172:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0318/015452.197:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/015452.197:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/015452.496:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/015452.497:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/015452.568:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/015452.657:INFO:CONSOLE(1154)] "<link rel=preload> must have a valid `as` value", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfl0uBxpB/desktop_polymer.js (1154)
+[0318/015453.667:ERROR:quota_settings.cc(95)] Unable to compute QuotaSettings.
+[0318/015453.668:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSettings.
+[0318/015454.583:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/015709.283:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0318/015709.285:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0318/015709.457:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0318/015709.458:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0318/015709.458:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0318/015709.459:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0318/015709.483:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/015709.549:WARNING:storage_block-inl.h(131)] Failed data load.
+[0318/015709.568:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/015714.622:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/015714.622:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/015714.886:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/015714.886:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/015715.028:INFO:CONSOLE(1154)] "<link rel=preload> must have a valid `as` value", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfl0uBxpB/desktop_polymer.js (1154)
+[0318/015715.272:ERROR:quota_settings.cc(95)] Unable to compute QuotaSettings.
+[0318/015715.272:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSettings.
+[0318/020550.307:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0318/020550.309:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0318/020551.039:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0318/020551.040:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0318/020551.040:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0318/020551.040:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0318/020553.763:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/020553.763:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/020554.184:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/020554.184:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/020554.397:INFO:CONSOLE(1154)] "<link rel=preload> must have a valid `as` value", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfl0uBxpB/desktop_polymer.js (1154)
+[0318/020554.816:ERROR:quota_settings.cc(95)] Unable to compute QuotaSettings.
+[0318/020554.816:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSettings.
+[0318/021024.753:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0318/021024.754:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0318/021024.754:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0318/021024.754:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0318/021025.316:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0318/021025.316:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0318/021031.816:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/021031.816:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/021032.185:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/021032.185:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/021032.362:INFO:CONSOLE(1154)] "<link rel=preload> must have a valid `as` value", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfl0uBxpB/desktop_polymer.js (1154)
+[0318/021033.140:ERROR:quota_settings.cc(95)] Unable to compute QuotaSettings.
+[0318/021033.140:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSettings.
+[0318/021407.255:INFO:CONSOLE(14)] "<link rel=preload> must have a valid `as` value", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (14)
+[0318/021407.424:INFO:CONSOLE(14)] "<link rel=preload> must have a valid `as` value", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (14)
+[0318/021407.474:INFO:CONSOLE(14)] "<link rel=preload> must have a valid `as` value", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (14)
+[0318/021407.495:INFO:CONSOLE(14)] "<link rel=preload> must have a valid `as` value", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (14)
+[0318/021408.032:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0318/021408.033:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0318/021408.127:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0318/021408.127:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0318/021408.331:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0318/021408.331:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0318/021408.386:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/021408.386:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/021408.425:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/021408.425:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/021408.488:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/021408.488:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/021408.508:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0318/021408.508:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0318/021408.953:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/021408.954:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/021408.958:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/021408.958:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/021408.962:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/021408.962:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/021408.967:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/021408.967:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/021409.113:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/021409.113:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/021411.947:INFO:CONSOLE(0)] "The resource https://r3---sn-ov8vjvh-q5jl.googlevideo.com/generate_204?conn2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it wasn't preloaded for nothing.", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (0)
+[0318/021411.947:INFO:CONSOLE(0)] "The resource https://r3---sn-ov8vjvh-q5jl.googlevideo.com/generate_204 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it wasn't preloaded for nothing.", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (0)
+[0318/021411.971:INFO:CONSOLE(0)] "The resource https://r3---sn-ov8vjvh-q5jl.googlevideo.com/generate_204?conn2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it wasn't preloaded for nothing.", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (0)
+[0318/021411.971:INFO:CONSOLE(0)] "The resource https://r3---sn-ov8vjvh-q5jl.googlevideo.com/generate_204 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it wasn't preloaded for nothing.", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (0)
+[0318/021412.830:ERROR:quota_settings.cc(95)] Unable to compute QuotaSettings.
+[0318/021412.830:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSettings.
+[0318/021413.054:INFO:CONSOLE(0)] "The resource https://r3---sn-ov8vjvh-q5jl.googlevideo.com/generate_204?conn2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it wasn't preloaded for nothing.", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (0)
+[0318/021413.054:INFO:CONSOLE(0)] "The resource https://r3---sn-ov8vjvh-q5jl.googlevideo.com/generate_204 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it wasn't preloaded for nothing.", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (0)
+[0318/021413.151:INFO:CONSOLE(0)] "The resource https://r3---sn-ov8vjvh-q5jl.googlevideo.com/generate_204?conn2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it wasn't preloaded for nothing.", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (0)
+[0318/021413.151:INFO:CONSOLE(0)] "The resource https://r3---sn-ov8vjvh-q5jl.googlevideo.com/generate_204 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it wasn't preloaded for nothing.", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (0)
+[0318/021413.457:INFO:CONSOLE(3249)] "paper-tooltip:", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfl0uBxpB/desktop_polymer.js (3249)
+[0318/021413.487:INFO:CONSOLE(3249)] "paper-tooltip:", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfl0uBxpB/desktop_polymer.js (3249)
+[0318/021413.497:INFO:CONSOLE(3249)] "paper-tooltip:", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfl0uBxpB/desktop_polymer.js (3249)
+[0318/021413.519:INFO:CONSOLE(3249)] "paper-tooltip:", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfl0uBxpB/desktop_polymer.js (3249)
+[0318/021413.792:INFO:CONSOLE(3249)] "paper-tooltip:", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfl0uBxpB/desktop_polymer.js (3249)
+[0318/021453.830:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/021453.974:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0318/021612.748:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 235
+[0318/021657.992:INFO:CONSOLE(14)] "<link rel=preload> must have a valid `as` value", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (14)
+[0318/021658.194:INFO:CONSOLE(14)] "<link rel=preload> must have a valid `as` value", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (14)
+[0318/021658.270:INFO:CONSOLE(26)] "<link rel=preload> must have a valid `as` value", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (26)
+[0318/021658.306:INFO:CONSOLE(14)] "<link rel=preload> must have a valid `as` value", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (14)
+[0318/021658.758:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/021658.764:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/021658.790:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0318/021658.790:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0318/021658.797:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/021658.814:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/021658.866:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/021658.867:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/021658.880:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/021658.881:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/021658.907:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/021658.907:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/021658.909:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/021658.910:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/021658.914:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/021658.915:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/021658.940:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0318/021658.942:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0318/021658.967:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0318/021658.993:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0318/021659.004:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0318/021659.017:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0318/021659.018:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0318/021659.021:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0318/021705.283:INFO:CONSOLE(0)] "The resource https://r3---sn-ov8vjvh-q5jl.googlevideo.com/generate_204?conn2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it wasn't preloaded for nothing.", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (0)
+[0318/021705.285:INFO:CONSOLE(0)] "The resource https://r3---sn-ov8vjvh-q5jl.googlevideo.com/generate_204 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it wasn't preloaded for nothing.", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (0)
+[0318/021705.306:INFO:CONSOLE(0)] "The resource https://r3---sn-ov8vjvh-q5jl.googlevideo.com/generate_204?conn2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it wasn't preloaded for nothing.", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (0)
+[0318/021705.309:INFO:CONSOLE(0)] "The resource https://r3---sn-ov8vjvh-q5jl.googlevideo.com/generate_204 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it wasn't preloaded for nothing.", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (0)
+[0318/021706.592:INFO:CONSOLE(0)] "The resource https://r3---sn-ov8vjvh-q5jl.googlevideo.com/generate_204?conn2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it wasn't preloaded for nothing.", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (0)
+[0318/021706.597:INFO:CONSOLE(0)] "The resource https://r3---sn-ov8vjvh-q5jl.googlevideo.com/generate_204 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it wasn't preloaded for nothing.", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (0)
+[0318/021706.642:ERROR:quota_settings.cc(95)] Unable to compute QuotaSettings.
+[0318/021706.650:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSettings.
+[0318/021707.516:INFO:CONSOLE(0)] "The resource https://r3---sn-ov8vjvh-q5jl.googlevideo.com/generate_204?conn2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it wasn't preloaded for nothing.", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (0)
+[0318/021707.516:INFO:CONSOLE(0)] "The resource https://r3---sn-ov8vjvh-q5jl.googlevideo.com/generate_204 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it wasn't preloaded for nothing.", source: https://www.youtube.com/watch?v=3GhAL9YhVNA (0)
+[0318/021714.414:WARNING:backend_impl.cc(1571)] Wrong entry address.
