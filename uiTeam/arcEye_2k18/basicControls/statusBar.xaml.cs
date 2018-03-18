@@ -16,6 +16,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using arcEye_2k18.controllers;
+using arcEye_2k18.dataTemplate;
 using LiveCharts.Geared;
 using XDMessaging;
 using XDMessaging.Messages;
@@ -108,11 +109,11 @@ namespace arcEye_2k18.basicControls
                     {
                         if (this._typedData.Message.point == statusBarPoint.Normal)
                         {
-                            this.left_content.Text = "ARC_EYE :_ " + this._typedData.Message.statusBarString;
+                            this.left_content.Text = "ARC_EYE :_> " + this._typedData.Message.statusBarString;
                         }
                         else if (this._typedData.Message.point == statusBarPoint.Ai)
                         {
-                            this.right_content.Text = this._typedData.Message.statusBarString + "_: ARC_EYE_AI";
+                            this.right_content.Text = this._typedData.Message.statusBarString + " <_: ARC_EYE_AI";
                         }
                     }), DispatcherPriority.Background);
                 }

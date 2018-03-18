@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -19,10 +20,13 @@ using System.Windows.Threading;
 using arcEye_2k18.basicControls;
 using arcEye_2k18.chartControls;
 using arcEye_2k18.controllers;
+using arcEye_2k18.dataTemplate;
 using Dragablz;
+using LiveCharts.Geared;
 using MahApps.Metro.Controls;
 using MaterialDesignThemes.Wpf;
 using XDMessaging;
+using XDMessaging.Messages;
 
 namespace arcEye_2k18
 {
@@ -31,10 +35,10 @@ namespace arcEye_2k18
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
-        private dataPublisher _dataPublisher;
         public MainWindow()
-        {   
-            _dataPublisher = new dataPublisher();
+        {
+            movementController.initIMessageReceiver(ChannelList.movementControl.ToString());
+            this.initIMessageReceiver(ChannelList.MainWindow.ToString());
             InitializeComponent();
             this.initializeControls();
             this.placeComponentsHome();
@@ -89,49 +93,14 @@ namespace arcEye_2k18
 
         private void MainWindow_OnKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.W || e.Key == Key.A || e.Key == Key.D || e.Key == Key.S)
+            try
             {
-                movementController.roverMovementController(sender,e);
+                this._xdBroadcaster.SendToChannel(ChannelList.keyStroke.ToString(),
+                    new keyStrokeData(KeyPosition.keyDown, e.Key));
             }
-            else if(e.Key == Key.Up || e.Key == Key.Left || e.Key == Key.Right || e.Key == Key.Down || e.Key == Key.NumPad8 || e.Key == Key.NumPad4 || e.Key == Key.NumPad5 || e.Key == Key.NumPad6)
+            catch (Exception ex)
             {
-               movementController.cameraMovementController(sender, e);
-            }
-            else if (e.Key == Key.F || e.Key == Key.G || e.Key == Key.H || e.Key == Key.J || e.Key == Key.K || e.Key == Key.L || e.Key == Key.C || e.Key == Key.V || e.Key == Key.B || e.Key == Key.N || e.Key == Key.M || e.Key == Key.OemComma)
-            {
-                movementController.handMovementController(sender,e);
-            }
-            else if (e.Key == Key.F1)
-            {
-                this.Home_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
-            }
-            else if (e.Key == Key.F2)
-            {
-                this.Full_screen_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
-            }
-            else if (e.Key == Key.F3)
-            {
-                this.Normal_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
-            }
-            else if (e.Key == Key.F4)
-            {
-                this.Settings_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
-            }
-            else if (e.Key == Key.F12)
-            {
-                this.dialog_host.IsOpen = true;
-            }
-            else if (e.Key == Key.LeftShift)
-            {
-                
-            }
-            else if (e.Key == Key.LeftCtrl)
-            {
-
-            }
-            else
-            {
-                
+                Debug.WriteLine(ex.Message);
             }
 
             e.Handled = true;
@@ -139,42 +108,104 @@ namespace arcEye_2k18
 
         private void MainWindow_OnKeyUp(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.W || e.Key == Key.A || e.Key == Key.D || e.Key == Key.S)
+            try
             {
-                movementController.roverMovementController(null, null);
+                this._xdBroadcaster.SendToChannel(ChannelList.keyStroke.ToString(),
+                    new keyStrokeData(KeyPosition.keyUp, e.Key));
             }
-            else if (e.Key == Key.Up || e.Key == Key.Left || e.Key == Key.Right || e.Key == Key.Down || e.Key == Key.NumPad8 || e.Key == Key.NumPad4 || e.Key == Key.NumPad5 || e.Key == Key.NumPad6)
+            catch (Exception ex)
             {
-                movementController.cameraMovementController(null, null);
-            }
-            else if (e.Key == Key.F || e.Key == Key.G || e.Key == Key.H || e.Key == Key.J || e.Key == Key.K || e.Key == Key.L || e.Key == Key.C || e.Key == Key.V || e.Key == Key.B || e.Key == Key.N || e.Key == Key.M || e.Key == Key.OemComma)
-            {
-                movementController.handMovementController(null, null);
-            }
-            else if (e.Key == Key.F1 || e.Key == Key.F2 || e.Key == Key.F3 || e.Key == Key.F4)
-            {
-                this.Home_btn_OnClick(new ObjectDataProvider(), new RoutedEventArgs());
-            }
-            else if (e.Key == Key.F12)
-            {
-                this.dialog_host.IsOpen = false;
-            }
-            else if (e.Key == Key.LeftShift)
-            {
-
-            }
-            else if (e.Key == Key.LeftCtrl)
-            {
-
-            }
-            else
-            {
-                
+                Debug.WriteLine(ex.Message);
             }
 
             e.Handled = true;
         }
 
+    }
+    public partial class MainWindow : iMessageReceiver
+    {
+        public IXDBroadcaster _xdBroadcaster { get; set; }
+        public XDMessagingClient _xdMessagingClient { get; set; }
+        public IXDListener _xdListener { get; set; }
+        public BackgroundWorker _backgroundWorker { get; set; }
+
+        TypedDataGram<keyStrokeData> _typedData;
+
+        void initIMessageReceiver(string _contentName)
+        {
+            this._backgroundWorker = new BackgroundWorker();
+            this._backgroundWorker.DoWork += BackgroundWorkerOnDoWork;
+            this._backgroundWorker.RunWorkerCompleted += BackgroundWorkerOnRunWorkerCompleted;
+
+            this._xdMessagingClient = new XDMessagingClient();
+            this._xdBroadcaster =
+                this._xdMessagingClient.Broadcasters.GetBroadcasterForMode(XDTransportMode.HighPerformanceUI);
+            this._xdListener = this._xdMessagingClient.Listeners.GetListenerForMode(XDTransportMode.HighPerformanceUI);
+            this._xdListener.RegisterChannel(_contentName);
+            this._xdListener.MessageReceived += XdListenerOnMessageReceived;
+            this._xdBroadcaster.SendToChannel(ChannelList.statusBar.ToString(),
+                new statusBarData(statusBarPoint.Normal, "arcEye_2k18 MainWindow is initialization successful"));
+        }
+
+        void iMessageReceiver.XdListenerOnMessageReceived(object sender, XDMessageEventArgs xdMessageEventArgs)
+        {
+            XdListenerOnMessageReceived(sender, xdMessageEventArgs);
+        }
+
+        void iMessageReceiver.BackgroundWorkerOnDoWork(object sender, DoWorkEventArgs doWorkEventArgs)
+        {
+            BackgroundWorkerOnDoWork(sender, doWorkEventArgs);
+        }
+
+        void iMessageReceiver.BackgroundWorkerOnRunWorkerCompleted(object sender, RunWorkerCompletedEventArgs runWorkerCompletedEventArgs)
+        {
+            BackgroundWorkerOnRunWorkerCompleted(sender, runWorkerCompletedEventArgs);
+        }
+
+        void iMessageReceiver.initIMessageReceiver(string _contentName)
+        {
+            initIMessageReceiver(_contentName);
+        }
+
+        void XdListenerOnMessageReceived(object sender, XDMessageEventArgs xdMessageEventArgs)
+        {
+            if (xdMessageEventArgs.DataGram.Channel == ChannelList.MainWindow.ToString())
+            {
+                this._typedData = xdMessageEventArgs.DataGram;
+                if (!this._backgroundWorker.IsBusy)
+                {
+                    this._backgroundWorker.RunWorkerAsync();
+                }
+
+            }
+        }
+        void BackgroundWorkerOnDoWork(object sender, DoWorkEventArgs doWorkEventArgs)
+        {
+            try
+            {
+                if (this._typedData.IsValid)
+                {
+                    //this._seriesChartValues.Add(new dataModel() { DateTime = DateTime.Now, Value = _typedData.Message.coloumnChartValue });
+                    //this.group_box.Dispatcher.Invoke((Action)(() =>
+                    //{
+                    //    this._seriesChartValues.Add(new dataModel() { DateTime = DateTime.Now, Value = _typedData.Message.coloumnChartValue });
+                    //    SetAxisLimits(DateTime.Now);
+
+                    //    //lets only use the last 150 values
+                    //    if (_seriesChartValues.Count > 150) _seriesChartValues.RemoveAt(0);
+                    //}), DispatcherPriority.Background);
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.Message);
+            }
+
+        }
+        void BackgroundWorkerOnRunWorkerCompleted(object sender, RunWorkerCompletedEventArgs runWorkerCompletedEventArgs)
+        {
+            //
+        }
     }
 
     public partial class MainWindow
@@ -203,7 +234,7 @@ namespace arcEye_2k18
             this._mapModule = new mapModule();
             this._gyroModule = new gyroModule();
             this._visionModule = new visionModule();
-            this._movementControl = movementControl.obj;
+            this._movementControl = new movementControl();
         }
 
         private void placeComponentsConstant()

@@ -17,6 +17,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using arcEye_2k18.controllers;
+using arcEye_2k18.dataTemplate;
 using LiveCharts;
 using LiveCharts.Configurations;
 using LiveCharts.Geared;

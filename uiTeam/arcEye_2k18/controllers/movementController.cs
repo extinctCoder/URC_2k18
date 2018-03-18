@@ -1,139 +1,193 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Threading;
 using arcEye_2k18.basicControls;
+using arcEye_2k18.dataTemplate;
+using XDMessaging;
+using XDMessaging.Messages;
 
 namespace arcEye_2k18.controllers
-{
+{ 
     public static class movementController
     {
-        public static void roverMovementController(object sender, KeyEventArgs e)
+        public static void roverMovementController(Key _key)
         {
-            if (sender == null && e == null)
+            if (_key == Key.Back)
             {
-                movementControl.roverMovement(RoverMovement.stop);
+                movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                    new movementControlData(RoverMovement.stop, CameraMovement.None, HandMovement.None));
             }
             else
             {
-                if (e.Key == Key.W)
+                if (_key == Key.W)
                 {
-                    movementControl.roverMovement(RoverMovement.forward);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.forward, CameraMovement.None, HandMovement.None));
                 }
-                else if (e.Key == Key.A)
+                else if (_key == Key.A)
                 {
-                    movementControl.roverMovement(RoverMovement.left);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.left, CameraMovement.None, HandMovement.None));
                 }
-                else if (e.Key == Key.S)
+                else if (_key == Key.S)
                 {
-                    movementControl.roverMovement(RoverMovement.backward);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.backward, CameraMovement.None, HandMovement.None));
                 }
-                else if (e.Key == Key.D)
+                else if (_key == Key.D)
                 {
-                    movementControl.roverMovement(RoverMovement.right);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.right, CameraMovement.None, HandMovement.None));
                 }
                 else
                 {
-                    movementControl.roverMovement(RoverMovement.stop);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.stop, CameraMovement.None, HandMovement.None));
                 }
             }
         }
 
-        public static void handMovementController(object sender, KeyEventArgs e)
+        public static void handMovementController(Key _key)
         {
-            if (sender == null && e == null)
+            if (_key == Key.Back)
             {
-                movementControl.handMovement(HandMovement.stop);
+                movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                    new movementControlData(RoverMovement.None, CameraMovement.None, HandMovement.stop));
             }
             else
             {
-                if (e.Key == Key.F)
+                if (_key == Key.F)
                 {
-                    movementControl.handMovement(HandMovement.firstDLeft);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.None, CameraMovement.None, HandMovement.firstDLeft));
                 }
-                else if (e.Key == Key.C)
+                else if (_key == Key.C)
                 {
-                    movementControl.handMovement(HandMovement.firstDRight);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.None, CameraMovement.None, HandMovement.firstDRight));
                 }
-                else if (e.Key == Key.G)
+                else if (_key == Key.G)
                 {
-                    movementControl.handMovement(HandMovement.secondDUp);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.None, CameraMovement.None, HandMovement.secondDUp));
                 }
-                else if (e.Key == Key.V)
+                else if (_key == Key.V)
                 {
-                    movementControl.handMovement(HandMovement.secondDDown);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.None, CameraMovement.None, HandMovement.secondDDown));
                 }
-                else if (e.Key == Key.H)
+                else if (_key == Key.H)
                 {
-                    movementControl.handMovement(HandMovement.thirdDUp);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.None, CameraMovement.None, HandMovement.thirdDUp));
                 }
-                else if (e.Key == Key.B)
+                else if (_key == Key.B)
                 {
-                    movementControl.handMovement(HandMovement.thirdDDown);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.None, CameraMovement.None, HandMovement.thirdDDown));
                 }
-                else if (e.Key == Key.J)
+                else if (_key == Key.J)
                 {
-                    movementControl.handMovement(HandMovement.fourthDLeft);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.None, CameraMovement.None, HandMovement.fourthDLeft));
                 }
-                else if (e.Key == Key.N)
+                else if (_key == Key.N)
                 {
-                    movementControl.handMovement(HandMovement.fourthDRight);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.None, CameraMovement.None, HandMovement.fourthDRight));
                 }
-                else if (e.Key == Key.K)
+                else if (_key == Key.K)
                 {
-                    movementControl.handMovement(HandMovement.fifthDUp);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.None, CameraMovement.None, HandMovement.fifthDUp));
                 }
-                else if (e.Key == Key.M)
+                else if (_key == Key.M)
                 {
-                    movementControl.handMovement(HandMovement.fifthDDown);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.None, CameraMovement.None, HandMovement.fifthDDown));
                 }
-                else if (e.Key == Key.L)
+                else if (_key == Key.L)
                 {
-                    movementControl.handMovement(HandMovement.clawOn);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.None, CameraMovement.None, HandMovement.clawOn));
                 }
-                else if (e.Key == Key.OemComma)
+                else if (_key == Key.OemComma)
                 {
-                    movementControl.handMovement(HandMovement.clawOff);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.None, CameraMovement.None, HandMovement.clawOff));
                 }
                 else
                 {
-                    movementControl.handMovement(HandMovement.stop);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.None, CameraMovement.None, HandMovement.stop));
                 }
             }
         }
 
-        public static void cameraMovementController(object sender, KeyEventArgs e)
+        public static void cameraMovementController(Key _key)
         {
-            if (sender == null && e == null)
+            if (_key == Key.Back)
             {
-                movementControl.cameraMovement(CameraMovement.stop);
+                //  movementControl.cameraMovement(CameraMovement.stop);
+                movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                    new movementControlData(RoverMovement.None, CameraMovement.stop, HandMovement.None));
             }
             else
             {
-                if (e.Key == Key.Up || e.Key == Key.NumPad8)
+                if (_key == Key.Up || _key == Key.NumPad8)
                 {
-                    movementControl.cameraMovement(CameraMovement.forward);
+                    //movementControl.cameraMovement(CameraMovement.forward);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.None, CameraMovement.forward, HandMovement.None));
+
                 }
-                else if (e.Key == Key.Left || e.Key == Key.NumPad4)
+                else if (_key == Key.Left || _key == Key.NumPad4)
                 {
-                    movementControl.cameraMovement(CameraMovement.left);
+                    // movementControl.cameraMovement(CameraMovement.left);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.None, CameraMovement.left, HandMovement.None));
                 }
-                else if (e.Key == Key.Down || e.Key == Key.NumPad5)
+                else if (_key == Key.Down || _key == Key.NumPad5)
                 {
-                    movementControl.cameraMovement(CameraMovement.backward);
+                    // movementControl.cameraMovement(CameraMovement.backward);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.None, CameraMovement.backward, HandMovement.None));
                 }
-                else if (e.Key == Key.Right || e.Key == Key.NumPad6)
+                else if (_key == Key.Right || _key == Key.NumPad6)
                 {
-                    movementControl.cameraMovement(CameraMovement.right);
+                    // movementControl.cameraMovement(CameraMovement.right);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.None, CameraMovement.right, HandMovement.None));
                 }
                 else
                 {
-                    movementControl.cameraMovement(CameraMovement.stop);
+                    // movementControl.cameraMovement(CameraMovement.stop);
+                    movementController._xdBroadcaster.SendToChannel(ChannelList.movementControl.ToString(),
+                        new movementControlData(RoverMovement.None, CameraMovement.stop, HandMovement.None));
                 }
             }
         }
+        public static IXDBroadcaster _xdBroadcaster { get; set; }
+        public static XDMessagingClient _xdMessagingClient { get; set; }
+
+        static TypedDataGram<movementControlData> _typedData;
+
+        public static void initIMessageReceiver(string _contentName)
+        {
+           
+            movementController._xdMessagingClient = new XDMessagingClient();
+            movementController._xdBroadcaster =
+                movementController._xdMessagingClient.Broadcasters.GetBroadcasterForMode(XDTransportMode.HighPerformanceUI);
+            movementController._xdBroadcaster.SendToChannel(ChannelList.statusBar.ToString(),
+                new statusBarData(statusBarPoint.Normal, "MovementController is initialization successful"));
+        }
+     
     }
 }

@@ -13,6 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using arcEye_2k18.controllers;
+using arcEye_2k18.dataTemplate;
+using Amazon.EC2.Model;
+using CefSharp.Wpf;
 
 namespace arcEye_2k18.basicControls
 {
@@ -29,6 +32,50 @@ namespace arcEye_2k18.basicControls
             InitializeComponent();
             this.group_box.Header = _visionModuleName;
             this.Name = _visionModuleName;
+            this.browser_1.Address = this._addressOne;
+            this.browser_2.Address = this._addressTwo;
+            this.browser_3.Address = this._addressThree;
+            this.browser_4.Address = this._addressFour;
         }
+
+        private void Cam_view_btn_1_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.browser_1.Address = this._addressOne;
+            this.browser_2.Address = this._addressTwo;
+            this.browser_3.Address = this._addressThree;
+            this.browser_4.Address = this._addressFour;
+        }
+
+        private void Cam_view_btn_2_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.browser_1.Address = this._addressTwo;
+            this.browser_2.Address = this._addressOne;
+            this.browser_3.Address = this._addressThree;
+            this.browser_4.Address = this._addressFour;
+        }
+
+        private void Cam_view_btn_3_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.browser_1.Address = this._addressThree;
+            this.browser_2.Address = this._addressTwo;
+            this.browser_3.Address = this._addressOne;
+            this.browser_4.Address = this._addressFour;
+        }
+
+        private void Cam_view_btn_4_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.browser_1.Address = this._addressFour;
+            this.browser_2.Address = this._addressTwo;
+            this.browser_3.Address = this._addressThree;
+            this.browser_4.Address = this._addressOne;
+        }
+    }
+
+    public partial class visionModule
+    {
+        private string _addressOne = "faceook.com";
+        private string _addressTwo = "google.com";
+        private string _addressThree = "github.com";
+        private string _addressFour = "yahoo.com";
     }
 }
