@@ -73,9 +73,9 @@ namespace arcEye_2k18.basicControls
 
     public partial class visionModule
     {
-        private string _addressOne = "faceook.com";
-        private string _addressTwo = "google.com";
-        private string _addressThree = "github.com";
-        private string _addressFour = "yahoo.com";
+        private string _addressOne = "http://192.168.0.102";
+        private string _addressTwo = "http://192.168.0.102:8081";
+        private string _addressThree = "http://192.168.0.102:8082";
+        private string _addressFour = "http://192.168.0.102:8083";
     }
 }

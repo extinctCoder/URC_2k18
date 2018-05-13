@@ -1,0 +1,15 @@
+D:\OneDrive\URC_2k18\controlTeam\demoClient\demoClient\bin\Debug\demoClient.exe.config
+D:\OneDrive\URC_2k18\controlTeam\demoClient\demoClient\bin\Debug\demoClient.exe
+D:\OneDrive\URC_2k18\controlTeam\demoClient\demoClient\bin\Debug\demoClient.pdb
+D:\OneDrive\URC_2k18\controlTeam\demoClient\demoClient\obj\Debug\demoClient.csprojResolveAssemblyReference.cache
+D:\OneDrive\URC_2k18\controlTeam\demoClient\demoClient\obj\Debug\MainWindow.g.cs
+D:\OneDrive\URC_2k18\controlTeam\demoClient\demoClient\obj\Debug\App.g.cs
+D:\OneDrive\URC_2k18\controlTeam\demoClient\demoClient\obj\Debug\demoClient_MarkupCompile.cache
+D:\OneDrive\URC_2k18\controlTeam\demoClient\demoClient\obj\Debug\demoClient_MarkupCompile.lref
+D:\OneDrive\URC_2k18\controlTeam\demoClient\demoClient\obj\Debug\MainWindow.baml
+D:\OneDrive\URC_2k18\controlTeam\demoClient\demoClient\obj\Debug\demoClient.g.resources
+D:\OneDrive\URC_2k18\controlTeam\demoClient\demoClient\obj\Debug\demoClient.Properties.Resources.resources
+D:\OneDrive\URC_2k18\controlTeam\demoClient\demoClient\obj\Debug\demoClient.csproj.GenerateResource.cache
+D:\OneDrive\URC_2k18\controlTeam\demoClient\demoClient\obj\Debug\demoClient.csproj.CoreCompileInputs.cache
+D:\OneDrive\URC_2k18\controlTeam\demoClient\demoClient\obj\Debug\demoClient.exe
+D:\OneDrive\URC_2k18\controlTeam\demoClient\demoClient\obj\Debug\demoClient.pdb
