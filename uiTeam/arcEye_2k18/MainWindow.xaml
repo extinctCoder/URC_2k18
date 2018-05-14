@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:arcEye_2k18"
         xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls" 
         materialDesign:TransitionAssist.DisableTransitions="True"
-        mc:Ignorable="d" TitleAlignment="Center" WindowStartupLocation="CenterScreen" WindowStyle="None"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen" WindowStyle="None"
         Title="arcEye_2k18" MinHeight="648" MinWidth="1152" KeyDown="MainWindow_OnKeyDown" KeyUp="MainWindow_OnKeyUp"
         xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
         xmlns:dockablz="clr-namespace:Dragablz.Dockablz;assembly=Dragablz"
@@ -15,20 +15,22 @@
         xmlns:basicControls="clr-namespace:arcEye_2k18.basicControls"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:xcad="http://schemas.xceed.com/wpf/xaml/avalondock">
-    <controls:MetroWindow.LeftWindowCommands>
-        <controls:WindowCommands>
-            <Button x:Name="HomeBtn" Click="Home_btn_OnClick" Content="HOME"></Button>
-            <Button x:Name="FullScreenBtn" Click="Full_screen_btn_OnClick" Content="FULL_SCREEN"></Button>
-            <Button x:Name="NormalBtn" Click="Normal_btn_OnClick" Content="NORMAL"></Button>
-            <Button x:Name="SettingsBtn" Click="Settings_btn_OnClick" Content="SETTINGS"></Button>
-        </controls:WindowCommands>
-    </controls:MetroWindow.LeftWindowCommands>
     <controls:MetroWindow.RightWindowCommands>
         <controls:WindowCommands>
-            <Button x:Name="info_btn" Click="Info_btn_OnClick" Content="info"></Button>
+            <Button x:Name="infoButton" Click="InfoButton_OnClick" Content="info"></Button>
+            <Button x:Name="homeButton" Click="HomeButton_OnClick" Content="HOME"></Button>
+            <Button x:Name="visionModuleButton" Click="VisionModuleButton_OnClick" Content="VISION MODULE"></Button>
+            <Button x:Name="gpsModuleButton" Click="GpsModuleButton_OnClick" Content="GPS MODULE"></Button>
+            <Button x:Name="gyroModuleButton" Click="GyroModuleButton_OnClick" Content="GYRO MODULE"></Button>
+            <Button x:Name="sensor1Button" Click="Sensor1Button_OnClick" Content="SENSOR 1"></Button>
+            <Button x:Name="sensor2Button" Click="Sensor2Button_OnClick" Content="SENSOR 2"></Button>
+            <Button x:Name="sensor3Button" Click="Sensor3Button_OnClick" Content="SENSOR 3"></Button>
+            <Button x:Name="sensor4Button" Click="Sensor4Button_OnClick" Content="SENSOR 4"></Button>
+            <Button x:Name="sensor5Button" Click="Sensor5Button_OnClick" Content="SENSOR 5"></Button>
+            <Button x:Name="sensor6Button" Click="Sensor6Button_OnClick" Content="SENSOR 6"></Button>
         </controls:WindowCommands>
     </controls:MetroWindow.RightWindowCommands>
-    <Grid x:Name="grid">
+    <!--<Grid x:Name="grid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -244,8 +246,126 @@
         </Grid>
         <Grid Grid.Column="1" Grid.Row="3" x:Name="status_bar_grid">
         </Grid>
+    </Grid>-->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="0"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height=" 0"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height=" 0"></RowDefinition>
+        </Grid.RowDefinitions>
+        <materialDesign:DialogHost Grid.Column="1" Grid.Row="1" x:Name="dialogHost" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <materialDesign:DialogHost.DialogContent>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Column="1" Grid.Row="1" Text="designed and developed by FSIT department, AIUB. under Dr. Tabin Hansn's supervision."></TextBlock>
+                    <Button Grid.Column="1" Grid.Row="3" Command="materialDesign:DialogHost.CloseDialogCommand" Content="cancel" Style="{StaticResource MaterialDesignFlatButton}"></Button>
+                </Grid>
+            </materialDesign:DialogHost.DialogContent>
+        </materialDesign:DialogHost>
+        <Grid Grid.Column="1" Grid.Row="1" x:Name="homeGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+                <ColumnDefinition Width="4*"></ColumnDefinition>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="0"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Column="1" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Column="1" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="0"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="0"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="0"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="0"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Column="1" Grid.Row="1" x:Name="sensorOne"></Grid>
+                    <Grid Grid.Column="1" Grid.Row="3" x:Name="sensorTwo"></Grid>
+                    <Grid Grid.Column="3" Grid.Row="1" x:Name="sensorThree"></Grid>
+                    <Grid Grid.Column="3" Grid.Row="3" x:Name="sensorFour"></Grid>
+                </Grid>
+                <Grid Grid.Column="1" Grid.Row="3" x:Name="gyroModule"></Grid>
+                <Grid Grid.Column="1" Grid.Row="5" x:Name="mapModule"></Grid>
+            </Grid>
+            <Grid Grid.Column="3" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0"></RowDefinition>
+                    <RowDefinition Height="4*"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Column="1" Grid.Row="1" x:Name="visionModule"></Grid>
+                <Grid Grid.Column="1" Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="0"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="0"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="0"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Column="1" Grid.Row="1" x:Name="sensorFive"></Grid>
+                    <Grid Grid.Column="3" Grid.Row="1" x:Name="sensorSix"></Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="1" x:Name="fullScreenGrid"></Grid>
+        <basicControls:statusBar Grid.Column="1" Grid.Row="3"></basicControls:statusBar>
     </Grid>
-    
 </controls:MetroWindow>
 
 

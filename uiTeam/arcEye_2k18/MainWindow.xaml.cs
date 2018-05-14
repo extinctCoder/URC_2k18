@@ -41,54 +41,7 @@ namespace arcEye_2k18
             this.initIMessageReceiver(ChannelList.MainWindow.ToString());
             InitializeComponent();
             this.initializeControls();
-            this.placeComponentsHome();
-            this.placeComponentsConstant();
-            this.home_grid.Visibility = Visibility.Visible;
-            this.settings_grid.Visibility = Visibility.Hidden;
-            this.full_screen_grid.Visibility = Visibility.Hidden;
-        }
-
-        private void Home_btn_OnClick(object sender, RoutedEventArgs e)
-        {
-            this.placeComponentsHome();
-            this.WindowState = WindowState.Normal;
-            this.home_grid.Visibility = Visibility.Visible;
-            this.settings_grid.Visibility = Visibility.Hidden;
-            this.full_screen_grid.Visibility = Visibility.Hidden;
-            
-        }
-
-        private void Full_screen_btn_OnClick(object sender, RoutedEventArgs e)
-        {
-            this.placeComponentsFullScreen();
-            this.WindowState = WindowState.Maximized;
-            this.home_grid.Visibility = Visibility.Hidden;
-            this.settings_grid.Visibility = Visibility.Hidden;
-            this.full_screen_grid.Visibility = Visibility.Visible;
-            
-        }
-
-        private void Normal_btn_OnClick(object sender, RoutedEventArgs e)
-        {
-            this.placeComponentsHome();
-            this.WindowState = WindowState.Maximized;
-            this.home_grid.Visibility = Visibility.Visible;
-            this.settings_grid.Visibility = Visibility.Hidden;
-            this.full_screen_grid.Visibility = Visibility.Hidden;
-            
-        }
-
-        private void Settings_btn_OnClick(object sender, RoutedEventArgs e)
-        {
-            this.WindowState = WindowState.Normal;
-            this.home_grid.Visibility = Visibility.Hidden;
-            this.settings_grid.Visibility = Visibility.Visible;
-            this.full_screen_grid.Visibility = Visibility.Hidden;
-            
-        }
-        private void Info_btn_OnClick(object sender, RoutedEventArgs e)
-        {
-            this.dialog_host.IsOpen = true;
+            this.homeLayout();
         }
 
         private void MainWindow_OnKeyDown(object sender, KeyEventArgs e)
@@ -210,120 +163,133 @@ namespace arcEye_2k18
 
     public partial class MainWindow
     {
-        private angularGauge _angularGauge1, _angularGauge2;
-        private solidGauge _solidGauge1, _solidGauge2, _solidGauge3, _solidGauge4;
-        private columnChart _columnChart1, _columnChart2, _columnChart3, _columnChart4;
-        private lineChart _lineChart;
+        private columnChart _sensor1;
+        private columnChart _sensor2;
+        private columnChart _sensor3;
+        private columnChart _sensor4;
+        private lineChart _sensor5;
+        private lineChart _sensor6;
         private mapModule _mapModule;
-        private gyroModule _gyroModule;
         private visionModule _visionModule;
-        private movementControl _movementControl;
+        private gyroModule _gyroModule;
+        
         private void initializeControls()
         {
-            this._angularGauge1 = new angularGauge();
-            this._angularGauge2 = new angularGauge();
-            this._solidGauge1 = new solidGauge();
-            this._solidGauge2 = new solidGauge();
-            this._solidGauge3 = new solidGauge();
-            this._solidGauge4 = new solidGauge();
-            this._columnChart1 = new columnChart();
-            this._columnChart2 = new columnChart();
-            this._columnChart3 = new columnChart();
-            this._columnChart4 = new columnChart();
-            this._lineChart = new lineChart();
+            this._sensor1 = new columnChart();
+            this._sensor2 = new columnChart();
+            this._sensor3 = new columnChart();
+            this._sensor4 = new columnChart();
+            this._sensor5 = new lineChart();
+            this._sensor6 = new lineChart();
             this._mapModule = new mapModule();
-            this._gyroModule = new gyroModule();
             this._visionModule = new visionModule();
-            this._movementControl = new movementControl();
+            this._gyroModule = new gyroModule();
         }
 
-        private void placeComponentsConstant()
+        private void clearLayout()
         {
-            this.status_bar_grid.Children.Clear();
+            this.fullScreenGrid.Children.Clear();
 
-            this.status_bar_grid.Children.Add(new statusBar());
+            this.sensorOne.Children.Clear();
+            this.sensorTwo.Children.Clear();
+            this.sensorThree.Children.Clear();
+            this.sensorFour.Children.Clear();
+            this.sensorFive.Children.Clear();
+            this.sensorSix.Children.Clear();
+            this.mapModule.Children.Clear();
+            this.visionModule.Children.Clear();
+            this.gyroModule.Children.Clear();
         }
 
-        private void placeComponentsHome()
+        private void homeLayout()
         {
-            this.angular_gudge_grid_one.Children.Clear();
-            this.angular_gudge_grid_two.Children.Clear();
-            this.solid_gudge_grid_one.Children.Clear();
-            this.solid_gudge_grid_two.Children.Clear();
-            this.solid_gudge_grid_three.Children.Clear();
-            this.solid_gudge_grid_four.Children.Clear();
-            this.column_chart_grid_one.Children.Clear();
-            this.column_chart_grid_two.Children.Clear();
-            this.column_chart_grid_three.Children.Clear();
-            this.column_chart_grid_four.Children.Clear();
-            this.line_chart_grid.Children.Clear();
-            this.map_grid.Children.Clear();
-            this.gyro_grid.Children.Clear();
-            this.home_movement_control_grid.Children.Clear();
-            this.home_vision_grid.Children.Clear();
-            this.full_screen_movement_control_grid.Children.Clear();
-            this.full_screen_vision_grid.Children.Clear();
+            this.clearLayout();
 
-            this.angular_gudge_grid_one.Children.Add(this._angularGauge1);
-            this.angular_gudge_grid_two.Children.Add(this._angularGauge2);
-            this.solid_gudge_grid_one.Children.Add(this._solidGauge1);
-            this.solid_gudge_grid_two.Children.Add(this._solidGauge2);
-            this.solid_gudge_grid_three.Children.Add(this._solidGauge3);
-            this.solid_gudge_grid_four.Children.Add(this._solidGauge4);
-            this.column_chart_grid_one.Children.Add(this._columnChart1);
-            this.column_chart_grid_two.Children.Add(this._columnChart2);
-            this.column_chart_grid_three.Children.Add(this._columnChart3);
-            this.column_chart_grid_four.Children.Add(this._columnChart4);
-            this.line_chart_grid.Children.Add(this._lineChart);
-            this.map_grid.Children.Add(this._mapModule);
-            this.gyro_grid.Children.Add(this._gyroModule);
+            this.homeGrid.Visibility = Visibility.Visible;
+            this.fullScreenGrid.Visibility = Visibility.Hidden;
 
-            this.home_vision_grid.Children.Add(this._visionModule);
-
-            this.home_movement_control_grid.Children.Add(this._movementControl);
-
+            this.sensorOne.Children.Add(this._sensor1);
+            this.sensorTwo.Children.Add(this._sensor2);
+            this.sensorThree.Children.Add(this._sensor3);
+            this.sensorFour.Children.Add(this._sensor4);
+            this.sensorFive.Children.Add(this._sensor5);
+            this.sensorSix.Children.Add(this._sensor6);
+            this.mapModule.Children.Add(this._mapModule);
+            this.visionModule.Children.Add(this._visionModule);
+            this.gyroModule.Children.Add(this._gyroModule);
         }
 
-        private void placeComponentsFullScreen()
+        private void fullScreenLayout()
         {
-            this.angular_gudge_grid_one.Children.Clear();
-            this.angular_gudge_grid_two.Children.Clear();
-            this.solid_gudge_grid_one.Children.Clear();
-            this.solid_gudge_grid_two.Children.Clear();
-            this.solid_gudge_grid_three.Children.Clear();
-            this.solid_gudge_grid_four.Children.Clear();
-            this.column_chart_grid_one.Children.Clear();
-            this.column_chart_grid_two.Children.Clear();
-            this.column_chart_grid_three.Children.Clear();
-            this.column_chart_grid_four.Children.Clear();
-            this.line_chart_grid.Children.Clear();
-            this.map_grid.Children.Clear();
-            this.gyro_grid.Children.Clear();
-            this.home_movement_control_grid.Children.Clear();
-            this.home_vision_grid.Children.Clear();
-            this.full_screen_movement_control_grid.Children.Clear();
-            this.full_screen_vision_grid.Children.Clear();
+            this.clearLayout();
 
-            this.angular_gudge_grid_one.Children.Add(this._angularGauge1);
-            this.angular_gudge_grid_two.Children.Add(this._angularGauge2);
-            this.solid_gudge_grid_one.Children.Add(this._solidGauge1);
-            this.solid_gudge_grid_two.Children.Add(this._solidGauge2);
-            this.solid_gudge_grid_three.Children.Add(this._solidGauge3);
-            this.solid_gudge_grid_four.Children.Add(this._solidGauge4);
-            this.column_chart_grid_one.Children.Add(this._columnChart1);
-            this.column_chart_grid_two.Children.Add(this._columnChart2);
-            this.column_chart_grid_three.Children.Add(this._columnChart3);
-            this.column_chart_grid_four.Children.Add(this._columnChart4);
-            this.line_chart_grid.Children.Add(this._lineChart);
-            this.map_grid.Children.Add(this._mapModule);
-            this.gyro_grid.Children.Add(this._gyroModule);
-
-            
-            this.full_screen_vision_grid.Children.Add(this._visionModule);
-            
-            this.full_screen_movement_control_grid.Children.Add(this._movementControl);
+            this.homeGrid.Visibility = Visibility.Hidden;
+            this.fullScreenGrid.Visibility = Visibility.Visible;
         }
 
+        private void InfoButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.dialogHost.IsOpen = true;
+        }
+
+        private void HomeButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.homeLayout();
+        }
+
+        private void VisionModuleButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.fullScreenLayout();
+            this.fullScreenGrid.Children.Add(this._visionModule);
+        }
+
+        private void GpsModuleButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.fullScreenLayout();
+            this.fullScreenGrid.Children.Add(this._mapModule);
+        }
+
+        private void GyroModuleButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.fullScreenLayout();
+            this.fullScreenGrid.Children.Add(this._gyroModule);
+        }
+
+        private void Sensor1Button_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.fullScreenLayout();
+            this.fullScreenGrid.Children.Add(this._sensor1);
+        }
+
+        private void Sensor2Button_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.fullScreenLayout();
+            this.fullScreenGrid.Children.Add(this._sensor2);
+        }
+
+        private void Sensor3Button_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.fullScreenLayout();
+            this.fullScreenGrid.Children.Add(this._sensor3);
+        }
+
+        private void Sensor4Button_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.fullScreenLayout();
+            this.fullScreenGrid.Children.Add(this._sensor4);
+        }
+
+        private void Sensor5Button_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.fullScreenLayout();
+            this.fullScreenGrid.Children.Add(this._sensor5);
+        }
+
+        private void Sensor6Button_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.fullScreenLayout();
+            this.fullScreenGrid.Children.Add(this._sensor6);
+        }
     }
 
 }

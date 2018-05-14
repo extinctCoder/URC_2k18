@@ -59,8 +59,8 @@ namespace arcEye_2k18.controllers
                     this.broadcast.SendToChannel(ChannelList.lineChart.ToString(), _lineChartData);
                     this.broadcast.SendToChannel(ChannelList.columnChart.ToString(), _coloumnChartData);
 
-                    //this.broadcast.SendToChannel(ChannelList.statusBar.ToString(),
-                    //    new statusBarData(statusBarPoint.Normal, "injected value is : "+_value.ToString()));
+                    this.broadcast.SendToChannel(ChannelList.statusBar.ToString(),
+                        new statusBarData(statusBarPoint.Normal, "injected value is : "+_value.ToString()));
                 }
             }
             catch (Exception e)

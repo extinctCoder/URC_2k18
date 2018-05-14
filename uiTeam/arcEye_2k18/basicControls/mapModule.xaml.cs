@@ -96,7 +96,7 @@ namespace arcEye_2k18.basicControls
         }
         private void BackgroundWorkerProgressBarOnDoWork(object sender, DoWorkEventArgs doWorkEventArgs)
         {
-            this.group_box.Dispatcher.Invoke((Action)(() => { this.progress_bar.IsIndeterminate = this._progressBarFlag; }), DispatcherPriority.Background);
+            //this.group_box.Dispatcher.Invoke((Action)(() => { this.progress_bar.IsIndeterminate = this._progressBarFlag; }), DispatcherPriority.Background);
         }
 
         private static bool PingNetwork(string hostNameOrAddress)

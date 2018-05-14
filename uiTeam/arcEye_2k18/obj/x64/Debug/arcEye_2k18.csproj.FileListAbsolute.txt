@@ -167,3 +167,5 @@ D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\x64\Debug\basicControls\statusBar.g.
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\x64\Debug\basicControls\statusBar.baml
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\x64\Debug\LiveCharts.Geared.dll
 D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\bin\x64\Debug\XDMessaging.dll
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\x64\Debug\arcEye_2k18.csproj.CopyComplete
+D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\x64\Debug\GeneratedInternalTypeHelper.g.cs
