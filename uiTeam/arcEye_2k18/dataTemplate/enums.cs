@@ -34,6 +34,11 @@ namespace arcEye_2k18.dataTemplate
         MainWindow, statusBar, gyroModule, mapModule, visionModule, angularGauge, solidGauge, lineChart, columnChart, keyStroke, movementControl
     }
 
+    public enum ChannelListMod
+    {
+        MainWindow, statusBar, gyroModule, mapModule, visionModule, lineChart1, lineChart2, columnChart1, columnChart2, columnChart3, columnChart4, keyStroke, movementControl
+    }
+
     public enum KeyPosition
     {
         keyDown, keyUp, normal

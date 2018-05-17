@@ -175,12 +175,12 @@ namespace arcEye_2k18
         
         private void initializeControls()
         {
-            this._sensor1 = new columnChart();
-            this._sensor2 = new columnChart();
-            this._sensor3 = new columnChart();
-            this._sensor4 = new columnChart();
-            this._sensor5 = new lineChart();
-            this._sensor6 = new lineChart();
+            this._sensor1 = new columnChart(ChannelListMod.columnChart1.ToString());
+            this._sensor2 = new columnChart(ChannelListMod.columnChart2.ToString());
+            this._sensor3 = new columnChart(ChannelListMod.columnChart3.ToString());
+            this._sensor4 = new columnChart(ChannelListMod.columnChart4.ToString());
+            this._sensor5 = new lineChart(ChannelListMod.lineChart1.ToString());
+            this._sensor6 = new lineChart(ChannelListMod.lineChart2.ToString());
             this._mapModule = new mapModule();
             this._visionModule = new visionModule();
             this._gyroModule = new gyroModule();

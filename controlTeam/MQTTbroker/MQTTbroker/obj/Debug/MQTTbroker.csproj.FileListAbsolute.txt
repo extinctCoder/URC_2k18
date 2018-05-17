@@ -1,0 +1,9 @@
+D:\OneDrive\URC_2k18\controlTeam\MQTTbroker\MQTTbroker\bin\Debug\MQTTbroker.exe.config
+D:\OneDrive\URC_2k18\controlTeam\MQTTbroker\MQTTbroker\bin\Debug\MQTTbroker.exe
+D:\OneDrive\URC_2k18\controlTeam\MQTTbroker\MQTTbroker\bin\Debug\MQTTbroker.pdb
+D:\OneDrive\URC_2k18\controlTeam\MQTTbroker\MQTTbroker\bin\Debug\MQTTnet.dll
+D:\OneDrive\URC_2k18\controlTeam\MQTTbroker\MQTTbroker\obj\Debug\MQTTbroker.csprojResolveAssemblyReference.cache
+D:\OneDrive\URC_2k18\controlTeam\MQTTbroker\MQTTbroker\obj\Debug\MQTTbroker.csproj.CoreCompileInputs.cache
+D:\OneDrive\URC_2k18\controlTeam\MQTTbroker\MQTTbroker\obj\Debug\MQTTbroker.csproj.CopyComplete
+D:\OneDrive\URC_2k18\controlTeam\MQTTbroker\MQTTbroker\obj\Debug\MQTTbroker.exe
+D:\OneDrive\URC_2k18\controlTeam\MQTTbroker\MQTTbroker\obj\Debug\MQTTbroker.pdb

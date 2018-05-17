@@ -8,10 +8,12 @@ using System.Threading.Tasks;
 using arcEye_2k18.dataTemplate;
 using Amazon.EC2.Model;
 using XDMessaging;
+using uPLibrary.Networking.M2Mqtt;
+using uPLibrary.Networking.M2Mqtt.Messages;
 
 namespace arcEye_2k18.controllers
 {
-    public class dataPublisher
+    public partial class dataPublisher
     {
         private IXDBroadcaster broadcast;
         private XDMessagingClient client;
@@ -19,17 +21,18 @@ namespace arcEye_2k18.controllers
 
         public dataPublisher()
         {
-            _thread = new Thread(runDataPublisher);
+            _thread = new Thread(mqttDataPublisher);
             _thread.IsBackground = true;
 
             client = new XDMessagingClient();
             broadcast = client.Broadcasters
                 .GetBroadcasterForMode(XDTransportMode.HighPerformanceUI);
             _thread.Start();
+
         }
         private void runDataPublisher()
         {
-            double _value;
+            /*double _value;
             gyroModuleData _gyroModuleData = new gyroModuleData();
             mapModuleData _mapModuleData = new mapModuleData();
             angularGaugeData _angularGaugeData = new angularGaugeData();
@@ -67,7 +70,162 @@ namespace arcEye_2k18.controllers
             {
                 Debug.WriteLine(e.Message);
             }
+            */
+        }
+    }
+
+    public partial class dataPublisher
+    {
+        private String brokerIp = "192.168.0.101";
+
+        private string sensorSoil = "sensor/soil";
+        private string sensorUv = "sensor/uv";
+        private string sensorGas = "sensor/gas";
+        private string sensorTemp = "sensor/temp";
+        private string sensorAirTemp = "sensor/air/temp";
+        private string sensorAirHum = "sensor/air/hum";
+
+        private MqttClient soilClient;
+        private MqttClient uvClient;
+        private MqttClient gasClient;
+        private MqttClient tempClient;
+        private MqttClient airTempClient;
+        private MqttClient airHumClient;
+
+        private string soilClientId;
+        private string uvClientId;
+        private string gasClientId;
+        private string tempClientId;
+        private string airTempClientId;
+        private string airHumClientId;
+        private void mqttDataPublisher()
+        {
+            
+            
+
+            soilClient = new MqttClient(brokerIp);
+            uvClient = new MqttClient(brokerIp);
+            gasClient = new MqttClient(brokerIp);
+            tempClient = new MqttClient(brokerIp);
+            airTempClient = new MqttClient(brokerIp);
+            airHumClient = new MqttClient(brokerIp);
+
+
+
+            soilClient.Subscribe(new string[] { sensorSoil }, new byte[] { MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE });
+            uvClient.Subscribe(new string[] { sensorUv }, new byte[] { MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE });
+            gasClient.Subscribe(new string[] { sensorGas }, new byte[] { MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE });
+            tempClient.Subscribe(new string[] { sensorTemp }, new byte[] { MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE });
+            airTempClient.Subscribe(new string[] { sensorAirTemp }, new byte[] { MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE });
+            airHumClient.Subscribe(new string[] { sensorAirHum }, new byte[] { MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE });
+
+            soilClient.MqttMsgPublishReceived += (s, e) =>
+            {
+                try
+                {
+                    this.broadcast.SendToChannel(ChannelListMod.columnChart1.ToString(),
+                        new coloumnChartData() {coloumnChartValue = Convert.ToDouble(Encoding.UTF8.GetString(e.Message))});
+                }
+                catch (Exception exception)
+                {
+                    this.broadcast.SendToChannel(ChannelList.statusBar.ToString(),
+                        new statusBarData(statusBarPoint.Ai, "Error : " + exception.Message));
+                }
+            };
+
+            uvClient.MqttMsgPublishReceived += (s, e) =>
+            {
+                try
+                {
+                    this.broadcast.SendToChannel(ChannelListMod.columnChart2.ToString(),
+                        new coloumnChartData() { coloumnChartValue = Convert.ToDouble(Encoding.UTF8.GetString(e.Message)) });
+                }
+                catch (Exception exception)
+                {
+                    this.broadcast.SendToChannel(ChannelList.statusBar.ToString(),
+                        new statusBarData(statusBarPoint.Ai, "Error : " + exception.Message));
+                }
+            };
+
+            gasClient.MqttMsgPublishReceived += (s, e) =>
+            {
+                try
+                {
+                    this.broadcast.SendToChannel(ChannelListMod.columnChart3.ToString(),
+                        new coloumnChartData() { coloumnChartValue = Convert.ToDouble(Encoding.UTF8.GetString(e.Message)) });
+                }
+                catch (Exception exception)
+                {
+                    this.broadcast.SendToChannel(ChannelList.statusBar.ToString(),
+                        new statusBarData(statusBarPoint.Ai, "Error : " + exception.Message));
+                }
+            };
+
+            tempClient.MqttMsgPublishReceived += (s, e) =>
+            {
+                try
+                {
+                    this.broadcast.SendToChannel(ChannelListMod.columnChart4.ToString(),
+                        new coloumnChartData() { coloumnChartValue = Convert.ToDouble(Encoding.UTF8.GetString(e.Message)) });
+                }
+                catch (Exception exception)
+                {
+                    this.broadcast.SendToChannel(ChannelList.statusBar.ToString(),
+                        new statusBarData(statusBarPoint.Ai, "Error : " + exception.Message));
+                }
+            };
+
+            airTempClient.MqttMsgPublishReceived += (s, e) =>
+            {
+                try
+                {
+                    this.broadcast.SendToChannel(ChannelListMod.lineChart1.ToString(),
+                        new lineChartData() { lineChartValue = Convert.ToDouble(Encoding.UTF8.GetString(e.Message)) });
+                }
+                catch (Exception exception)
+                {
+                    this.broadcast.SendToChannel(ChannelList.statusBar.ToString(),
+                        new statusBarData(statusBarPoint.Ai, "Error : " + exception.Message));
+                }
+            };
+
+            airHumClient.MqttMsgPublishReceived += (s, e) =>
+            {
+                try
+                {
+                    this.broadcast.SendToChannel(ChannelListMod.lineChart2.ToString(),
+                        new lineChartData() { lineChartValue = Convert.ToDouble(Encoding.UTF8.GetString(e.Message)) });
+                }
+                catch (Exception exception)
+                {
+                    this.broadcast.SendToChannel(ChannelList.statusBar.ToString(),
+                        new statusBarData(statusBarPoint.Ai, "Error : " + exception.Message));
+                }
+            };
+
+
+            soilClientId = Guid.NewGuid().ToString();
+            uvClientId = Guid.NewGuid().ToString();
+            gasClientId = Guid.NewGuid().ToString();
+            tempClientId = Guid.NewGuid().ToString();
+            airTempClientId = Guid.NewGuid().ToString();
+            airHumClientId = Guid.NewGuid().ToString();
+
+            try
+            {
+                soilClient.Connect(soilClientId);
+                uvClient.Connect(uvClientId);
+                gasClient.Connect(gasClientId);
+                tempClient.Connect(tempClientId);
+                airTempClient.Connect(airTempClientId);
+                airHumClient.Connect(airHumClientId);
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.Message);
+            }
 
         }
     }
+
 }

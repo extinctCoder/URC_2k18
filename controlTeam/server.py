@@ -9,6 +9,18 @@ import socket
 ip = '127.0.0.1'
 port = 8888
 BUFFER_SIZE = 10
+sensor1 = 1
+sensor2 = 2
+sensor3 = 3
+sensor4 = 4
+sensor5 = 5
+sensor6 = 6
+
+
+def feedData(sensor1,sensor2,sensor3,sensor4,sensor5,sensor6):
+    data = str(sensor1)+","+str(sensor2)+","+str(sensor3)+","+str(sensor4)+","+str(sensor5)+","+str(sensor6)
+    return data
+
 def printMsg(msg):
     print msg
     return
@@ -36,11 +48,18 @@ else:
                 else:
                     printMsg("sending data to gui")
                     while(1):
-                        con.sendall("data is being send\n")
-                        printMsg("data is being send\n")
-        except:
+                        sensor1 = sensor1 + 1
+                        sensor2 = sensor2 + 1
+                        sensor3 = sensor3 + 1
+                        sensor4 = sensor4 + 1
+                        sensor5 = sensor5 + 1
+                        sensor6 = sensor6 + 1
+                        data = feedData(sensor1,sensor2,sensor3,sensor4,sensor5,sensor6)
+                        printMsg(data)
+                        con.send(data)
+        except Exception as ex:
             printMsg("gui offline")
-        finally:
-            server.close()
+            printMsg(ex)
 finally:
+    server.close()
     printMsg("thank you")

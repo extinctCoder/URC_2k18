@@ -32,15 +32,24 @@ namespace demoClient
         private StreamWriter _streamWriter;
         private StreamReader _streamReader;
         private Thread _thread;
+        private bool _threadFlag = false;
 
         public MainWindow()
         {
             InitializeComponent();
+            this._thread = new Thread(() => dataHandler());
+            this._thread.IsBackground = true;
+            this.disconnectButton.IsEnabled = this._threadFlag;
+            this.connectButton.IsEnabled = !this._threadFlag;
         }
 
         private void ConnectButton_OnClick(object sender, RoutedEventArgs e)
         {
+            this.printMsgNoneThread("Connection is starting");
             this.convertAdd();
+            this._threadFlag = true;
+            this.disconnectButton.IsEnabled = this._threadFlag;
+            this.connectButton.IsEnabled = !this._threadFlag;
             try
             {
                 this._tcpClient = new TcpClient();
@@ -48,10 +57,14 @@ namespace demoClient
                 this._networkStream = this._tcpClient.GetStream();
                 this._streamReader=new StreamReader(this._networkStream);
                 this._streamWriter=new StreamWriter(this._networkStream);
-                this._thread = new Thread(() => dataHandler());
-                this._thread.IsBackground = true;
-                this._thread.Start();
-
+                if (this._thread.IsAlive)
+                {
+                    this._thread.Resume();
+                }
+                else
+                {
+                    this._thread.Start();
+                }
             }
             catch (Exception ex)
             {
@@ -64,10 +77,18 @@ namespace demoClient
         {
 
             this._streamWriter.AutoFlush = true;
-            while (true)
+            while (this._threadFlag)
             {
-                printMsg(this._streamReader.ReadLine());
+                try
+                {
+                    printMsg(this._streamReader.ReadLine());
+                }
+                catch (Exception e)
+                {
+                    Debug.WriteLine(e.Message);
+                }
             }
+            this._thread.Suspend();
         }
 
         private void convertAdd()
@@ -100,6 +121,29 @@ namespace demoClient
             {
                 Debug.WriteLine(ex.Message);
             }
+        }
+
+        private void printMsgNoneThread(String Msg)
+        {
+            textBox.Text = textBox.Text + "MSG :_ " + Msg + "\n";
+            textBox.ScrollToEnd();
+        }
+
+        private void DisconnectButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.printMsgNoneThread("Connection is disconnected");
+            this._threadFlag = false;
+            this.disconnectButton.IsEnabled = this._threadFlag;
+            this.connectButton.IsEnabled = !this._threadFlag;
+            if (this._thread.IsAlive)
+            {
+                this._thread.Suspend();
+            }
+            this._tcpClient.Close();
+            this._tcpClient = null;
+            this._networkStream = null;
+            this._streamReader = null;
+            this._streamWriter = null;
         }
     }
 }
