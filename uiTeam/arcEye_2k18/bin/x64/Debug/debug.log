@@ -2993,3 +2993,267 @@ C:\fakepath(200,32-88): warning X3571: pow(f, e) will not work for negative f, u
 [0319/003800.001:INFO:CONSOLE(14)] "yui: NOT loaded: highlander-client-templates-viewer-controls-atomic", source: https://mbp.yimg.com/sy/zz/combo?yui:/3.18.0/yui/yui-min.js (14)
 [0319/003800.001:INFO:CONSOLE(14)] "yui: NOT loaded: highlander-vertical-video", source: https://mbp.yimg.com/sy/zz/combo?yui:/3.18.0/yui/yui-min.js (14)
 [0328/011636.320:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/011757.111:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0520/014113.377:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0520/014118.379:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0520/014123.386:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0520/014128.387:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0520/014133.390:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0520/014138.395:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0520/014143.398:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0520/014148.400:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0520/014153.408:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0520/014201.012:WARNING:dns_config_service_win.cc(669)] Failed to read DnsConfig.
+[0520/035617.585:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035617.749:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035617.763:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035617.820:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035617.850:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035617.863:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035617.924:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035617.958:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035618.362:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0520/035618.368:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0520/035618.640:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035619.010:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035619.012:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035619.289:INFO:CONSOLE(0)] "Refused to display 'https://accounts.google.com/ServiceLogin?uilel=3&service=youtube&hl=en&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dpassive%26next%3D%252Fsignin_passive%26hl%3Den%26action_handle_signin%3Dtrue%26app%3Ddesktop' in a frame because it set 'X-Frame-Options' to 'deny'.", source: https://www.youtube.com/ (0)
+[0520/035619.422:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035619.679:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035619.679:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035620.325:ERROR:quota_settings.cc(95)] Unable to compute QuotaSettings.
+[0520/035620.336:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSettings.
+[0520/035621.320:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035621.351:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035622.109:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035622.131:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035622.223:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035622.280:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035622.382:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035623.932:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0520/035623.932:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0520/035623.932:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0520/035623.932:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0520/035633.943:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035636.691:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035642.563:ERROR:block_files.cc(473)] Failed to open GPUCache\data_217
+[0520/035642.564:WARNING:storage_block-inl.h(131)] Failed data load.
+[0520/035650.545:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035654.419:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0520/035654.419:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0520/035655.055:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035655.062:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035655.166:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035655.174:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035655.175:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035655.376:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035655.437:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035657.282:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0520/035657.298:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0520/035657.299:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0520/035657.301:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0520/035713.069:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035713.501:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0520/035713.501:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0520/035714.201:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035714.202:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035714.366:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035714.373:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035714.852:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0520/035714.857:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0520/035714.857:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0520/035714.857:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0520/035714.928:INFO:CONSOLE(1169)] "<link rel=preload> must have a valid `as` value", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfl1EOvVo/desktop_polymer.js (1169)
+[0520/035718.508:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035718.523:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0520/035718.524:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0520/035719.118:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035719.133:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035719.320:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035719.324:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035720.170:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0520/035720.173:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0520/035720.173:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0520/035720.176:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0520/035721.835:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035721.840:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0520/035721.840:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0520/035722.112:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 61
+[0520/035722.207:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035722.207:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035722.377:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035722.377:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035722.433:INFO:CONSOLE(1169)] "<link rel=preload> must have a valid `as` value", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfl1EOvVo/desktop_polymer.js (1169)
+[0520/035723.134:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0520/035723.146:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0520/035723.155:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0520/035723.160:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0520/035725.412:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 73
+[0520/035725.482:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0520/035725.482:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0520/035725.623:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035725.623:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035725.784:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035725.793:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035726.511:INFO:CONSOLE(1169)] "<link rel=preload> must have a valid `as` value", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfl1EOvVo/desktop_polymer.js (1169)
+[0520/035726.754:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0520/035726.760:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0520/035726.843:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0520/035726.845:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0520/035726.846:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0520/035726.849:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0520/035727.261:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035727.268:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035727.371:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035727.373:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035728.058:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0520/035728.062:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0520/035728.062:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0520/035728.062:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0520/035728.243:WARNING:backend_impl.cc(1571)] Wrong entry address.
+[0520/035731.737:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0520/035731.739:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0520/035731.836:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 97
+[0520/035732.152:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035732.156:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035732.446:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035732.449:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035732.940:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0520/035732.949:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0520/035732.964:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0520/035732.966:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0520/035736.317:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 107
+[0520/035736.392:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0520/035736.394:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0520/035736.761:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035736.762:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035736.920:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035736.921:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035737.097:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0520/035737.097:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0520/035737.097:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0520/035737.102:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0520/035742.275:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0520/035742.280:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0520/035742.673:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035742.675:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035742.919:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035742.933:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035743.539:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0520/035743.539:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0520/035743.540:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0520/035743.540:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0520/035743.989:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 13
+[0520/035745.117:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0520/035745.121:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0520/035745.598:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035745.600:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035745.781:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035745.782:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035746.385:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0520/035746.395:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0520/035746.395:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0520/035746.406:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0520/035747.870:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 139
+[0520/035747.904:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0520/035747.904:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0520/035748.069:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035748.069:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035748.227:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035748.231:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035749.330:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0520/035749.330:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0520/035749.330:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0520/035749.334:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0520/035751.091:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 149
+[0520/035751.236:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0520/035751.248:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0520/035751.571:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035751.572:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035751.716:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035751.719:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035751.800:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0520/035751.801:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0520/035751.801:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0520/035751.803:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0520/035754.203:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0520/035754.203:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0520/035754.680:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035754.685:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035754.912:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035754.924:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035754.924:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 159
+[0520/035755.790:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0520/035755.798:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0520/035755.798:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0520/035755.798:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0520/035758.400:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0520/035758.404:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0520/035758.833:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035758.835:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035759.000:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0520/035759.007:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0520/035759.595:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0520/035759.596:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0520/035759.600:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0520/035759.602:INFO:CONSOLE(0)] "
+%c", source:  (0)

@@ -22,12 +22,14 @@
                     <RowDefinition Height="2"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="2"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="2"></RowDefinition>
                 </Grid.RowDefinitions>
-                <lvc:CartesianChart Grid.Column="1" Grid.Row="1"  DataTooltip="{x:Null}" Hoverable="False" DisableAnimations="False">
+                <lvc:CartesianChart Grid.Column="1" Grid.Row="1" Zoom="X" DisableAnimations="True" Hoverable="True">
                     <lvc:CartesianChart.AxisX>
-                        <lvc:Axis LabelFormatter="{Binding DateTimeFormatter}" 
-                                  MaxValue="{Binding AxisMax}" 
-                                  MinValue="{Binding AxisMin}"
+                        <lvc:Axis LabelFormatter="{Binding DateTimeFormatter}"  
+                                  MaxValue="{Binding AxisMax, Mode=TwoWay}" 
+                                  MinValue="{Binding AxisMin, Mode=TwoWay}"
                                   Unit="{Binding AxisUnit}">
                             <lvc:Axis.Separator>
                                 <lvc:Separator Step="{Binding AxisStep}" />
@@ -35,8 +37,22 @@
                         </lvc:Axis>
                     </lvc:CartesianChart.AxisX>
                     <lvc:CartesianChart.Series>
-                        <geared:GLineSeries Values="{Binding _seriesChartValues}" Fill="Transparent" PointGeometry="{x:Null}"/>
+                        <geared:GLineSeries Values="{Binding _seriesChartValues}" PointGeometry="{x:Null}"/>
                     </lvc:CartesianChart.Series>
+                </lvc:CartesianChart>
+                <lvc:CartesianChart Grid.Column="1" Grid.Row="3" DisableAnimations="True"
+                                    ScrollHorizontalFrom="{Binding AxisMin, Mode=TwoWay}"
+                                    ScrollHorizontalTo="{Binding AxisMax, Mode=TwoWay}"
+                                    ScrollMode="X" DataTooltip="{x:Null}">
+                    <lvc:CartesianChart.Series>
+                        <geared:GLineSeries Values="{Binding _seriesChartValues}" PointGeometry="{x:Null}"/>
+                    </lvc:CartesianChart.Series>
+                    <lvc:CartesianChart.AxisX>
+                        <lvc:Axis LabelFormatter="{Binding DateTimeFormatter, Mode=OneTime}" />
+                    </lvc:CartesianChart.AxisX>
+                    <lvc:CartesianChart.AxisY>
+                        <lvc:Axis ShowLabels="False"/>
+                    </lvc:CartesianChart.AxisY>
                 </lvc:CartesianChart>
             </Grid>
         </GroupBox>

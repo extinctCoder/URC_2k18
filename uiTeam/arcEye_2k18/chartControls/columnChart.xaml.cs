@@ -19,6 +19,8 @@ using arcEye_2k18.controllers;
 using arcEye_2k18.dataTemplate;
 using LiveCharts;
 using LiveCharts.Configurations;
+using LiveCharts.Defaults;
+using LiveCharts.Events;
 using LiveCharts.Geared;
 using LiveCharts.Wpf;
 using XDMessaging;
@@ -59,7 +61,7 @@ namespace arcEye_2k18.chartControls
         private void SetAxisLimits(DateTime now)
         {
             AxisMax = now.Ticks + TimeSpan.FromSeconds(1).Ticks;
-            AxisMin = now.Ticks - TimeSpan.FromSeconds(1).Ticks;
+            AxisMin = now.Ticks - TimeSpan.FromSeconds(5).Ticks;
         }
 
         protected virtual void OnPropertyChanged(string propertyName = null)
@@ -74,11 +76,7 @@ namespace arcEye_2k18.chartControls
         {
         }
 
-        public columnChart(String _columnChartName) : this(_columnChartName, 0, 100)
-        {
-        }
-
-        public columnChart(String _columnChartName, int minValue, int maxValue)
+        public columnChart(String _columnChartName)
         {
             InitializeComponent();
             this.Name = _columnChartName;

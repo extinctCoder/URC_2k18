@@ -22,12 +22,12 @@
             <Button x:Name="visionModuleButton" Click="VisionModuleButton_OnClick" Content="VISION MODULE"></Button>
             <Button x:Name="gpsModuleButton" Click="GpsModuleButton_OnClick" Content="GPS MODULE"></Button>
             <Button x:Name="gyroModuleButton" Click="GyroModuleButton_OnClick" Content="GYRO MODULE"></Button>
-            <Button x:Name="sensor1Button" Click="Sensor1Button_OnClick" Content="SENSOR 1"></Button>
-            <Button x:Name="sensor2Button" Click="Sensor2Button_OnClick" Content="SENSOR 2"></Button>
-            <Button x:Name="sensor3Button" Click="Sensor3Button_OnClick" Content="SENSOR 3"></Button>
-            <Button x:Name="sensor4Button" Click="Sensor4Button_OnClick" Content="SENSOR 4"></Button>
-            <Button x:Name="sensor5Button" Click="Sensor5Button_OnClick" Content="SENSOR 5"></Button>
-            <Button x:Name="sensor6Button" Click="Sensor6Button_OnClick" Content="SENSOR 6"></Button>
+            <Button x:Name="sensor1Button" Click="Sensor1Button_OnClick" Content="SOIL"></Button>
+            <Button x:Name="sensor2Button" Click="Sensor2Button_OnClick" Content="UV"></Button>
+            <Button x:Name="sensor3Button" Click="Sensor3Button_OnClick" Content="GAS"></Button>
+            <Button x:Name="sensor4Button" Click="Sensor4Button_OnClick" Content="TEMP"></Button>
+            <Button x:Name="sensor5Button" Click="Sensor5Button_OnClick" Content="AIR TEMP"></Button>
+            <Button x:Name="sensor6Button" Click="Sensor6Button_OnClick" Content="AIR HUM"></Button>
         </controls:WindowCommands>
     </controls:MetroWindow.RightWindowCommands>
     <!--<Grid x:Name="grid">
@@ -285,7 +285,9 @@
                 <ColumnDefinition Width="0"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="0"></ColumnDefinition>
-                <ColumnDefinition Width="4*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="0"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
@@ -308,28 +310,9 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="0"></RowDefinition>
                 </Grid.RowDefinitions>
-                <Grid Grid.Column="1" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="0"></ColumnDefinition>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                        <ColumnDefinition Width="0"></ColumnDefinition>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                        <ColumnDefinition Width="0"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="0"></RowDefinition>
-                        <RowDefinition Height="*"></RowDefinition>
-                        <RowDefinition Height="0"></RowDefinition>
-                        <RowDefinition Height="*"></RowDefinition>
-                        <RowDefinition Height="0"></RowDefinition>
-                    </Grid.RowDefinitions>
-                    <Grid Grid.Column="1" Grid.Row="1" x:Name="sensorOne"></Grid>
-                    <Grid Grid.Column="1" Grid.Row="3" x:Name="sensorTwo"></Grid>
-                    <Grid Grid.Column="3" Grid.Row="1" x:Name="sensorThree"></Grid>
-                    <Grid Grid.Column="3" Grid.Row="3" x:Name="sensorFour"></Grid>
-                </Grid>
-                <Grid Grid.Column="1" Grid.Row="3" x:Name="gyroModule"></Grid>
-                <Grid Grid.Column="1" Grid.Row="5" x:Name="mapModule"></Grid>
+                <Grid Grid.Column="1" Grid.Row="1" x:Name="sensorOne"></Grid>
+                <Grid Grid.Column="1" Grid.Row="3" x:Name="sensorTwo"></Grid>
+                <Grid Grid.Column="1" Grid.Row="5" x:Name="gyroModule"></Grid>
             </Grid>
             <Grid Grid.Column="3" Grid.Row="1">
                 <Grid.ColumnDefinitions>
@@ -339,7 +322,7 @@
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="0"></RowDefinition>
-                    <RowDefinition Height="4*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
                     <RowDefinition Height="0"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="0"></RowDefinition>
@@ -361,6 +344,25 @@
                     <Grid Grid.Column="1" Grid.Row="1" x:Name="sensorFive"></Grid>
                     <Grid Grid.Column="3" Grid.Row="1" x:Name="sensorSix"></Grid>
                 </Grid>
+            </Grid>
+            <Grid Grid.Column="5" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="0"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Column="1" Grid.Row="1" x:Name="sensorThree"></Grid>
+                <Grid Grid.Column="1" Grid.Row="3" x:Name="sensorFour"></Grid>
+                <Grid Grid.Column="1" Grid.Row="5" x:Name="mapModule"></Grid>
             </Grid>
         </Grid>
         <Grid Grid.Column="1" Grid.Row="1" x:Name="fullScreenGrid"></Grid>

@@ -36,7 +36,7 @@ namespace arcEye_2k18.dataTemplate
 
     public enum ChannelListMod
     {
-        MainWindow, statusBar, gyroModule, mapModule, visionModule, lineChart1, lineChart2, columnChart1, columnChart2, columnChart3, columnChart4, keyStroke, movementControl
+        MainWindow, statusBar, gyroModule, mapModule, visionModule, AirTempSensor, AirHumSensor, SoilSensor, UvSensor, GasSensore, TempSensor, keyStroke, movementControl
     }
 
     public enum KeyPosition

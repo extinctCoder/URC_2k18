@@ -76,7 +76,7 @@ namespace arcEye_2k18.controllers
 
     public partial class dataPublisher
     {
-        private String brokerIp = "192.168.0.101";
+        private String brokerIp = "192.168.43.197";
 
         private string sensorSoil = "sensor/soil";
         private string sensorUv = "sensor/uv";
@@ -123,7 +123,7 @@ namespace arcEye_2k18.controllers
             {
                 try
                 {
-                    this.broadcast.SendToChannel(ChannelListMod.columnChart1.ToString(),
+                    this.broadcast.SendToChannel(ChannelListMod.SoilSensor.ToString(),
                         new coloumnChartData() {coloumnChartValue = Convert.ToDouble(Encoding.UTF8.GetString(e.Message))});
                 }
                 catch (Exception exception)
@@ -137,7 +137,7 @@ namespace arcEye_2k18.controllers
             {
                 try
                 {
-                    this.broadcast.SendToChannel(ChannelListMod.columnChart2.ToString(),
+                    this.broadcast.SendToChannel(ChannelListMod.UvSensor.ToString(),
                         new coloumnChartData() { coloumnChartValue = Convert.ToDouble(Encoding.UTF8.GetString(e.Message)) });
                 }
                 catch (Exception exception)
@@ -151,7 +151,7 @@ namespace arcEye_2k18.controllers
             {
                 try
                 {
-                    this.broadcast.SendToChannel(ChannelListMod.columnChart3.ToString(),
+                    this.broadcast.SendToChannel(ChannelListMod.GasSensore.ToString(),
                         new coloumnChartData() { coloumnChartValue = Convert.ToDouble(Encoding.UTF8.GetString(e.Message)) });
                 }
                 catch (Exception exception)
@@ -165,7 +165,7 @@ namespace arcEye_2k18.controllers
             {
                 try
                 {
-                    this.broadcast.SendToChannel(ChannelListMod.columnChart4.ToString(),
+                    this.broadcast.SendToChannel(ChannelListMod.TempSensor.ToString(),
                         new coloumnChartData() { coloumnChartValue = Convert.ToDouble(Encoding.UTF8.GetString(e.Message)) });
                 }
                 catch (Exception exception)
@@ -179,7 +179,7 @@ namespace arcEye_2k18.controllers
             {
                 try
                 {
-                    this.broadcast.SendToChannel(ChannelListMod.lineChart1.ToString(),
+                    this.broadcast.SendToChannel(ChannelListMod.AirTempSensor.ToString(),
                         new lineChartData() { lineChartValue = Convert.ToDouble(Encoding.UTF8.GetString(e.Message)) });
                 }
                 catch (Exception exception)
@@ -193,7 +193,7 @@ namespace arcEye_2k18.controllers
             {
                 try
                 {
-                    this.broadcast.SendToChannel(ChannelListMod.lineChart2.ToString(),
+                    this.broadcast.SendToChannel(ChannelListMod.AirHumSensor.ToString(),
                         new lineChartData() { lineChartValue = Convert.ToDouble(Encoding.UTF8.GetString(e.Message)) });
                 }
                 catch (Exception exception)

@@ -35,7 +35,10 @@ namespace arcEye_2k18.basicControls
             this.browser_1.Address = this._addressOne;
             this.browser_2.Address = this._addressTwo;
             this.browser_3.Address = this._addressThree;
-            this.browser_4.Address = this._addressFour;
+            this.browser_1.ZoomLevelIncrement = 1;
+            this.browser_2.ZoomLevelIncrement = 0.01;
+            this.browser_3.ZoomLevelIncrement = 0.01;
+
         }
 
         private void Cam_view_btn_1_OnClick(object sender, RoutedEventArgs e)
@@ -43,7 +46,12 @@ namespace arcEye_2k18.basicControls
             this.browser_1.Address = this._addressOne;
             this.browser_2.Address = this._addressTwo;
             this.browser_3.Address = this._addressThree;
-            this.browser_4.Address = this._addressFour;
+            cam_view_btn_1.Background = Brushes.LightBlue;
+            cam_view_btn_2.Background = Brushes.White;
+            cam_view_btn_3.Background = Brushes.White;
+            this.cam_view_btn_1.Content = "C1";
+            this.cam_view_btn_2.Content = "C2";
+            this.cam_view_btn_3.Content = "C3";
         }
 
         private void Cam_view_btn_2_OnClick(object sender, RoutedEventArgs e)
@@ -51,7 +59,13 @@ namespace arcEye_2k18.basicControls
             this.browser_1.Address = this._addressTwo;
             this.browser_2.Address = this._addressOne;
             this.browser_3.Address = this._addressThree;
-            this.browser_4.Address = this._addressFour;
+            cam_view_btn_2.Background = Brushes.LightBlue;
+            cam_view_btn_1.Background = Brushes.White;
+            cam_view_btn_3.Background = Brushes.White;
+            this.cam_view_btn_1.Content = "C2";
+            this.cam_view_btn_2.Content = "C1";
+            this.cam_view_btn_3.Content = "C3";
+
         }
 
         private void Cam_view_btn_3_OnClick(object sender, RoutedEventArgs e)
@@ -59,23 +73,22 @@ namespace arcEye_2k18.basicControls
             this.browser_1.Address = this._addressThree;
             this.browser_2.Address = this._addressTwo;
             this.browser_3.Address = this._addressOne;
-            this.browser_4.Address = this._addressFour;
+            cam_view_btn_3.Background = Brushes.LightBlue;
+            cam_view_btn_1.Background = Brushes.White;
+            cam_view_btn_2.Background = Brushes.White;
+            this.cam_view_btn_1.Content = "C3";
+            this.cam_view_btn_2.Content = "C2";
+            this.cam_view_btn_3.Content = "C1";
         }
 
-        private void Cam_view_btn_4_OnClick(object sender, RoutedEventArgs e)
-        {
-            this.browser_1.Address = this._addressFour;
-            this.browser_2.Address = this._addressTwo;
-            this.browser_3.Address = this._addressThree;
-            this.browser_4.Address = this._addressOne;
-        }
     }
 
     public partial class visionModule
     {
-        private string _addressOne = "http://192.168.0.102";
-        private string _addressTwo = "http://192.168.0.102:8081";
-        private string _addressThree = "http://192.168.0.102:8082";
-        private string _addressFour = "http://192.168.0.102:8083";
+        private string _addressOne = "http://facebook.com";
+        private string _addressTwo = "http://youtube.com";
+        private string _addressThree = "http://google.com";
+
+
     }
 }

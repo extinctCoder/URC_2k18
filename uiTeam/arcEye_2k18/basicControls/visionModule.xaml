@@ -14,7 +14,7 @@
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2"></ColumnDefinition>
-                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
                     <ColumnDefinition Width="2"></ColumnDefinition>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                     <ColumnDefinition Width="2"></ColumnDefinition>
@@ -50,19 +50,48 @@
                             <ColumnDefinition Width="2"></ColumnDefinition>
                             <ColumnDefinition Width="*"></ColumnDefinition>
                             <ColumnDefinition Width="2"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="2"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="2"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="2"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="2"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="2"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="2"></RowDefinition>
                             <RowDefinition Height="Auto"></RowDefinition>
                             <RowDefinition Height="2"></RowDefinition>
                         </Grid.RowDefinitions>
-                        <Button Grid.Column="1" Grid.Row="1" x:Name="cam_view_btn_1" Click="Cam_view_btn_1_OnClick" Content="Cam View One"></Button>
-                        <Button Grid.Column="3" Grid.Row="1" x:Name="cam_view_btn_2" Click="Cam_view_btn_2_OnClick" Content="Cam View Two"></Button>
-                        <Button Grid.Column="5" Grid.Row="1" x:Name="cam_view_btn_3" Click="Cam_view_btn_3_OnClick" Content="Cam View Three"></Button>
-                        <Button Grid.Column="7" Grid.Row="1" x:Name="cam_view_btn_4" Click="Cam_view_btn_4_OnClick" Content="Cam View Four"></Button>
+                        <Button Grid.Column="1" Grid.Row="1" Command="{Binding ElementName=browser_1, Path=ZoomInCommand}">
+                            <materialDesign:PackIcon Kind="ArrowExpandAll"></materialDesign:PackIcon>
+                        </Button>
+                        <Button Grid.Column="3" Grid.Row="1" x:Name="cam_view_btn_1" Background="White" Click="Cam_view_btn_1_OnClick" Content="C1"></Button>
+                        <Button Grid.Column="5" Grid.Row="1" Command="{Binding ElementName=browser_1, Path=ZoomOutCommand}">
+                            <materialDesign:PackIcon Kind="ArrowCompressAll"></materialDesign:PackIcon>
+                        </Button>
+                        <Button Grid.Column="7" Grid.Row="1" Command="{Binding ElementName=browser_2, Path=ZoomInCommand}">
+                            <materialDesign:PackIcon Kind="ArrowExpandAll"></materialDesign:PackIcon>
+                        </Button>
+                        <Button Grid.Column="9" Grid.Row="1" x:Name="cam_view_btn_2" Click="Cam_view_btn_2_OnClick" Background="White" Content="C2"></Button>
+                        <Button Grid.Column="11" Grid.Row="1" Command="{Binding ElementName=browser_2, Path=ZoomOutCommand}">
+                            <materialDesign:PackIcon Kind="ArrowCompressAll"></materialDesign:PackIcon>
+                        </Button>
+                        <Button Grid.Column="13" Grid.Row="1" Command="{Binding ElementName=browser_3, Path=ZoomInCommand}">
+                            <materialDesign:PackIcon Kind="ArrowExpandAll"></materialDesign:PackIcon>
+                        </Button>
+                        <Button Grid.Column="15" Grid.Row="1" x:Name="cam_view_btn_3" Click="Cam_view_btn_3_OnClick" Background="White" Content="C3"></Button>
+                        <Button Grid.Column="17" Grid.Row="1" Command="{Binding ElementName=browser_3, Path=ZoomOutCommand}">
+                            <materialDesign:PackIcon Kind="ArrowCompressAll"></materialDesign:PackIcon>
+                        </Button>
+
+
                     </Grid>
                     <cefSharp:ChromiumWebBrowser Grid.Column="1" Grid.Row="3" x:Name="browser_1"></cefSharp:ChromiumWebBrowser>
-                    <ProgressBar Grid.Column="1" Grid.Row="5" IsIndeterminate="{Binding IsLoading, ElementName = browser_1}"></ProgressBar>
+                    <!--<ProgressBar Grid.Column="1" Grid.Row="5" IsIndeterminate="{Binding IsLoading, ElementName = browser_1}"></ProgressBar>-->
                 </Grid>
                 <Grid Grid.Row="1" Grid.Column="3">
                     <Grid.ColumnDefinitions>
@@ -71,8 +100,6 @@
                         <ColumnDefinition Width="0"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="0"></RowDefinition>
-                        <RowDefinition Height="*"></RowDefinition>
                         <RowDefinition Height="0"></RowDefinition>
                         <RowDefinition Height="*"></RowDefinition>
                         <RowDefinition Height="0"></RowDefinition>
@@ -93,7 +120,7 @@
                             <RowDefinition Height="2"></RowDefinition>
                         </Grid.RowDefinitions>
                         <cefSharp:ChromiumWebBrowser Grid.Column="1" Grid.Row="1" x:Name="browser_2"></cefSharp:ChromiumWebBrowser>
-                        <ProgressBar Grid.Column="1" Grid.Row="3" IsIndeterminate="{Binding IsLoading, ElementName = browser_2}"></ProgressBar>
+                        <!--<ProgressBar Grid.Column="1" Grid.Row="3" IsIndeterminate="{Binding IsLoading, ElementName = browser_2}"></ProgressBar>-->
                     </Grid>
                     <Grid Grid.Row="3" Grid.Column="1">
                         <Grid.ColumnDefinitions>
@@ -109,23 +136,7 @@
                             <RowDefinition Height="2"></RowDefinition>
                         </Grid.RowDefinitions>
                         <cefSharp:ChromiumWebBrowser Grid.Column="1" Grid.Row="1" x:Name="browser_3"></cefSharp:ChromiumWebBrowser>
-                        <ProgressBar Grid.Column="1" Grid.Row="3" IsIndeterminate="{Binding IsLoading, ElementName = browser_3}"></ProgressBar>
-                    </Grid>
-                    <Grid Grid.Row="5" Grid.Column="1">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="2"></ColumnDefinition>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="2"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="2"></RowDefinition>
-                            <RowDefinition Height="*"></RowDefinition>
-                            <RowDefinition Height="2"></RowDefinition>
-                            <RowDefinition Height="Auto"></RowDefinition>
-                            <RowDefinition Height="2"></RowDefinition>
-                        </Grid.RowDefinitions>
-                        <cefSharp:ChromiumWebBrowser Grid.Column="1" Grid.Row="1" x:Name="browser_4"></cefSharp:ChromiumWebBrowser>
-                        <ProgressBar Grid.Column="1" Grid.Row="3" IsIndeterminate="{Binding IsLoading, ElementName = browser_4}"></ProgressBar>
+                        <!--<ProgressBar Grid.Column="1" Grid.Row="3" IsIndeterminate="{Binding IsLoading, ElementName = browser_3}"></ProgressBar>-->
                     </Grid>
                 </Grid>
             </Grid>
