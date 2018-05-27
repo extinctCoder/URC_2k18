@@ -3257,3 +3257,62 @@ C:\fakepath(200,32-88): warning X3571: pow(f, e) will not work for negative f, u
 %cSee https://www.facebook.com/selfxss for more information.", source:  (0)
 [0520/035759.602:INFO:CONSOLE(0)] "
 %c", source:  (0)
+[0528/024225.105:ERROR:backend_impl.cc(1055)] Critical error found -8
+[0528/024230.193:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0528/024230.228:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0528/024231.608:INFO:CONSOLE(0)] "Refused to display 'https://accounts.google.com/ServiceLogin?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26next%3D%252Fsignin_passive%26feature%3Dpassive%26app%3Ddesktop%26hl%3Den&passive=true&hl=en&service=youtube&uilel=3' in a frame because it set 'X-Frame-Options' to 'deny'.", source: https://www.youtube.com/ (0)
+[0528/024234.985:ERROR:shader_disk_cache.cc(238)] Failed to create shader cache entry: -2
+[0528/024235.536:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0528/024235.556:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0528/024235.979:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0528/024235.980:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0528/024236.858:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0528/024236.858:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0528/024236.858:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0528/024236.858:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0528/024236.858:INFO:CONSOLE(1177)] "<link rel=preload> must have a valid `as` value", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfl7buC1V/desktop_polymer.js (1177)
+[0528/024237.902:ERROR:quota_settings.cc(95)] Unable to compute QuotaSettings.
+[0528/024237.955:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSettings.
+[0528/024437.661:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0528/024437.663:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0528/024438.941:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0528/024438.941:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0528/024439.056:INFO:CONSOLE(0)] "Refused to display 'https://accounts.google.com/ServiceLogin?hl=en&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fhl%3Den%26next%3D%252Fsignin_passive%26app%3Ddesktop%26feature%3Dpassive%26action_handle_signin%3Dtrue&passive=true&service=youtube&uilel=3' in a frame because it set 'X-Frame-Options' to 'deny'.", source: https://www.youtube.com/ (0)
+[0528/024439.229:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0528/024439.230:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0528/024439.293:INFO:CONSOLE(1177)] "<link rel=preload> must have a valid `as` value", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfl7buC1V/desktop_polymer.js (1177)
+[0528/024439.419:ERROR:quota_settings.cc(95)] Unable to compute QuotaSettings.
+[0528/024439.420:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSettings.
+[0528/024442.633:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0528/024442.633:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0528/024442.633:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0528/024442.633:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0528/024458.213:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 47
+[0528/024542.095:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 49
+[0528/024838.630:ERROR:service_manager.cc(157)] Connection InterfaceProviderSpec prevented service: content_renderer from binding interface: blink::mojom::ReportingServiceProxy exposed by: content_browser
+[0528/024838.634:INFO:CONSOLE(0)] "Styling master document from stylesheets defined in HTML Imports is deprecated, and is planned to be removed in M65, around March 2018. Please refer to https://goo.gl/EGXzpw for possible migration paths.", source:  (0)
+[0528/024839.199:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0528/024839.199:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0528/024839.293:INFO:CONSOLE(0)] "Refused to display 'https://accounts.google.com/ServiceLogin?uilel=3&hl=en&service=youtube&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dpassive%26next%3D%252Fsignin_passive%26hl%3Den%26action_handle_signin%3Dtrue%26app%3Ddesktop' in a frame because it set 'X-Frame-Options' to 'deny'.", source: https://www.youtube.com/ (0)
+[0528/024839.525:WARNING:extension_protocols.cc(477)] Failed to GetPathForExtension: invalid
+[0528/024839.525:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0528/024839.628:INFO:CONSOLE(1177)] "<link rel=preload> must have a valid `as` value", source: https://s.ytimg.com/yts/jsbin/desktop_polymer-vfl7buC1V/desktop_polymer.js (1177)
+[0528/024839.808:ERROR:quota_settings.cc(95)] Unable to compute QuotaSettings.
+[0528/024839.810:WARNING:quota_manager.cc(1629)] No storage quota provided in QuotaSettings.
+[0528/024841.141:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0528/024841.141:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0528/024841.141:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0528/024841.142:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0528/024848.731:ERROR:broker_win.cc(138)] Error sending sync broker message

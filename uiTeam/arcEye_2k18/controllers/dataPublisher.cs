@@ -76,7 +76,7 @@ namespace arcEye_2k18.controllers
 
     public partial class dataPublisher
     {
-        private String brokerIp = "192.168.43.197";
+        private String brokerIp = "192.168.0.101";
 
         private string sensorSoil = "sensor/soil";
         private string sensorUv = "sensor/uv";
@@ -84,6 +84,10 @@ namespace arcEye_2k18.controllers
         private string sensorTemp = "sensor/temp";
         private string sensorAirTemp = "sensor/air/temp";
         private string sensorAirHum = "sensor/air/hum";
+        private string sensorGps = "sensor/gps_lat_log";
+        private string sensorGyro = "sensor/gyro";
+
+
 
         private MqttClient soilClient;
         private MqttClient uvClient;
@@ -91,6 +95,8 @@ namespace arcEye_2k18.controllers
         private MqttClient tempClient;
         private MqttClient airTempClient;
         private MqttClient airHumClient;
+        private MqttClient gpsClient;
+        private MqttClient gyroClient;
 
         private string soilClientId;
         private string uvClientId;
@@ -98,6 +104,9 @@ namespace arcEye_2k18.controllers
         private string tempClientId;
         private string airTempClientId;
         private string airHumClientId;
+        private string gpsClientId;
+        private string gyroClientId;
+
         private void mqttDataPublisher()
         {
             
@@ -109,6 +118,9 @@ namespace arcEye_2k18.controllers
             tempClient = new MqttClient(brokerIp);
             airTempClient = new MqttClient(brokerIp);
             airHumClient = new MqttClient(brokerIp);
+            gpsClient = new MqttClient(brokerIp);
+            gyroClient = new MqttClient(brokerIp);
+
 
 
 
@@ -118,6 +130,10 @@ namespace arcEye_2k18.controllers
             tempClient.Subscribe(new string[] { sensorTemp }, new byte[] { MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE });
             airTempClient.Subscribe(new string[] { sensorAirTemp }, new byte[] { MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE });
             airHumClient.Subscribe(new string[] { sensorAirHum }, new byte[] { MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE });
+            gpsClient.Subscribe(new string[] { sensorGps }, new byte[] { MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE });
+            gyroClient.Subscribe(new string[] { sensorGyro }, new byte[] { MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE });
+
+
 
             soilClient.MqttMsgPublishReceived += (s, e) =>
             {
@@ -202,6 +218,36 @@ namespace arcEye_2k18.controllers
                         new statusBarData(statusBarPoint.Ai, "Error : " + exception.Message));
                 }
             };
+            gpsClient.MqttMsgPublishReceived += (s, e) =>
+            {
+                try
+                {
+                    string data = Encoding.UTF8.GetString(e.Message);
+                    string[] datas = data.Split(',');
+                    this.broadcast.SendToChannel(ChannelListMod.mapModule.ToString(),
+                        new mapModuleData() { xAxisValue = Convert.ToDouble(datas[0]),yAxisValue=Convert.ToDouble(datas[1]) });
+                }
+                catch (Exception exception)
+                {
+                    this.broadcast.SendToChannel(ChannelList.statusBar.ToString(),
+                        new statusBarData(statusBarPoint.Ai, "Error : " + exception.Message));
+                }
+            };
+            gyroClient.MqttMsgPublishReceived += (s, e) =>
+            {
+                try
+                {
+                    string data = Encoding.UTF8.GetString(e.Message);
+                    string[] datas = data.Split(',');
+                    this.broadcast.SendToChannel(ChannelListMod.gyroModule.ToString(),
+                        new gyroModuleData() { xAxisData = Convert.ToDouble(datas[0]), yAxisData = Convert.ToDouble(datas[1]), zAxisData = Convert.ToDouble(datas[2]) });
+                }
+                catch (Exception exception)
+                {
+                    this.broadcast.SendToChannel(ChannelList.statusBar.ToString(),
+                        new statusBarData(statusBarPoint.Ai, "Error : " + exception.Message));
+                }
+            };
 
 
             soilClientId = Guid.NewGuid().ToString();
@@ -210,6 +256,9 @@ namespace arcEye_2k18.controllers
             tempClientId = Guid.NewGuid().ToString();
             airTempClientId = Guid.NewGuid().ToString();
             airHumClientId = Guid.NewGuid().ToString();
+            gpsClientId = Guid.NewGuid().ToString();
+            gyroClientId = Guid.NewGuid().ToString();
+
 
             try
             {
@@ -219,6 +268,9 @@ namespace arcEye_2k18.controllers
                 tempClient.Connect(tempClientId);
                 airTempClient.Connect(airTempClientId);
                 airHumClient.Connect(airHumClientId);
+                gpsClient.Connect(gpsClientId);
+                gyroClient.Connect(gyroClientId);
+
             }
             catch (Exception e)
             {
