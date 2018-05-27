@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\obj\x64\Debug\
+C:\Users\islam\OneDrive\Documents\URC_2k18\uiTeam\arcEye_2k18\obj\x64\Debug\
 arcEye_2k18
 none
 false
 
-D:\OneDrive\URC_2k18\uiTeam\arcEye_2k18\App.xaml
+C:\Users\islam\OneDrive\Documents\URC_2k18\uiTeam\arcEye_2k18\App.xaml
 13-364615725
 
 222037387236
-94-1674631073
+949005966
 basicControls\gyroModule.xaml;basicControls\mapModule.xaml;basicControls\movementControl.xaml;basicControls\statusBar.xaml;basicControls\visionModule.xaml;chartControls\angularGauge.xaml;chartControls\columnChart.xaml;chartControls\lineChart.xaml;chartControls\seriesChart.xaml;chartControls\solidGauge.xaml;MainWindow.xaml;Resources\Icons.xaml;Resources\IconsNonShared.xaml;
 contents\splash_screen.gif
 False
